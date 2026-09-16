@@ -127,11 +127,12 @@ function toYahooSymbol(symbol) {
   return symbol.replace(/\./g, '-')
 }
 
-async function fetchHistory(symbol) {
+async function fetchHistory(symbol, range = RANGE) {
   const yahooSymbol = toYahooSymbol(symbol)
+  const interval = range === '1mo' ? '1h' : '1d'
   const url = `https://query1.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(
     yahooSymbol,
-  )}?range=${RANGE}&interval=1d&includePrePost=false`
+  )}?range=${range}&interval=${interval}&includePrePost=false`
 
   for (let attempt = 0; attempt <= RETRIES_PER_TICKER; attempt++) {
     try {
@@ -246,6 +247,22 @@ async function main() {
   const valid = results.filter(Boolean)
   valid.sort((a, b) => b.changePct3mo - a.changePct3mo)
   const top50 = valid.slice(0, RESULT_SIZE).map((s, i) => ({ rank: i + 1, ...s }))
+
+  // For the Detailansicht (1M/3M/1J-Chart) we only need extra ranges for
+  // the 50 winners, not the whole universe.
+  console.log(`Lade zusätzliche Zeiträume (1M, 1J) für die Top ${top50.length} …`)
+  await mapWithConcurrency(top50, CONCURRENCY, async (stock) => {
+    const [oneMonth, oneYear] = await Promise.all([
+      fetchHistory(stock.symbol, '1mo'),
+      fetchHistory(stock.symbol, '1y'),
+    ])
+    stock.history1mo = oneMonth.error
+      ? []
+      : downsample(oneMonth.points).map((p) => ({ t: toIsoDate(p.t), c: round2(p.c) }))
+    stock.history1y = oneYear.error
+      ? []
+      : downsample(oneYear.points).map((p) => ({ t: toIsoDate(p.t), c: round2(p.c) }))
+  })
 
   const output = {
     updatedAt: new Date().toISOString(),

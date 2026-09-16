@@ -6,9 +6,17 @@ interface Props {
   positive: boolean
   width?: number
   height?: number
+  /** Stretches the SVG to fill its container instead of a fixed pixel size. */
+  responsive?: boolean
 }
 
-export function Sparkline({ history, positive, width = 96, height = 32 }: Props) {
+export function Sparkline({
+  history,
+  positive,
+  width = 96,
+  height = 32,
+  responsive = false,
+}: Props) {
   const gradientId = useId()
 
   const { linePath, areaPath } = useMemo(() => {
@@ -34,15 +42,16 @@ export function Sparkline({ history, positive, width = 96, height = 32 }: Props)
     return { linePath: line, areaPath: area }
   }, [history, width, height])
 
-  if (!linePath) return <div style={{ width, height }} />
+  if (!linePath) return <div style={responsive ? undefined : { width, height }} />
 
   const color = positive ? '#30d158' : '#ff453a'
 
   return (
     <svg
-      width={width}
-      height={height}
+      width={responsive ? '100%' : width}
+      height={responsive ? '100%' : height}
       viewBox={`0 0 ${width} ${height}`}
+      preserveAspectRatio="none"
       className="overflow-visible"
       aria-hidden="true"
     >

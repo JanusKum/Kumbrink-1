@@ -15,8 +15,14 @@ export interface Stock {
   changePct3mo: number
   changeAbs3mo: number
   startPrice: number
+  /** 3-Monats-Historie, verwendet für die Sparkline in der Liste und als Ranking-Basis. */
   history: StockHistoryPoint[]
+  /** Zusätzliche Zeiträume für die Detailansicht (nur für die finalen Top 50 geladen). */
+  history1mo: StockHistoryPoint[]
+  history1y: StockHistoryPoint[]
 }
+
+export type ChartRange = '1mo' | '3mo' | '1y'
 
 export interface Top50Data {
   updatedAt: string

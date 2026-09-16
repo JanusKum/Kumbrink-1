@@ -22,6 +22,12 @@ sich automatisch, es ist kein API-Key und kein eigener Server nötig.
   (`.github/workflows/update-data.yml`) läuft **alle 6 Stunden**, holt die
   frischen Daten, committet `public/data/top50.json` und deployt die Seite
   automatisch neu auf GitHub Pages. Kein manuelles Eingreifen nötig.
+- **Installierbar (PWA):** Die App lässt sich über „Zum Home-Bildschirm
+  hinzufügen“ (iOS/Safari) bzw. „App installieren“ (Android/Chrome) wie
+  eine native App installieren – mit eigenem Icon, Standalone-Fenster ohne
+  Browserleiste und Offline-Fallback auf die zuletzt geladenen Kurse. Ein
+  Service Worker (`vite-plugin-pwa`) aktualisiert sich automatisch im
+  Hintergrund bei jedem neuen Deploy.
 
 ## Lokale Entwicklung
 

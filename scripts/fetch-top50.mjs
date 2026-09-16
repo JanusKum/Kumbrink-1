@@ -74,6 +74,16 @@ function parseCsv(text) {
   return rows.filter((r) => r.length > 1 || r[0] !== '')
 }
 
+/** Finds the first header column matching any of the given candidate names. */
+function findColumn(header, candidates) {
+  const normalized = header.map((h) => h.replace(/^﻿/, '').trim().toLowerCase())
+  for (const candidate of candidates) {
+    const idx = normalized.indexOf(candidate)
+    if (idx !== -1) return idx
+  }
+  return -1
+}
+
 async function fetchUniverse() {
   try {
     const res = await fetch(UNIVERSE_CSV_URL, {
@@ -84,11 +94,13 @@ async function fetchUniverse() {
     const text = await res.text()
     const rows = parseCsv(text)
     const [header, ...data] = rows
-    const symbolIdx = header.findIndex((h) => h.trim().toLowerCase() === 'symbol')
-    const nameIdx = header.findIndex((h) => h.trim().toLowerCase() === 'name')
-    const sectorIdx = header.findIndex((h) => h.trim().toLowerCase() === 'sector')
+    const symbolIdx = findColumn(header, ['symbol', 'ticker'])
+    const nameIdx = findColumn(header, ['name', 'security', 'company'])
+    const sectorIdx = findColumn(header, ['sector', 'gics sector'])
 
-    if (symbolIdx === -1 || nameIdx === -1) throw new Error('Unexpected CSV shape')
+    if (symbolIdx === -1 || nameIdx === -1) {
+      throw new Error(`Unexpected CSV shape, header was: ${header.join(' | ')}`)
+    }
 
     const universe = data
       .filter((r) => r[symbolIdx])

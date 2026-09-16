@@ -24,9 +24,9 @@ export function useTopStocks() {
 
     async function load() {
       try {
-        const res = await fetch(`${DATA_URL}?ts=${Date.now()}`, {
-          cache: 'no-store',
-        })
+        // No cache-busting query param: keeps the URL stable so the
+        // service worker's runtime cache can match and serve it offline.
+        const res = await fetch(DATA_URL, { cache: 'no-store' })
         if (!res.ok) throw new Error(`HTTP ${res.status}`)
         const json = (await res.json()) as Top50Data
         if (!cancelled) {

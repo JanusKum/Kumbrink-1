@@ -1,0 +1,73 @@
+name: Aktualisiere Top 50 & Deploy
+
+on:
+  schedule:
+    # Alle 6 Stunden: 3-Monats-Performance neu berechnen und Seite neu veröffentlichen.
+    - cron: '0 */6 * * *'
+  push:
+    branches: [main]
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  refresh-and-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Node einrichten
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Abhängigkeiten installieren
+        run: npm ci
+
+      - name: Top 50 Performer neu laden
+        run: npm run fetch-data
+
+      - name: Geänderte Daten committen
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if ! git diff --quiet -- public/data/top50.json; then
+            git add public/data/top50.json
+            git commit -m "chore: aktualisiere Top 50 Aktien-Daten"
+            git push
+          else
+            echo "Keine Änderungen an den Daten."
+          fi
+
+      - name: App bauen
+        run: npm run build
+
+      - name: Pages vorbereiten
+        uses: actions/configure-pages@v5
+
+      - name: Artefakt hochladen
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: refresh-and-build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Auf GitHub Pages veröffentlichen
+        id: deployment
+        uses: actions/deploy-pages@v4

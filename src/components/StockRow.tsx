@@ -1,9 +1,12 @@
 import type { Stock } from '../types'
+import { FavoriteButton } from './FavoriteButton'
 import { Sparkline } from './Sparkline'
 import { StatBadge } from './StatBadge'
 
 interface Props {
   stock: Stock
+  isFavorite: boolean
+  onToggleFavorite: (symbol: string) => void
 }
 
 const priceFormatterCache = new Map<string, Intl.NumberFormat>()
@@ -22,11 +25,21 @@ function formatPrice(price: number, currency: string) {
   return formatter.format(price)
 }
 
-export function StockRow({ stock }: Props) {
+export function StockRow({ stock, isFavorite, onToggleFavorite }: Props) {
   const positive = stock.changePct3mo >= 0
 
   return (
     <li className="group flex items-center gap-3 sm:gap-4 rounded-2xl px-3 py-3 sm:px-4 sm:py-3.5 transition-colors hover:bg-black/[0.03] dark:hover:bg-white/[0.06]">
+      <FavoriteButton
+        active={isFavorite}
+        onToggle={() => onToggleFavorite(stock.symbol)}
+        label={
+          isFavorite
+            ? `${stock.symbol} von der Watchlist entfernen`
+            : `${stock.symbol} zur Watchlist hinzufügen`
+        }
+      />
+
       <span className="w-6 shrink-0 text-right text-sm font-medium tabular-nums text-black/35 dark:text-white/35">
         {stock.rank}
       </span>

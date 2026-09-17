@@ -1,13 +1,16 @@
 import { useMemo, useState } from 'react'
 import { Header, type View } from './components/Header'
+import { StockDetail } from './components/StockDetail'
 import { StockRow } from './components/StockRow'
 import { UpdatedFooter } from './components/UpdatedFooter'
+import { useSelectedSymbol } from './hooks/useSelectedSymbol'
 import { useTopStocks } from './hooks/useTopStocks'
 import { useWatchlist } from './hooks/useWatchlist'
 
 function App() {
   const { data, loading, error } = useTopStocks()
   const { favorites, isFavorite, toggle } = useWatchlist()
+  const { symbol: selectedSymbol, select, clear } = useSelectedSymbol()
   const [query, setQuery] = useState('')
   const [view, setView] = useState<View>('all')
 
@@ -24,6 +27,23 @@ function App() {
         s.symbol.toLowerCase().includes(q) || s.name.toLowerCase().includes(q),
     )
   }, [data, query, view, favorites])
+
+  const selectedStock = selectedSymbol
+    ? data?.stocks.find((s) => s.symbol === selectedSymbol)
+    : undefined
+
+  if (selectedSymbol && selectedStock) {
+    return (
+      <div className="min-h-screen">
+        <StockDetail
+          stock={selectedStock}
+          isFavorite={isFavorite(selectedStock.symbol)}
+          onToggleFavorite={toggle}
+          onBack={clear}
+        />
+      </div>
+    )
+  }
 
   return (
     <div className="min-h-screen">
@@ -50,6 +70,12 @@ function App() {
           </div>
         )}
 
+        {selectedSymbol && !selectedStock && data && (
+          <div className="mx-3 mt-6 rounded-2xl bg-black/[0.04] px-4 py-4 text-[14px] text-black/50 dark:bg-white/[0.06] dark:text-white/50">
+            „{selectedSymbol}“ ist aktuell nicht in den Top 50.
+          </div>
+        )}
+
         {data && (
           <>
             {filtered.length === 0 ? (
@@ -66,6 +92,7 @@ function App() {
                     stock={stock}
                     isFavorite={isFavorite(stock.symbol)}
                     onToggleFavorite={toggle}
+                    onSelect={select}
                   />
                 ))}
               </ul>

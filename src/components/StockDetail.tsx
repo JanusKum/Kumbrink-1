@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react'
 import type { ChartRange, Stock } from '../types'
 import { FavoriteButton } from './FavoriteButton'
+import { ShareButton } from './ShareButton'
 import { Sparkline } from './Sparkline'
 import { StatBadge } from './StatBadge'
 
@@ -20,6 +21,12 @@ const RANGE_LABELS: Record<ChartRange, string> = {
 const RANGES: ChartRange[] = ['1mo', '3mo', '1y']
 
 const priceFormatterCache = new Map<string, Intl.NumberFormat>()
+
+const pctFormatter = new Intl.NumberFormat('de-DE', {
+  minimumFractionDigits: 2,
+  maximumFractionDigits: 2,
+  signDisplay: 'always',
+})
 
 function formatPrice(price: number, currency: string) {
   let formatter = priceFormatterCache.get(currency)
@@ -78,15 +85,22 @@ export function StockDetail({ stock, isFavorite, onToggleFavorite, onBack }: Pro
           Top 50
         </button>
 
-        <FavoriteButton
-          active={isFavorite}
-          onToggle={() => onToggleFavorite(stock.symbol)}
-          label={
-            isFavorite
-              ? `${stock.symbol} von der Watchlist entfernen`
-              : `${stock.symbol} zur Watchlist hinzufügen`
-          }
-        />
+        <div className="flex items-center gap-1">
+          <ShareButton
+            title={`${stock.symbol} – ${stock.name}`}
+            text={`${stock.symbol}: ${formatPrice(stock.price, stock.currency)} (${pctFormatter.format(changePct)}%) – Top 50 Aktien der letzten 3 Monate`}
+            url={window.location.href}
+          />
+          <FavoriteButton
+            active={isFavorite}
+            onToggle={() => onToggleFavorite(stock.symbol)}
+            label={
+              isFavorite
+                ? `${stock.symbol} von der Watchlist entfernen`
+                : `${stock.symbol} zur Watchlist hinzufügen`
+            }
+          />
+        </div>
       </header>
 
       <main className="px-4 pt-4 pb-10">

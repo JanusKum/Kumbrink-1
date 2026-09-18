@@ -1,3 +1,5 @@
+import { SectorFilter } from './SectorFilter'
+
 export type View = 'all' | 'watchlist'
 
 interface Props {
@@ -6,6 +8,9 @@ interface Props {
   view: View
   onViewChange: (view: View) => void
   watchlistCount: number
+  sectors: string[]
+  selectedSector: string | null
+  onSectorChange: (sector: string | null) => void
 }
 
 export function Header({
@@ -14,6 +19,9 @@ export function Header({
   view,
   onViewChange,
   watchlistCount,
+  sectors,
+  selectedSector,
+  onSectorChange,
 }: Props) {
   return (
     <header className="sticky top-0 z-10 -mx-4 px-4 pt-[calc(env(safe-area-inset-top)+1.25rem)] pb-3 backdrop-blur-xl bg-white/70 dark:bg-black/70 border-b border-black/[0.06] dark:border-white/[0.08]">
@@ -67,6 +75,12 @@ export function Header({
             Watchlist{watchlistCount > 0 ? ` (${watchlistCount})` : ''}
           </button>
         </div>
+
+        <SectorFilter
+          sectors={sectors}
+          selected={selectedSector}
+          onChange={onSectorChange}
+        />
       </div>
     </header>
   )

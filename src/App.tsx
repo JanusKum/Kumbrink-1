@@ -13,20 +13,36 @@ function App() {
   const { symbol: selectedSymbol, select, clear } = useSelectedSymbol()
   const [query, setQuery] = useState('')
   const [view, setView] = useState<View>('all')
+  const [selectedSector, setSelectedSector] = useState<string | null>(null)
+
+  function handleViewChange(next: View) {
+    setView(next)
+    setSelectedSector(null)
+  }
+
+  const viewBase = useMemo(() => {
+    if (!data) return []
+    return view === 'watchlist'
+      ? data.stocks.filter((s) => favorites.has(s.symbol))
+      : data.stocks
+  }, [data, view, favorites])
+
+  const sectors = useMemo(
+    () => [...new Set(viewBase.map((s) => s.sector))].sort((a, b) => a.localeCompare(b, 'de')),
+    [viewBase],
+  )
 
   const filtered = useMemo(() => {
-    if (!data) return []
-    const base =
-      view === 'watchlist'
-        ? data.stocks.filter((s) => favorites.has(s.symbol))
-        : data.stocks
+    const bySector = selectedSector
+      ? viewBase.filter((s) => s.sector === selectedSector)
+      : viewBase
     const q = query.trim().toLowerCase()
-    if (!q) return base
-    return base.filter(
+    if (!q) return bySector
+    return bySector.filter(
       (s) =>
         s.symbol.toLowerCase().includes(q) || s.name.toLowerCase().includes(q),
     )
-  }, [data, query, view, favorites])
+  }, [viewBase, query, selectedSector])
 
   const selectedStock = selectedSymbol
     ? data?.stocks.find((s) => s.symbol === selectedSymbol)
@@ -51,8 +67,11 @@ function App() {
         query={query}
         onQueryChange={setQuery}
         view={view}
-        onViewChange={setView}
+        onViewChange={handleViewChange}
         watchlistCount={favorites.size}
+        sectors={sectors}
+        selectedSector={selectedSector}
+        onSectorChange={setSelectedSector}
       />
 
       <main className="mx-auto max-w-xl px-1 sm:px-4 pt-2">
@@ -80,9 +99,11 @@ function App() {
           <>
             {filtered.length === 0 ? (
               <p className="px-4 py-12 text-center text-[15px] text-black/40 dark:text-white/40">
-                {view === 'watchlist' && !query
+                {view === 'watchlist' && !query && !selectedSector
                   ? 'Noch keine Favoriten – tippe auf den Stern bei einer Aktie, um sie zur Watchlist hinzuzufügen.'
-                  : `Keine Treffer für „${query}“`}
+                  : query
+                    ? `Keine Treffer für „${query}“`
+                    : `Keine Titel im Sektor „${selectedSector}“`}
               </p>
             ) : (
               <ul className="divide-y divide-black/[0.05] dark:divide-white/[0.07]">

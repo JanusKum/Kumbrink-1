@@ -1,6 +1,12 @@
 import type { MarketData, Stock, StockDetailData } from '../types'
 
-const EMPTY_DETAIL: StockDetailData = { history: [], history1mo: [], history1y: [] }
+const EMPTY_DETAIL: StockDetailData = {
+  history1d: [],
+  history1w: [],
+  history: [],
+  history1mo: [],
+  history1y: [],
+}
 
 /** Merges a stock's base data with its chart history (if loaded) into the UI's view-model. */
 export function buildStock(data: MarketData, symbol: string, rank: number): Stock | undefined {

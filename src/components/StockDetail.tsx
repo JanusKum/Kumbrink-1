@@ -1,8 +1,9 @@
-import { useMemo, useState } from 'react'
-import type { ChartRange, Stock } from '../types'
+import { useEffect, useMemo, useState } from 'react'
+import { useCountUp } from '../hooks/useCountUp'
+import type { ChartRange, Stock, StockHistoryPoint } from '../types'
 import { FavoriteButton } from './FavoriteButton'
+import { InteractiveChart } from './InteractiveChart'
 import { ShareButton } from './ShareButton'
-import { Sparkline } from './Sparkline'
 import { StatBadge } from './StatBadge'
 
 interface Props {
@@ -14,12 +15,14 @@ interface Props {
 }
 
 const RANGE_LABELS: Record<ChartRange, string> = {
+  '1d': '1D',
+  '1w': '1W',
   '1mo': '1M',
   '3mo': '3M',
   '1y': '1J',
 }
 
-const RANGES: ChartRange[] = ['1mo', '3mo', '1y']
+const RANGES: ChartRange[] = ['1d', '1w', '1mo', '3mo', '1y']
 
 const priceFormatterCache = new Map<string, Intl.NumberFormat>()
 
@@ -28,6 +31,14 @@ const pctFormatter = new Intl.NumberFormat('de-DE', {
   maximumFractionDigits: 2,
   signDisplay: 'always',
 })
+
+const timeFormatter = new Intl.DateTimeFormat('de-DE', { hour: '2-digit', minute: '2-digit' })
+const weekdayTimeFormatter = new Intl.DateTimeFormat('de-DE', {
+  weekday: 'short',
+  hour: '2-digit',
+  minute: '2-digit',
+})
+const dateFormatter = new Intl.DateTimeFormat('de-DE', { day: '2-digit', month: '2-digit', year: 'numeric' })
 
 function formatPrice(price: number, currency: string) {
   let formatter = priceFormatterCache.get(currency)
@@ -43,10 +54,20 @@ function formatPrice(price: number, currency: string) {
   return formatter.format(price)
 }
 
+function formatPointLabel(point: StockHistoryPoint, range: ChartRange) {
+  const date = new Date(point.t)
+  if (range === '1d') return `${timeFormatter.format(date)} Uhr`
+  if (range === '1w') return `${weekdayTimeFormatter.format(date)} Uhr`
+  return dateFormatter.format(date)
+}
+
 export function StockDetail({ stock, isFavorite, onToggleFavorite, onBack, backLabel }: Props) {
   const [range, setRange] = useState<ChartRange>('3mo')
+  const [scrubPoint, setScrubPoint] = useState<StockHistoryPoint | null>(null)
 
   const historyByRange: Record<ChartRange, typeof stock.history> = {
+    '1d': stock.history1d ?? [],
+    '1w': stock.history1w ?? [],
     '1mo': stock.history1mo ?? [],
     '3mo': stock.history ?? [],
     '1y': stock.history1y ?? [],
@@ -66,8 +87,25 @@ export function StockDetail({ stock, isFavorite, onToggleFavorite, onBack, backL
 
   const positive = changePct >= 0
 
+  const displayPrice = scrubPoint ? scrubPoint.c : stock.price
+  const displayChangePct =
+    scrubPoint && activeHistory.length > 0
+      ? ((scrubPoint.c - activeHistory[0].c) / activeHistory[0].c) * 100
+      : changePct
+  const animatedPrice = useCountUp(displayPrice)
+  const animatedChangePct = useCountUp(displayChangePct)
+
+  useEffect(() => {
+    setScrubPoint(null)
+  }, [stock.symbol])
+
+  function handleRangeChange(next: ChartRange) {
+    setRange(next)
+    setScrubPoint(null)
+  }
+
   return (
-    <div className="mx-auto max-w-xl">
+    <div className="mx-auto max-w-xl animate-[fade-slide-in_0.35s_ease-out]">
       <header className="sticky top-0 z-10 -mx-4 flex items-center justify-between px-4 pt-[calc(env(safe-area-inset-top)+0.75rem)] pb-2 backdrop-blur-xl bg-white/70 dark:bg-black/70 border-b border-black/[0.06] dark:border-white/[0.08]">
         <button
           type="button"
@@ -113,14 +151,30 @@ export function StockDetail({ stock, isFavorite, onToggleFavorite, onBack, backL
 
         <div className="mt-4 flex items-baseline gap-2.5">
           <span className="text-[34px] font-bold tabular-nums leading-none">
-            {formatPrice(stock.price, stock.currency)}
+            {formatPrice(animatedPrice, stock.currency)}
           </span>
-          <StatBadge changePct={changePct} />
+          <span className="relative flex h-2 w-2">
+            <span
+              className={`absolute inline-flex h-full w-full animate-ping rounded-full opacity-60 ${positive ? 'bg-up' : 'bg-down'}`}
+            />
+            <span className={`relative inline-flex h-2 w-2 rounded-full ${positive ? 'bg-up' : 'bg-down'}`} />
+          </span>
+          <StatBadge changePct={animatedChangePct} />
         </div>
+        <p className="mt-1 h-[18px] text-[13px] text-black/45 dark:text-white/45">
+          {scrubPoint ? formatPointLabel(scrubPoint, range) : ' '}
+        </p>
 
-        <div className="mt-6 h-56 w-full">
+        <div className="mt-2 h-56 w-full">
           {hasHistory ? (
-            <Sparkline history={activeHistory} positive={positive} responsive width={400} height={160} />
+            <InteractiveChart
+              history={activeHistory}
+              positive={positive}
+              responsive
+              width={400}
+              height={160}
+              onScrub={setScrubPoint}
+            />
           ) : (
             <div className="flex h-full items-center justify-center text-[14px] text-black/35 dark:text-white/35">
               Keine Daten für diesen Zeitraum
@@ -138,7 +192,7 @@ export function StockDetail({ stock, isFavorite, onToggleFavorite, onBack, backL
               type="button"
               role="tab"
               aria-selected={range === r}
-              onClick={() => setRange(r)}
+              onClick={() => handleRangeChange(r)}
               className={`rounded-[7px] px-4 py-1.5 transition-colors ${
                 range === r
                   ? 'bg-white text-black shadow-sm dark:bg-white/15 dark:text-white'

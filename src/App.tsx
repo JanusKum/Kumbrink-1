@@ -2,6 +2,7 @@ import { useMemo, useState } from 'react'
 import { BottomTabBar, type MainTab } from './components/BottomTabBar'
 import { Header, type View } from './components/Header'
 import { HomeView } from './components/HomeView'
+import { LoadingSkeleton } from './components/LoadingSkeleton'
 import { SectorsView } from './components/SectorsView'
 import { StockDetail } from './components/StockDetail'
 import { StockRow } from './components/StockRow'
@@ -11,7 +12,7 @@ import { useMarketData } from './hooks/useMarketData'
 import { useSelectedSymbol } from './hooks/useSelectedSymbol'
 import { useWatchlist } from './hooks/useWatchlist'
 import { buildStock, buildStockList } from './lib/buildStock'
-import { pickRandom } from './lib/pickRandom'
+import { pickSpotlight } from './lib/pickSpotlight'
 
 const TAB_LABELS: Record<MainTab, string> = {
   home: 'Home',
@@ -23,7 +24,7 @@ const TAB_LABELS: Record<MainTab, string> = {
 const HOME_SPOTLIGHT_SIZE = 4
 
 function App() {
-  const { data, loading, error } = useMarketData()
+  const { data, error } = useMarketData()
   const { favorites, isFavorite, toggle } = useWatchlist()
   const { symbol: selectedSymbol, select, clear } = useSelectedSymbol()
   const [query, setQuery] = useState('')
@@ -53,7 +54,7 @@ function App() {
   )
 
   const spotlightStocks = useMemo(
-    () => (data ? pickRandom(buildStockList(data, data.topShortTerm), HOME_SPOTLIGHT_SIZE) : []),
+    () => (data ? pickSpotlight(buildStockList(data, data.topShortTerm), HOME_SPOTLIGHT_SIZE) : []),
     [data],
   )
 
@@ -113,18 +114,34 @@ function App() {
     )
   }
 
-  if (data && activeTab === 'home') {
+  if (!data) {
     return (
       <div className="min-h-screen">
+        {error ? (
+          <div className="mx-3 mt-[calc(env(safe-area-inset-top)+2rem)] rounded-2xl bg-down/10 px-4 py-4 text-[14px] text-down">
+            Daten konnten nicht geladen werden ({error}). Bitte später erneut
+            versuchen.
+          </div>
+        ) : (
+          <LoadingSkeleton />
+        )}
+        <BottomTabBar active={activeTab} onChange={handleTabChange} />
+      </div>
+    )
+  }
+
+  if (activeTab === 'home') {
+    return (
+      <div className="min-h-screen animate-[fade-slide-in_0.3s_ease-out]">
         <HomeView spotlightStocks={spotlightStocks} news={data.news ?? []} onSelectStock={select} />
         <BottomTabBar active={activeTab} onChange={handleTabChange} />
       </div>
     )
   }
 
-  if (data && activeTab === 'valuable') {
+  if (activeTab === 'valuable') {
     return (
-      <div className="min-h-screen">
+      <div className="min-h-screen animate-[fade-slide-in_0.3s_ease-out]">
         <ValuableView
           stocks={valuableStocks}
           isFavorite={isFavorite}
@@ -136,9 +153,9 @@ function App() {
     )
   }
 
-  if (data && activeTab === 'sectors') {
+  if (activeTab === 'sectors') {
     return (
-      <div className="min-h-screen">
+      <div className="min-h-screen animate-[fade-slide-in_0.3s_ease-out]">
         <SectorsView
           sectors={data.sectors}
           openSector={openSector}
@@ -154,7 +171,7 @@ function App() {
   }
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen animate-[fade-slide-in_0.3s_ease-out]">
       <Header
         query={query}
         onQueryChange={setQuery}
@@ -167,55 +184,34 @@ function App() {
       />
 
       <main className="mx-auto max-w-xl px-1 sm:px-4 pb-24 pt-2">
-        {loading && !data && (
-          <div className="flex flex-col items-center gap-3 py-24 text-black/40 dark:text-white/40">
-            <div className="h-6 w-6 animate-spin rounded-full border-2 border-current border-t-transparent" />
-            <p className="text-[15px]">Lade aktuelle Kurse …</p>
-          </div>
-        )}
-
-        {error && !data && (
-          <div className="mx-3 mt-6 rounded-2xl bg-down/10 px-4 py-4 text-[14px] text-down">
-            Daten konnten nicht geladen werden ({error}). Bitte später erneut
-            versuchen.
-          </div>
-        )}
-
-        {selectedSymbol && !selectedStock && data && (
+        {selectedSymbol && !selectedStock && (
           <div className="mx-3 mt-6 rounded-2xl bg-black/[0.04] px-4 py-4 text-[14px] text-black/50 dark:bg-white/[0.06] dark:text-white/50">
             „{selectedSymbol}“ wurde in keiner Ansicht gefunden.
           </div>
         )}
 
-        {data && (
-          <>
-            {filtered.length === 0 ? (
-              <p className="px-4 py-12 text-center text-[15px] text-black/40 dark:text-white/40">
-                {view === 'watchlist' && !query && !selectedSector
-                  ? 'Noch keine Favoriten – tippe auf den Stern bei einer Aktie, um sie zur Watchlist hinzuzufügen.'
-                  : query
-                    ? `Keine Treffer für „${query}“`
-                    : `Keine Titel im Sektor „${selectedSector}“`}
-              </p>
-            ) : (
-              <ul className="divide-y divide-black/[0.05] dark:divide-white/[0.07]">
-                {filtered.map((stock) => (
-                  <StockRow
-                    key={stock.symbol}
-                    stock={stock}
-                    isFavorite={isFavorite(stock.symbol)}
-                    onToggleFavorite={toggle}
-                    onSelect={select}
-                  />
-                ))}
-              </ul>
-            )}
-            <UpdatedFooter
-              updatedAt={data.updatedAt}
-              universeSize={data.universeSize}
-            />
-          </>
+        {filtered.length === 0 ? (
+          <p className="px-4 py-12 text-center text-[15px] text-black/40 dark:text-white/40">
+            {view === 'watchlist' && !query && !selectedSector
+              ? 'Noch keine Favoriten – tippe auf den Stern bei einer Aktie, um sie zur Watchlist hinzuzufügen.'
+              : query
+                ? `Keine Treffer für „${query}“`
+                : `Keine Titel im Sektor „${selectedSector}“`}
+          </p>
+        ) : (
+          <ul className="divide-y divide-black/[0.05] dark:divide-white/[0.07]">
+            {filtered.map((stock) => (
+              <StockRow
+                key={stock.symbol}
+                stock={stock}
+                isFavorite={isFavorite(stock.symbol)}
+                onToggleFavorite={toggle}
+                onSelect={select}
+              />
+            ))}
+          </ul>
         )}
+        <UpdatedFooter updatedAt={data.updatedAt} universeSize={data.universeSize} />
       </main>
 
       <BottomTabBar active={activeTab} onChange={handleTabChange} />

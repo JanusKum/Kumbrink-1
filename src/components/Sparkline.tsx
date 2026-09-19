@@ -61,7 +61,12 @@ export function Sparkline({
           <stop offset="100%" stopColor={color} stopOpacity="0" />
         </linearGradient>
       </defs>
-      <path d={areaPath} fill={`url(#${gradientId})`} stroke="none" />
+      <path
+        d={areaPath}
+        fill={`url(#${gradientId})`}
+        stroke="none"
+        className="animate-[fade-in_0.5s_ease-out]"
+      />
       <path
         d={linePath}
         fill="none"
@@ -69,6 +74,8 @@ export function Sparkline({
         strokeWidth={1.75}
         strokeLinecap="round"
         strokeLinejoin="round"
+        pathLength={1}
+        className="animate-[chart-draw-in_0.6s_ease-out]"
       />
     </svg>
   )

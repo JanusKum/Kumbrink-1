@@ -9,6 +9,10 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: 'autoUpdate',
+      // We register the service worker ourselves (src/registerServiceWorker.ts)
+      // so we can poll for updates and don't want the plugin's auto-injected
+      // script registering it a second time.
+      injectRegister: false,
       includeAssets: ['favicon.svg', 'icons/apple-touch-icon.png'],
       manifest: {
         name: 'ChartPuls · Aktienmarkt-Übersicht',

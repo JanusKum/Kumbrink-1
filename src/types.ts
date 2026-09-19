@@ -17,8 +17,6 @@ export interface StockSummary {
   startPrice3mo: number
   changeAbs3mo: number
   changePct3mo: number
-  /** null when the large-cap lookup failed or the stock wasn't in the candidate pool. */
-  marketCap: number | null
 }
 
 /** Chart history, only fetched for stocks shown in one of the ranked views. */
@@ -48,12 +46,12 @@ export interface MarketData {
   source: {
     universe: string
     prices: string
-    marketCap: string
+    top20ByMarketCap: string
   }
   stocksBySymbol: Record<string, StockSummary>
   /** Symbols, best 3-month performer first. */
   top50: string[]
-  /** Symbols, highest market cap first. */
+  /** Symbols, from a manually curated large-cap list (see source.top20ByMarketCap). */
   top20ByMarketCap: string[]
   /** Strongest average 3-month performance first. */
   sectors: SectorSummary[]

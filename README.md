@@ -17,14 +17,17 @@ eigener Server nötig.
   (`scripts/universe-fallback.json`) zurück.
 - **Kurse:** Für jeden Titel wird die 3-Monats-Kurshistorie über die
   öffentliche Chart-API von Yahoo Finance abgerufen (kein API-Key nötig).
-- **Marktkapitalisierung:** Für einen kuratierten Large-Cap-Pool
-  (`scripts/universe-fallback.json`) wird zusätzlich die Marktkapitalisierung
-  über die gebündelte Yahoo-Quote-API geladen, Basis für die "Top 20
-  wertvollste Unternehmen"-Ansicht.
+- **Top 20 wertvollste Unternehmen:** Yahoos Endpunkt für Live-Marktkapitalisierung
+  verlangt einen Auth-Crumb, den unauthentifizierte Anfragen nicht bekommen
+  (getestet: durchgehend HTTP 401). Statt uns auf eine fragile Umgehung zu
+  verlassen, nutzen wir eine manuell kuratierte, öffentlich bekannte Liste der
+  größten S&P-500-Unternehmen (`scripts/top20-market-cap.json`) – Kurs und
+  Performance für diese Titel sind weiterhin zu 100 % live geladen, nur die
+  Auswahl/Reihenfolge der 20 Unternehmen ist kuratiert statt live berechnet.
 - **Ranking:** Alle Titel werden nach prozentualer Veränderung (aktueller
   Kurs vs. Kurs vor 3 Monaten) sortiert – daraus entstehen die Top 50
-  Performer, die stärksten Branchen (Durchschnittsperformance je Sektor,
-  mit eigenen Top 10) und die wertvollsten Unternehmen.
+  Performer sowie die stärksten Branchen (Durchschnittsperformance je Sektor,
+  mit eigenen Top 10).
 - **Auto-Update:** Ein GitHub-Actions-Workflow
   (`.github/workflows/update-data.yml`) läuft **alle 6 Stunden**, holt die
   frischen Daten, committet `public/data/market.json` und deployt die Seite

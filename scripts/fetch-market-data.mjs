@@ -28,11 +28,19 @@ const OUTPUT_PATH = path.join(ROOT, 'public', 'data', 'market.json')
 
 const TOP_PERFORMERS_SIZE = 50
 const TOP_PER_SECTOR_SIZE = 10
+const TOP_SHORT_TERM_SIZE = 24
 const RANGE = '3mo'
 const CONCURRENCY = 8
 const MIN_HISTORY_POINTS = 20
 const REQUEST_TIMEOUT_MS = 15_000
 const RETRIES_PER_TICKER = 2
+const NEWS_ITEM_LIMIT = 12
+// Public RSS feeds, no API key needed. Tried in order; the first one that
+// yields items wins, so a single feed going down doesn't blank the section.
+const NEWS_FEEDS = [
+  'https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=100003114',
+  'https://feeds.content.dowjones.io/public/rss/mw_topstories',
+]
 
 const USER_AGENT =
   'Mozilla/5.0 (compatible; ChartPulsBot/1.0; +https://github.com/JanusKum/Kumbrink-1)'
@@ -189,6 +197,81 @@ async function fetchHistory(symbol, range = RANGE) {
   return { error: 'unreachable' }
 }
 
+function extractTag(block, tag) {
+  const m = block.match(new RegExp(`<${tag}\\b[^>]*>([\\s\\S]*?)<\\/${tag}>`, 'i'))
+  return m ? m[1] : null
+}
+
+function extractAttr(block, tag, attr) {
+  const m = block.match(new RegExp(`<${tag}\\b[^>]*\\b${attr}=["']([^"']+)["']`, 'i'))
+  return m ? m[1] : null
+}
+
+function stripCdata(s) {
+  const m = s.match(/^<!\[CDATA\[([\s\S]*)\]\]>$/)
+  return (m ? m[1] : s).trim()
+}
+
+function decodeEntities(s) {
+  return s
+    .replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;|&apos;/g, "'")
+}
+
+/** Minimal, tolerant RSS <item> extractor — regex-based rather than a full XML parser. */
+function parseRssItems(xml) {
+  const items = []
+  const itemBlocks = xml.match(/<item\b[^>]*>[\s\S]*?<\/item>/gi) ?? []
+  for (const block of itemBlocks) {
+    const title = extractTag(block, 'title')
+    const link = extractTag(block, 'link')
+    const pubDate = extractTag(block, 'pubDate')
+    const imageUrl =
+      extractAttr(block, 'media:content', 'url') ??
+      extractAttr(block, 'media:thumbnail', 'url') ??
+      extractAttr(block, 'enclosure', 'url') ??
+      null
+
+    if (!title || !link) continue
+    const publishedAt = pubDate && !Number.isNaN(Date.parse(pubDate)) ? new Date(pubDate).toISOString() : null
+
+    items.push({
+      title: decodeEntities(stripCdata(title)),
+      url: decodeEntities(stripCdata(link)),
+      imageUrl,
+      publishedAt,
+    })
+  }
+  return items
+}
+
+async function fetchNews() {
+  for (const url of NEWS_FEEDS) {
+    try {
+      const res = await fetch(url, {
+        headers: {
+          'User-Agent': USER_AGENT,
+          Accept: 'application/rss+xml, application/xml, text/xml',
+        },
+        signal: AbortSignal.timeout(REQUEST_TIMEOUT_MS),
+      })
+      if (!res.ok) throw new Error(`HTTP ${res.status}`)
+      const xml = await res.text()
+      const items = parseRssItems(xml).slice(0, NEWS_ITEM_LIMIT)
+      if (items.length === 0) throw new Error('Keine Artikel im Feed gefunden')
+      console.log(`News: ${items.length} Artikel von ${new URL(url).hostname} geladen.`)
+      return items
+    } catch (err) {
+      console.warn(`News-Feed ${url} fehlgeschlagen: ${err.message}`)
+    }
+  }
+  console.warn('Alle News-Feeds fehlgeschlagen, News-Sektion bleibt leer.')
+  return []
+}
+
 /** Runs async tasks with a concurrency cap, preserving input order in the result array. */
 async function mapWithConcurrency(items, limit, worker) {
   const results = new Array(items.length)
@@ -224,6 +307,15 @@ function round2(n) {
   return Math.round(n * 100) / 100
 }
 
+/** % change over the last `n` trading days, using points already fetched for the 3mo ranking. */
+function changeOverLastNPoints(points, n) {
+  if (points.length < n + 1) return null
+  const end = points[points.length - 1].c
+  const start = points[points.length - 1 - n].c
+  if (!start) return null
+  return round2(((end - start) / start) * 100)
+}
+
 async function main() {
   const startedAt = Date.now()
   const { universe, source } = await fetchUniverse()
@@ -250,6 +342,8 @@ async function main() {
       startPrice3mo: round2(history.startPrice),
       changeAbs3mo: round2(changeAbs3mo),
       changePct3mo: round2(changePct3mo),
+      changePct3d: changeOverLastNPoints(history.points, 3),
+      changePct1w: changeOverLastNPoints(history.points, 5),
       _points3mo: history.points,
     }
   })
@@ -294,11 +388,22 @@ async function main() {
     `Top 20 wertvollste: ${top20ByMarketCap.length}/${curatedTop20.length} aus der kuratierten Liste im aktuellen Universum gefunden.`,
   )
 
+  // --- Kurzfristige Top-Performer (für die Startseite: 1-Wochen-Performance) ---
+  const topShortTerm = [...valid]
+    .filter((s) => typeof s.changePct1w === 'number')
+    .sort((a, b) => b.changePct1w - a.changePct1w)
+    .slice(0, TOP_SHORT_TERM_SIZE)
+    .map((s) => s.symbol)
+
+  // --- News-Feed (öffentliche RSS-Feeds, kein API-Key) ---
+  const news = await fetchNews()
+
   // --- Zusätzliche Zeiträume (1M, 1J) nur für Aktien, die irgendwo auftauchen ---
   const detailSymbols = new Set([
     ...top50,
     ...top20ByMarketCap,
     ...sectors.flatMap((s) => s.top10),
+    ...topShortTerm,
   ])
   console.log(`Lade zusätzliche Zeiträume (1M, 1J) für ${detailSymbols.size} Aktien …`)
 
@@ -333,6 +438,8 @@ async function main() {
       startPrice3mo: s.startPrice3mo,
       changeAbs3mo: s.changeAbs3mo,
       changePct3mo: s.changePct3mo,
+      changePct3d: s.changePct3d,
+      changePct1w: s.changePct1w,
     }
   }
 
@@ -344,11 +451,14 @@ async function main() {
       universe: source,
       prices: 'Yahoo Finance chart API (query1.finance.yahoo.com)',
       top20ByMarketCap: 'Manuell kuratierte Liste öffentlich bekannter Large Caps (scripts/top20-market-cap.json)',
+      news: 'Öffentliche RSS-Feeds (CNBC, MarketWatch)',
     },
     stocksBySymbol,
     top50,
     top20ByMarketCap,
     sectors,
+    topShortTerm,
+    news,
     detail,
   }
 
@@ -362,6 +472,7 @@ async function main() {
     top50.slice(0, 5).map((sym) => `${sym} ${stocksBySymbol[sym].changePct3mo}%`).join(', '),
   )
   console.log('Stärkste Branche:', sectors[0]?.name, `(${sectors[0]?.avgChangePct3mo}%)`)
+  console.log(`Kurzfristige Top-Performer: ${topShortTerm.length}, News-Artikel: ${news.length}`)
 
   if (top50.length < TOP_PERFORMERS_SIZE) {
     console.warn(`Warnung: nur ${top50.length} von ${TOP_PERFORMERS_SIZE} Top-Performer-Plätzen befüllt.`)

@@ -1,4 +1,4 @@
-export type MainTab = 'top50' | 'valuable' | 'sectors'
+export type MainTab = 'home' | 'top50' | 'valuable' | 'sectors'
 
 interface Props {
   active: MainTab
@@ -6,6 +6,19 @@ interface Props {
 }
 
 const TABS: { id: MainTab; label: string; icon: JSX.Element }[] = [
+  {
+    id: 'home',
+    label: 'Home',
+    icon: (
+      <path
+        d="M4 10l7-6 7 6v7a1 1 0 01-1 1h-4v-5H9v5H5a1 1 0 01-1-1v-7z"
+        stroke="currentColor"
+        strokeWidth="1.8"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    ),
+  },
   {
     id: 'top50',
     label: 'Top 50',

@@ -10,9 +10,14 @@ export function buildStock(data: MarketData, symbol: string, rank: number): Stoc
   return { ...summary, ...detail, rank }
 }
 
-/** Builds an ordered list of merged Stock view-models from a list of symbols (rank = position + 1). */
-export function buildStockList(data: MarketData, symbols: string[]): Stock[] {
-  return symbols
+/**
+ * Builds an ordered list of merged Stock view-models from a list of symbols
+ * (rank = position + 1). Tolerates a missing/undefined symbol list so a
+ * newer app bundle doesn't crash on a briefly stale cached market.json
+ * (the PWA service worker can serve one while a fresh one loads).
+ */
+export function buildStockList(data: MarketData, symbols: string[] | undefined): Stock[] {
+  return (symbols ?? [])
     .map((symbol, i) => buildStock(data, symbol, i + 1))
     .filter((s): s is Stock => s !== undefined)
 }

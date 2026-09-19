@@ -52,7 +52,12 @@ eigener Server nötig.
   eine native App installieren – mit eigenem Icon, Standalone-Fenster ohne
   Browserleiste und Offline-Fallback auf die zuletzt geladenen Kurse. Ein
   Service Worker (`vite-plugin-pwa`) aktualisiert sich automatisch im
-  Hintergrund bei jedem neuen Deploy.
+  Hintergrund bei jedem neuen Deploy, ohne die App neu installieren zu
+  müssen: `src/registerServiceWorker.ts` prüft alle 30 Minuten sowie jedes
+  Mal, wenn die App wieder in den Vordergrund kommt, aktiv auf ein Update
+  und lädt die Seite automatisch neu, sobald eins da ist – nötig, weil
+  Browser (v. a. iOS Safari) bei installierten Home-Bildschirm-Apps sonst
+  nur sehr selten von sich aus nach einer neuen Version schauen.
 
 ## Lokale Entwicklung
 

@@ -3,12 +3,13 @@ import { Header, type View } from './components/Header'
 import { StockDetail } from './components/StockDetail'
 import { StockRow } from './components/StockRow'
 import { UpdatedFooter } from './components/UpdatedFooter'
+import { useMarketData } from './hooks/useMarketData'
 import { useSelectedSymbol } from './hooks/useSelectedSymbol'
-import { useTopStocks } from './hooks/useTopStocks'
 import { useWatchlist } from './hooks/useWatchlist'
+import { buildStock, buildStockList } from './lib/buildStock'
 
 function App() {
-  const { data, loading, error } = useTopStocks()
+  const { data, loading, error } = useMarketData()
   const { favorites, isFavorite, toggle } = useWatchlist()
   const { symbol: selectedSymbol, select, clear } = useSelectedSymbol()
   const [query, setQuery] = useState('')
@@ -20,12 +21,18 @@ function App() {
     setSelectedSector(null)
   }
 
-  const viewBase = useMemo(() => {
-    if (!data) return []
-    return view === 'watchlist'
-      ? data.stocks.filter((s) => favorites.has(s.symbol))
-      : data.stocks
-  }, [data, view, favorites])
+  const top50Stocks = useMemo(
+    () => (data ? buildStockList(data, data.top50) : []),
+    [data],
+  )
+
+  const viewBase = useMemo(
+    () =>
+      view === 'watchlist'
+        ? top50Stocks.filter((s) => favorites.has(s.symbol))
+        : top50Stocks,
+    [top50Stocks, view, favorites],
+  )
 
   const sectors = useMemo(
     () => [...new Set(viewBase.map((s) => s.sector))].sort((a, b) => a.localeCompare(b, 'de')),
@@ -44,9 +51,11 @@ function App() {
     )
   }, [viewBase, query, selectedSector])
 
-  const selectedStock = selectedSymbol
-    ? data?.stocks.find((s) => s.symbol === selectedSymbol)
-    : undefined
+  const selectedStock = useMemo(() => {
+    if (!data || !selectedSymbol) return undefined
+    const rank = data.top50.indexOf(selectedSymbol) + 1
+    return buildStock(data, selectedSymbol, rank)
+  }, [data, selectedSymbol])
 
   if (selectedSymbol && selectedStock) {
     return (

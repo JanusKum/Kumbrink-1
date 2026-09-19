@@ -1,18 +1,18 @@
 import { useEffect, useState } from 'react'
-import type { Top50Data } from '../types'
+import type { MarketData } from '../types'
 
-const DATA_URL = `${import.meta.env.BASE_URL}data/top50.json`
+const DATA_URL = `${import.meta.env.BASE_URL}data/market.json`
 // Re-check for fresh data periodically so an open tab picks up the
 // scheduled GitHub Actions refresh without a manual reload.
 const REFRESH_INTERVAL_MS = 15 * 60 * 1000
 
 interface State {
-  data: Top50Data | null
+  data: MarketData | null
   loading: boolean
   error: string | null
 }
 
-export function useTopStocks() {
+export function useMarketData() {
   const [state, setState] = useState<State>({
     data: null,
     loading: true,
@@ -28,7 +28,7 @@ export function useTopStocks() {
         // service worker's runtime cache can match and serve it offline.
         const res = await fetch(DATA_URL, { cache: 'no-store' })
         if (!res.ok) throw new Error(`HTTP ${res.status}`)
-        const json = (await res.json()) as Top50Data
+        const json = (await res.json()) as MarketData
         if (!cancelled) {
           setState({ data: json, loading: false, error: null })
         }

@@ -1,4 +1,4 @@
-name: Aktualisiere Top 50 & Deploy
+name: ChartPuls – Daten aktualisieren & Deploy
 
 on:
   schedule:
@@ -35,16 +35,16 @@ jobs:
       - name: Abhängigkeiten installieren
         run: npm ci
 
-      - name: Top 50 Performer neu laden
+      - name: Marktdaten neu laden
         run: npm run fetch-data
 
       - name: Geänderte Daten committen
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          if ! git diff --quiet -- public/data/top50.json; then
-            git add public/data/top50.json
-            git commit -m "chore: aktualisiere Top 50 Aktien-Daten"
+          if ! git diff --quiet -- public/data/market.json; then
+            git add public/data/market.json
+            git commit -m "chore: aktualisiere Marktdaten"
             git push
           else
             echo "Keine Änderungen an den Daten."

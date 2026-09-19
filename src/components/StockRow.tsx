@@ -44,7 +44,7 @@ export function StockRow({ stock, isFavorite, onToggleFavorite, onSelect }: Prop
       <button
         type="button"
         onClick={() => onSelect(stock.symbol)}
-        className="flex min-w-0 flex-1 items-center gap-3 sm:gap-4 py-3 pr-3 sm:pr-4 text-left"
+        className="flex min-w-0 flex-1 items-center gap-3 sm:gap-4 py-3 pr-3 sm:pr-4 text-left transition-transform active:scale-[0.98]"
       >
         <span className="w-6 shrink-0 text-right text-sm font-medium tabular-nums text-black/35 dark:text-white/35">
           {stock.rank}

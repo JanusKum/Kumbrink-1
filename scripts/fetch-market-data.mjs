@@ -8,8 +8,8 @@
 // requires an auth crumb/cookie handshake it doesn't grant to plain
 // requests, so we don't depend on it; every price and performance
 // figure shown for these companies is still fetched live). Extra chart
-// ranges (1 month, 1 year) are fetched only for the stocks that
-// actually show up in one of these views. Designed to run on a
+// ranges (1 day, 1 week, 1 month, 1 year) are fetched only for the
+// stocks that actually show up in one of these views. Designed to run on a
 // schedule (GitHub Actions) so the published site always reflects real
 // current data without any manual work or API key.
 
@@ -144,9 +144,21 @@ function toYahooSymbol(symbol) {
   return symbol.replace(/\./g, '-')
 }
 
+// Yahoo's chart API returns a coarser bar size for short ranges than it
+// would default to, so each range gets an explicit interval: fine-grained
+// enough to draw a useful chart, coarse enough to stay well under Yahoo's
+// per-range point limits.
+const RANGE_INTERVAL = {
+  '1d': '5m',
+  '5d': '15m',
+  '1mo': '1h',
+  '3mo': '1d',
+  '1y': '1d',
+}
+
 async function fetchHistory(symbol, range = RANGE) {
   const yahooSymbol = toYahooSymbol(symbol)
-  const interval = range === '1mo' ? '1h' : '1d'
+  const interval = RANGE_INTERVAL[range] ?? '1d'
   const url = `https://query1.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(
     yahooSymbol,
   )}?range=${range}&interval=${interval}&includePrePost=false`
@@ -299,8 +311,9 @@ function downsample(points, max = 40) {
   return sampled
 }
 
-function toIsoDate(unixSeconds) {
-  return new Date(unixSeconds * 1000).toISOString().slice(0, 10)
+/** Full ISO timestamp (not just the date) so intraday points stay distinguishable. */
+function toIsoTimestamp(unixSeconds) {
+  return new Date(unixSeconds * 1000).toISOString()
 }
 
 function round2(n) {
@@ -388,10 +401,14 @@ async function main() {
     `Top 20 wertvollste: ${top20ByMarketCap.length}/${curatedTop20.length} aus der kuratierten Liste im aktuellen Universum gefunden.`,
   )
 
-  // --- Kurzfristige Top-Performer (für die Startseite: 1-Wochen-Performance) ---
+  // --- Größte Kursbewegungen der Woche (für die Startseite) ---
+  // Bewusst nach Betrag sortiert statt nur nach Gewinnern: starke Verlierer
+  // sind für einen Marktüberblick genauso interessant wie starke Gewinner,
+  // und eine gemischte Auswahl wirkt weniger beliebig als reine Zufallspicks
+  // aus einem Pool, der ohnehin nur eine Richtung kennt.
   const topShortTerm = [...valid]
     .filter((s) => typeof s.changePct1w === 'number')
-    .sort((a, b) => b.changePct1w - a.changePct1w)
+    .sort((a, b) => Math.abs(b.changePct1w) - Math.abs(a.changePct1w))
     .slice(0, TOP_SHORT_TERM_SIZE)
     .map((s) => s.symbol)
 
@@ -405,24 +422,26 @@ async function main() {
     ...sectors.flatMap((s) => s.top10),
     ...topShortTerm,
   ])
-  console.log(`Lade zusätzliche Zeiträume (1M, 1J) für ${detailSymbols.size} Aktien …`)
+  console.log(`Lade zusätzliche Zeiträume (1D, 1W, 1M, 1J) für ${detailSymbols.size} Aktien …`)
 
   const detail = {}
   await mapWithConcurrency([...detailSymbols], CONCURRENCY, async (symbol) => {
     const stock = validBySymbol.get(symbol)
     if (!stock) return
-    const [oneMonth, oneYear] = await Promise.all([
+    const [oneDay, fiveDay, oneMonth, oneYear] = await Promise.all([
+      fetchHistory(symbol, '1d'),
+      fetchHistory(symbol, '5d'),
       fetchHistory(symbol, '1mo'),
       fetchHistory(symbol, '1y'),
     ])
+    const toPoints = (points, max) =>
+      downsample(points, max).map((p) => ({ t: toIsoTimestamp(p.t), c: round2(p.c) }))
     detail[symbol] = {
-      history: downsample(stock._points3mo).map((p) => ({ t: toIsoDate(p.t), c: round2(p.c) })),
-      history1mo: oneMonth.error
-        ? []
-        : downsample(oneMonth.points).map((p) => ({ t: toIsoDate(p.t), c: round2(p.c) })),
-      history1y: oneYear.error
-        ? []
-        : downsample(oneYear.points).map((p) => ({ t: toIsoDate(p.t), c: round2(p.c) })),
+      history1d: oneDay.error ? [] : toPoints(oneDay.points, 60),
+      history1w: fiveDay.error ? [] : toPoints(fiveDay.points, 60),
+      history: toPoints(stock._points3mo, 40),
+      history1mo: oneMonth.error ? [] : toPoints(oneMonth.points, 40),
+      history1y: oneYear.error ? [] : toPoints(oneYear.points, 40),
     }
   })
 
@@ -472,7 +491,7 @@ async function main() {
     top50.slice(0, 5).map((sym) => `${sym} ${stocksBySymbol[sym].changePct3mo}%`).join(', '),
   )
   console.log('Stärkste Branche:', sectors[0]?.name, `(${sectors[0]?.avgChangePct3mo}%)`)
-  console.log(`Kurzfristige Top-Performer: ${topShortTerm.length}, News-Artikel: ${news.length}`)
+  console.log(`Größte Wochenbewegungen: ${topShortTerm.length}, News-Artikel: ${news.length}`)
 
   if (top50.length < TOP_PERFORMERS_SIZE) {
     console.warn(`Warnung: nur ${top50.length} von ${TOP_PERFORMERS_SIZE} Top-Performer-Plätzen befüllt.`)

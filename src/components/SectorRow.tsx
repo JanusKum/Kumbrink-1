@@ -13,7 +13,7 @@ export function SectorRow({ sector, rank, onSelect }: Props) {
       <button
         type="button"
         onClick={() => onSelect(sector.name)}
-        className="flex w-full items-center gap-3 sm:gap-4 rounded-2xl px-3 py-3 sm:px-4 sm:py-3.5 text-left transition-colors hover:bg-black/[0.03] dark:hover:bg-white/[0.06]"
+        className="flex w-full items-center gap-3 sm:gap-4 rounded-2xl px-3 py-3 sm:px-4 sm:py-3.5 text-left transition-[background-color,transform] hover:bg-black/[0.03] active:scale-[0.98] dark:hover:bg-white/[0.06]"
       >
         <span className="w-6 shrink-0 text-right text-sm font-medium tabular-nums text-black/35 dark:text-white/35">
           {rank}

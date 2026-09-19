@@ -28,12 +28,18 @@ eigener Server nötig.
   Kurs vs. Kurs vor 3 Monaten) sortiert – daraus entstehen die Top 50
   Performer sowie die stärksten Branchen (Durchschnittsperformance je Sektor,
   mit eigenen Top 10).
-- **Startseite:** Zeigt 4 zufällig ausgewählte Aktien aus dem Pool der
-  stärksten 1-Wochen-Performer (berechnet aus den ohnehin schon geladenen
-  3-Monats-Kursdaten, keine zusätzlichen Anfragen) sowie einen Markt-News-Feed
-  von öffentlichen RSS-Feeds (CNBC, mit MarketWatch als Fallback) – nur echte
-  Schlagzeilen und Bilder mit Link zur Originalquelle, keine erfundenen
-  Zitate oder Inhalte.
+- **Startseite:** Zeigt 4 Aktien aus dem Pool der größten 1-Wochen-Kursbewegungen
+  (Gewinner und Verlierer, berechnet aus den ohnehin schon geladenen
+  3-Monats-Kursdaten, keine zusätzlichen Anfragen) – die dramatischste
+  Bewegung der Woche ist garantiert dabei, der Rest wird zufällig aus
+  demselben Pool ergänzt – sowie einen Markt-News-Feed von öffentlichen
+  RSS-Feeds (CNBC, mit MarketWatch als Fallback) – nur echte Schlagzeilen
+  und Bilder mit Link zur Originalquelle, keine erfundenen Zitate oder
+  Inhalte.
+- **Detailansicht:** Zeigt den Kurs über 5 Zeiträume (1 Tag, 1 Woche, 1 Monat,
+  3 Monate, 1 Jahr). Der Chart ist per Maus/Touch scrubbbar – beim Ziehen
+  über den Verlauf werden Preis und Zeitpunkt der berührten Stelle live
+  angezeigt.
 - **Auto-Update:** Ein GitHub-Actions-Workflow
   (`.github/workflows/update-data.yml`) läuft **alle 6 Stunden**, holt die
   frischen Daten, committet `public/data/market.json` und deployt die Seite

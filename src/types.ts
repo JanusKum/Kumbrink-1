@@ -1,11 +1,11 @@
 export interface StockHistoryPoint {
-  /** ISO date, e.g. 2026-06-16 */
+  /** Full ISO timestamp, e.g. 2026-06-16T14:30:00.000Z */
   t: string
   /** Close price */
   c: number
 }
 
-export type ChartRange = '1mo' | '3mo' | '1y'
+export type ChartRange = '1d' | '1w' | '1mo' | '3mo' | '1y'
 
 /** Base fields available for every stock in the S&P-500 universe. */
 export interface StockSummary {
@@ -25,6 +25,8 @@ export interface StockSummary {
 
 /** Chart history, only fetched for stocks shown in one of the ranked views. */
 export interface StockDetailData {
+  history1d: StockHistoryPoint[]
+  history1w: StockHistoryPoint[]
   history: StockHistoryPoint[]
   history1mo: StockHistoryPoint[]
   history1y: StockHistoryPoint[]
@@ -68,7 +70,7 @@ export interface MarketData {
   top20ByMarketCap: string[]
   /** Strongest average 3-month performance first. */
   sectors: SectorSummary[]
-  /** Symbols, best 1-week performer first — pool the home screen picks random cards from. */
+  /** Symbols with the largest 1-week move (up or down) first — pool the home screen picks random cards from. */
   topShortTerm: string[]
   news: NewsItem[]
   detail: Record<string, StockDetailData>

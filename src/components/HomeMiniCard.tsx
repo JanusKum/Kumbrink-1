@@ -32,7 +32,7 @@ export function HomeMiniCard({ stock, onSelect }: Props) {
     <button
       type="button"
       onClick={() => onSelect(stock.symbol)}
-      className="flex flex-col rounded-2xl bg-black/[0.03] p-3 text-left transition-colors hover:bg-black/[0.06] dark:bg-white/[0.06] dark:hover:bg-white/[0.1]"
+      className="flex flex-col rounded-2xl bg-black/[0.03] p-3 text-left transition-[background-color,transform] hover:bg-black/[0.06] active:scale-[0.97] dark:bg-white/[0.06] dark:hover:bg-white/[0.1]"
     >
       <div className="flex items-start justify-between gap-2">
         <div className="min-w-0">

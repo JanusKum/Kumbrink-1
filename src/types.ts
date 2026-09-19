@@ -62,6 +62,7 @@ export interface MarketData {
     prices: string
     top20ByMarketCap: string
     news: string
+    ipoNews?: string
   }
   stocksBySymbol: Record<string, StockSummary>
   /** Symbols, best 3-month performer first. */
@@ -73,5 +74,7 @@ export interface MarketData {
   /** Symbols with the largest 1-week move (up or down) first — pool the home screen picks random cards from. */
   topShortTerm: string[]
   news: NewsItem[]
+  /** Real headlines from the same news feeds, keyword-matched for IPO/going-public stories. */
+  ipoNews: NewsItem[]
   detail: Record<string, StockDetailData>
 }

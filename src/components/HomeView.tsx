@@ -6,10 +6,11 @@ import { SectionHeader } from './SectionHeader'
 interface Props {
   spotlightStocks: Stock[]
   news: NewsItem[]
+  ipoNews: NewsItem[]
   onSelectStock: (symbol: string) => void
 }
 
-export function HomeView({ spotlightStocks, news, onSelectStock }: Props) {
+export function HomeView({ spotlightStocks, news, ipoNews, onSelectStock }: Props) {
   return (
     <div className="min-h-screen">
       <SectionHeader title="ChartPuls" subtitle="Was den Markt diese Woche bewegt" />
@@ -20,6 +21,19 @@ export function HomeView({ spotlightStocks, news, onSelectStock }: Props) {
             {spotlightStocks.map((stock) => (
               <HomeMiniCard key={stock.symbol} stock={stock} onSelect={onSelectStock} />
             ))}
+          </section>
+        )}
+
+        {ipoNews.length > 0 && (
+          <section className="mt-8">
+            <h2 className="px-2 text-[13px] font-semibold uppercase tracking-wide text-black/40 dark:text-white/40">
+              IPOs &amp; Börsengänge
+            </h2>
+            <div className="mt-2 flex flex-col divide-y divide-black/[0.05] dark:divide-white/[0.07]">
+              {ipoNews.map((item) => (
+                <NewsCard key={item.url} item={item} />
+              ))}
+            </div>
           </section>
         )}
 

@@ -35,12 +35,20 @@ const MIN_HISTORY_POINTS = 20
 const REQUEST_TIMEOUT_MS = 15_000
 const RETRIES_PER_TICKER = 2
 const NEWS_ITEM_LIMIT = 12
-// Public RSS feeds, no API key needed. Tried in order; the first one that
-// yields items wins, so a single feed going down doesn't blank the section.
+const IPO_ITEM_LIMIT = 8
+// Public RSS feeds, no API key needed. All are fetched (not just the first
+// that works): the first successful one supplies the general news list, and
+// items from every successful feed are pooled for IPO keyword-matching, so
+// a single feed going down doesn't blank a section and rare IPO headlines
+// have a bigger pool to turn up in.
 const NEWS_FEEDS = [
   'https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=100003114',
   'https://feeds.content.dowjones.io/public/rss/mw_topstories',
 ]
+// Matches real headlines about companies going public. Deliberately narrow
+// (no bare "public" etc.) to avoid false positives from unrelated stories.
+const IPO_KEYWORDS =
+  /\bipos?\b|initial public offering|going public|to go public|stock[- ]market debut|files? (?:confidentially )?for (?:an? )?ipo|börsengang|geht an die börse/i
 
 const USER_AGENT =
   'Mozilla/5.0 (compatible; ChartPulsBot/1.0; +https://github.com/JanusKum/Kumbrink-1)'
@@ -260,28 +268,50 @@ function parseRssItems(xml) {
   return items
 }
 
+async function fetchFeedItems(url) {
+  const res = await fetch(url, {
+    headers: {
+      'User-Agent': USER_AGENT,
+      Accept: 'application/rss+xml, application/xml, text/xml',
+    },
+    signal: AbortSignal.timeout(REQUEST_TIMEOUT_MS),
+  })
+  if (!res.ok) throw new Error(`HTTP ${res.status}`)
+  const xml = await res.text()
+  const items = parseRssItems(xml)
+  if (items.length === 0) throw new Error('Keine Artikel im Feed gefunden')
+  return items
+}
+
+/** Fetches all news feeds and splits them into the general list and a real, keyword-matched IPO list. */
 async function fetchNews() {
+  let general = []
+  const allItems = []
+
   for (const url of NEWS_FEEDS) {
     try {
-      const res = await fetch(url, {
-        headers: {
-          'User-Agent': USER_AGENT,
-          Accept: 'application/rss+xml, application/xml, text/xml',
-        },
-        signal: AbortSignal.timeout(REQUEST_TIMEOUT_MS),
-      })
-      if (!res.ok) throw new Error(`HTTP ${res.status}`)
-      const xml = await res.text()
-      const items = parseRssItems(xml).slice(0, NEWS_ITEM_LIMIT)
-      if (items.length === 0) throw new Error('Keine Artikel im Feed gefunden')
+      const items = await fetchFeedItems(url)
       console.log(`News: ${items.length} Artikel von ${new URL(url).hostname} geladen.`)
-      return items
+      if (general.length === 0) general = items.slice(0, NEWS_ITEM_LIMIT)
+      allItems.push(...items)
     } catch (err) {
       console.warn(`News-Feed ${url} fehlgeschlagen: ${err.message}`)
     }
   }
-  console.warn('Alle News-Feeds fehlgeschlagen, News-Sektion bleibt leer.')
-  return []
+  if (general.length === 0) {
+    console.warn('Alle News-Feeds fehlgeschlagen, News-Sektion bleibt leer.')
+  }
+
+  const seenUrls = new Set()
+  const ipo = allItems
+    .filter((item) => {
+      if (!IPO_KEYWORDS.test(item.title) || seenUrls.has(item.url)) return false
+      seenUrls.add(item.url)
+      return true
+    })
+    .slice(0, IPO_ITEM_LIMIT)
+
+  return { general, ipo }
 }
 
 /** Runs async tasks with a concurrency cap, preserving input order in the result array. */
@@ -413,7 +443,7 @@ async function main() {
     .map((s) => s.symbol)
 
   // --- News-Feed (öffentliche RSS-Feeds, kein API-Key) ---
-  const news = await fetchNews()
+  const { general: news, ipo: ipoNews } = await fetchNews()
 
   // --- Zusätzliche Zeiträume (1M, 1J) nur für Aktien, die irgendwo auftauchen ---
   const detailSymbols = new Set([
@@ -471,6 +501,7 @@ async function main() {
       prices: 'Yahoo Finance chart API (query1.finance.yahoo.com)',
       top20ByMarketCap: 'Manuell kuratierte Liste öffentlich bekannter Large Caps (scripts/top20-market-cap.json)',
       news: 'Öffentliche RSS-Feeds (CNBC, MarketWatch)',
+      ipoNews: 'Wie news, gefiltert auf IPO-/Börsengang-Schlagzeilen per Stichwortsuche',
     },
     stocksBySymbol,
     top50,
@@ -478,6 +509,7 @@ async function main() {
     sectors,
     topShortTerm,
     news,
+    ipoNews,
     detail,
   }
 
@@ -491,7 +523,9 @@ async function main() {
     top50.slice(0, 5).map((sym) => `${sym} ${stocksBySymbol[sym].changePct3mo}%`).join(', '),
   )
   console.log('Stärkste Branche:', sectors[0]?.name, `(${sectors[0]?.avgChangePct3mo}%)`)
-  console.log(`Größte Wochenbewegungen: ${topShortTerm.length}, News-Artikel: ${news.length}`)
+  console.log(
+    `Größte Wochenbewegungen: ${topShortTerm.length}, News-Artikel: ${news.length}, IPO-News: ${ipoNews.length}`,
+  )
 
   if (top50.length < TOP_PERFORMERS_SIZE) {
     console.warn(`Warnung: nur ${top50.length} von ${TOP_PERFORMERS_SIZE} Top-Performer-Plätzen befüllt.`)

@@ -35,7 +35,10 @@ eigener Server nötig.
   demselben Pool ergänzt – sowie einen Markt-News-Feed von öffentlichen
   RSS-Feeds (CNBC, mit MarketWatch als Fallback) – nur echte Schlagzeilen
   und Bilder mit Link zur Originalquelle, keine erfundenen Zitate oder
-  Inhalte.
+  Inhalte. Eine eigene „IPOs & Börsengänge"-Sektion filtert aus denselben
+  Feeds per Stichwortsuche (z. B. „IPO", „going public", „Börsengang")
+  echte Artikel zu Börsengängen heraus – erscheint nur, wenn die Feeds an
+  dem Tag tatsächlich passende Artikel enthalten.
 - **Detailansicht:** Zeigt den Kurs über 5 Zeiträume (1 Tag, 1 Woche, 1 Monat,
   3 Monate, 1 Jahr). Der Chart ist per Maus/Touch scrubbbar – beim Ziehen
   über den Verlauf werden Preis und Zeitpunkt der berührten Stelle live

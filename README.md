@@ -1,11 +1,12 @@
-# Top 50 · Aktien der letzten 3 Monate
+# ChartPuls
 
 Kollaboration KI
 
-Eine schlanke, Apple-Stocks-inspirierte Web-App, die immer die **50 US-Aktien
-mit der besten Kursentwicklung der letzten 3 Monate** anzeigt – Kurs,
-prozentuale Veränderung und Mini-Chart pro Titel. Die Daten aktualisieren
-sich automatisch, es ist kein API-Key und kein eigener Server nötig.
+Eine schlanke, Apple-Stocks-inspirierte Web-App für einen schnellen Überblick
+über den Aktienmarkt: die **50 US-Aktien mit der besten Kursentwicklung der
+letzten 3 Monate** – Kurs, prozentuale Veränderung und Mini-Chart pro Titel.
+Die Daten aktualisieren sich automatisch, es ist kein API-Key und kein
+eigener Server nötig.
 
 ## Wie es funktioniert
 
@@ -16,11 +17,17 @@ sich automatisch, es ist kein API-Key und kein eigener Server nötig.
   (`scripts/universe-fallback.json`) zurück.
 - **Kurse:** Für jeden Titel wird die 3-Monats-Kurshistorie über die
   öffentliche Chart-API von Yahoo Finance abgerufen (kein API-Key nötig).
+- **Marktkapitalisierung:** Für einen kuratierten Large-Cap-Pool
+  (`scripts/universe-fallback.json`) wird zusätzlich die Marktkapitalisierung
+  über die gebündelte Yahoo-Quote-API geladen, Basis für die "Top 20
+  wertvollste Unternehmen"-Ansicht.
 - **Ranking:** Alle Titel werden nach prozentualer Veränderung (aktueller
-  Kurs vs. Kurs vor 3 Monaten) sortiert, die Top 50 werden veröffentlicht.
+  Kurs vs. Kurs vor 3 Monaten) sortiert – daraus entstehen die Top 50
+  Performer, die stärksten Branchen (Durchschnittsperformance je Sektor,
+  mit eigenen Top 10) und die wertvollsten Unternehmen.
 - **Auto-Update:** Ein GitHub-Actions-Workflow
   (`.github/workflows/update-data.yml`) läuft **alle 6 Stunden**, holt die
-  frischen Daten, committet `public/data/top50.json` und deployt die Seite
+  frischen Daten, committet `public/data/market.json` und deployt die Seite
   automatisch neu auf GitHub Pages. Kein manuelles Eingreifen nötig.
 - **Installierbar (PWA):** Die App lässt sich über „Zum Home-Bildschirm
   hinzufügen“ (iOS/Safari) bzw. „App installieren“ (Android/Chrome) wie
@@ -34,11 +41,11 @@ sich automatisch, es ist kein API-Key und kein eigener Server nötig.
 ```bash
 npm install
 npm run dev          # Dev-Server
-npm run fetch-data   # Aktuelle Top-50-Daten neu berechnen (public/data/top50.json)
+npm run fetch-data   # Aktuelle Marktdaten neu berechnen (public/data/market.json)
 npm run build         # Produktions-Build nach dist/
 ```
 
-`public/data/top50.json` enthält zu Beginn Platzhalterdaten, damit die App
+`public/data/market.json` enthält zu Beginn Platzhalterdaten, damit die App
 sofort lauffähig ist. Der Workflow ersetzt sie beim ersten Lauf durch echte
 Marktdaten.
 

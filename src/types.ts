@@ -5,32 +5,57 @@ export interface StockHistoryPoint {
   c: number
 }
 
-export interface Stock {
-  rank: number
+export type ChartRange = '1mo' | '3mo' | '1y'
+
+/** Base fields available for every stock in the S&P-500 universe. */
+export interface StockSummary {
   symbol: string
   name: string
   sector: string
   currency: string
   price: number
-  changePct3mo: number
+  startPrice3mo: number
   changeAbs3mo: number
-  startPrice: number
-  /** 3-Monats-Historie, verwendet für die Sparkline in der Liste und als Ranking-Basis. */
+  changePct3mo: number
+  /** null when the large-cap lookup failed or the stock wasn't in the candidate pool. */
+  marketCap: number | null
+}
+
+/** Chart history, only fetched for stocks shown in one of the ranked views. */
+export interface StockDetailData {
   history: StockHistoryPoint[]
-  /** Zusätzliche Zeiträume für die Detailansicht (nur für die finalen Top 50 geladen). */
   history1mo: StockHistoryPoint[]
   history1y: StockHistoryPoint[]
 }
 
-export type ChartRange = '1mo' | '3mo' | '1y'
+/** Merged view-model used by the UI: a summary plus its rank in the current list plus chart data. */
+export interface Stock extends StockSummary, StockDetailData {
+  rank: number
+}
 
-export interface Top50Data {
+export interface SectorSummary {
+  name: string
+  avgChangePct3mo: number
+  stockCount: number
+  /** Symbols, best performer first. */
+  top10: string[]
+}
+
+export interface MarketData {
   updatedAt: string
   period: string
   universeSize: number
   source: {
     universe: string
     prices: string
+    marketCap: string
   }
-  stocks: Stock[]
+  stocksBySymbol: Record<string, StockSummary>
+  /** Symbols, best 3-month performer first. */
+  top50: string[]
+  /** Symbols, highest market cap first. */
+  top20ByMarketCap: string[]
+  /** Strongest average 3-month performance first. */
+  sectors: SectorSummary[]
+  detail: Record<string, StockDetailData>
 }

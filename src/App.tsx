@@ -1,12 +1,21 @@
 import { useMemo, useState } from 'react'
+import { BottomTabBar, type MainTab } from './components/BottomTabBar'
 import { Header, type View } from './components/Header'
+import { SectorsView } from './components/SectorsView'
 import { StockDetail } from './components/StockDetail'
 import { StockRow } from './components/StockRow'
 import { UpdatedFooter } from './components/UpdatedFooter'
+import { ValuableView } from './components/ValuableView'
 import { useMarketData } from './hooks/useMarketData'
 import { useSelectedSymbol } from './hooks/useSelectedSymbol'
 import { useWatchlist } from './hooks/useWatchlist'
 import { buildStock, buildStockList } from './lib/buildStock'
+
+const TAB_LABELS: Record<MainTab, string> = {
+  top50: 'Top 50',
+  valuable: 'Wertvollste',
+  sectors: 'Branchen',
+}
 
 function App() {
   const { data, loading, error } = useMarketData()
@@ -15,16 +24,34 @@ function App() {
   const [query, setQuery] = useState('')
   const [view, setView] = useState<View>('all')
   const [selectedSector, setSelectedSector] = useState<string | null>(null)
+  const [activeTab, setActiveTab] = useState<MainTab>('top50')
+  const [openSector, setOpenSector] = useState<string | null>(null)
 
   function handleViewChange(next: View) {
     setView(next)
     setSelectedSector(null)
   }
 
+  function handleTabChange(next: MainTab) {
+    setActiveTab(next)
+    if (next !== 'sectors') setOpenSector(null)
+  }
+
   const top50Stocks = useMemo(
     () => (data ? buildStockList(data, data.top50) : []),
     [data],
   )
+
+  const valuableStocks = useMemo(
+    () => (data ? buildStockList(data, data.top20ByMarketCap) : []),
+    [data],
+  )
+
+  const sectorStocks = useMemo(() => {
+    if (!data || !openSector) return []
+    const sector = data.sectors.find((s) => s.name === openSector)
+    return sector ? buildStockList(data, sector.top10) : []
+  }, [data, openSector])
 
   const viewBase = useMemo(
     () =>
@@ -34,7 +61,7 @@ function App() {
     [top50Stocks, view, favorites],
   )
 
-  const sectors = useMemo(
+  const sectorFilterOptions = useMemo(
     () => [...new Set(viewBase.map((s) => s.sector))].sort((a, b) => a.localeCompare(b, 'de')),
     [viewBase],
   )
@@ -53,11 +80,15 @@ function App() {
 
   const selectedStock = useMemo(() => {
     if (!data || !selectedSymbol) return undefined
-    const rank = data.top50.indexOf(selectedSymbol) + 1
+    const rank =
+      data.top50.indexOf(selectedSymbol) + 1 ||
+      data.top20ByMarketCap.indexOf(selectedSymbol) + 1 ||
+      data.sectors.flatMap((s) => s.top10).indexOf(selectedSymbol) + 1
     return buildStock(data, selectedSymbol, rank)
   }, [data, selectedSymbol])
 
   if (selectedSymbol && selectedStock) {
+    const backLabel = activeTab === 'sectors' ? (openSector ?? TAB_LABELS.sectors) : TAB_LABELS[activeTab]
     return (
       <div className="min-h-screen">
         <StockDetail
@@ -65,7 +96,39 @@ function App() {
           isFavorite={isFavorite(selectedStock.symbol)}
           onToggleFavorite={toggle}
           onBack={clear}
+          backLabel={backLabel}
         />
+      </div>
+    )
+  }
+
+  if (data && activeTab === 'valuable') {
+    return (
+      <div className="min-h-screen">
+        <ValuableView
+          stocks={valuableStocks}
+          isFavorite={isFavorite}
+          onToggleFavorite={toggle}
+          onSelect={select}
+        />
+        <BottomTabBar active={activeTab} onChange={handleTabChange} />
+      </div>
+    )
+  }
+
+  if (data && activeTab === 'sectors') {
+    return (
+      <div className="min-h-screen">
+        <SectorsView
+          sectors={data.sectors}
+          openSector={openSector}
+          onOpenSector={setOpenSector}
+          sectorStocks={sectorStocks}
+          isFavorite={isFavorite}
+          onToggleFavorite={toggle}
+          onSelect={select}
+        />
+        <BottomTabBar active={activeTab} onChange={handleTabChange} />
       </div>
     )
   }
@@ -78,12 +141,12 @@ function App() {
         view={view}
         onViewChange={handleViewChange}
         watchlistCount={favorites.size}
-        sectors={sectors}
+        sectors={sectorFilterOptions}
         selectedSector={selectedSector}
         onSectorChange={setSelectedSector}
       />
 
-      <main className="mx-auto max-w-xl px-1 sm:px-4 pt-2">
+      <main className="mx-auto max-w-xl px-1 sm:px-4 pb-24 pt-2">
         {loading && !data && (
           <div className="flex flex-col items-center gap-3 py-24 text-black/40 dark:text-white/40">
             <div className="h-6 w-6 animate-spin rounded-full border-2 border-current border-t-transparent" />
@@ -100,7 +163,7 @@ function App() {
 
         {selectedSymbol && !selectedStock && data && (
           <div className="mx-3 mt-6 rounded-2xl bg-black/[0.04] px-4 py-4 text-[14px] text-black/50 dark:bg-white/[0.06] dark:text-white/50">
-            „{selectedSymbol}“ ist aktuell nicht in den Top 50.
+            „{selectedSymbol}“ wurde in keiner Ansicht gefunden.
           </div>
         )}
 
@@ -134,6 +197,8 @@ function App() {
           </>
         )}
       </main>
+
+      <BottomTabBar active={activeTab} onChange={handleTabChange} />
     </div>
   )
 }

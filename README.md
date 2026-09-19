@@ -28,6 +28,12 @@ eigener Server nötig.
   Kurs vs. Kurs vor 3 Monaten) sortiert – daraus entstehen die Top 50
   Performer sowie die stärksten Branchen (Durchschnittsperformance je Sektor,
   mit eigenen Top 10).
+- **Startseite:** Zeigt 4 zufällig ausgewählte Aktien aus dem Pool der
+  stärksten 1-Wochen-Performer (berechnet aus den ohnehin schon geladenen
+  3-Monats-Kursdaten, keine zusätzlichen Anfragen) sowie einen Markt-News-Feed
+  von öffentlichen RSS-Feeds (CNBC, mit MarketWatch als Fallback) – nur echte
+  Schlagzeilen und Bilder mit Link zur Originalquelle, keine erfundenen
+  Zitate oder Inhalte.
 - **Auto-Update:** Ein GitHub-Actions-Workflow
   (`.github/workflows/update-data.yml`) läuft **alle 6 Stunden**, holt die
   frischen Daten, committet `public/data/market.json` und deployt die Seite

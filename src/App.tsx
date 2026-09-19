@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react'
 import { BottomTabBar, type MainTab } from './components/BottomTabBar'
 import { Header, type View } from './components/Header'
+import { HomeView } from './components/HomeView'
 import { SectorsView } from './components/SectorsView'
 import { StockDetail } from './components/StockDetail'
 import { StockRow } from './components/StockRow'
@@ -10,12 +11,16 @@ import { useMarketData } from './hooks/useMarketData'
 import { useSelectedSymbol } from './hooks/useSelectedSymbol'
 import { useWatchlist } from './hooks/useWatchlist'
 import { buildStock, buildStockList } from './lib/buildStock'
+import { pickRandom } from './lib/pickRandom'
 
 const TAB_LABELS: Record<MainTab, string> = {
+  home: 'Home',
   top50: 'Top 50',
   valuable: 'Wertvollste',
   sectors: 'Branchen',
 }
+
+const HOME_SPOTLIGHT_SIZE = 4
 
 function App() {
   const { data, loading, error } = useMarketData()
@@ -24,7 +29,7 @@ function App() {
   const [query, setQuery] = useState('')
   const [view, setView] = useState<View>('all')
   const [selectedSector, setSelectedSector] = useState<string | null>(null)
-  const [activeTab, setActiveTab] = useState<MainTab>('top50')
+  const [activeTab, setActiveTab] = useState<MainTab>('home')
   const [openSector, setOpenSector] = useState<string | null>(null)
 
   function handleViewChange(next: View) {
@@ -44,6 +49,11 @@ function App() {
 
   const valuableStocks = useMemo(
     () => (data ? buildStockList(data, data.top20ByMarketCap) : []),
+    [data],
+  )
+
+  const spotlightStocks = useMemo(
+    () => (data ? pickRandom(buildStockList(data, data.topShortTerm), HOME_SPOTLIGHT_SIZE) : []),
     [data],
   )
 
@@ -83,7 +93,8 @@ function App() {
     const rank =
       data.top50.indexOf(selectedSymbol) + 1 ||
       data.top20ByMarketCap.indexOf(selectedSymbol) + 1 ||
-      data.sectors.flatMap((s) => s.top10).indexOf(selectedSymbol) + 1
+      data.sectors.flatMap((s) => s.top10).indexOf(selectedSymbol) + 1 ||
+      (data.topShortTerm ?? []).indexOf(selectedSymbol) + 1
     return buildStock(data, selectedSymbol, rank)
   }, [data, selectedSymbol])
 
@@ -98,6 +109,15 @@ function App() {
           onBack={clear}
           backLabel={backLabel}
         />
+      </div>
+    )
+  }
+
+  if (data && activeTab === 'home') {
+    return (
+      <div className="min-h-screen">
+        <HomeView spotlightStocks={spotlightStocks} news={data.news ?? []} onSelectStock={select} />
+        <BottomTabBar active={activeTab} onChange={handleTabChange} />
       </div>
     )
   }

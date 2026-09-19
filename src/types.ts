@@ -17,6 +17,10 @@ export interface StockSummary {
   startPrice3mo: number
   changeAbs3mo: number
   changePct3mo: number
+  /** % change over the last 3 trading days, or null if not enough history. */
+  changePct3d: number | null
+  /** % change over the last 5 trading days (~1 week), or null if not enough history. */
+  changePct1w: number | null
 }
 
 /** Chart history, only fetched for stocks shown in one of the ranked views. */
@@ -39,6 +43,14 @@ export interface SectorSummary {
   top10: string[]
 }
 
+export interface NewsItem {
+  title: string
+  url: string
+  imageUrl: string | null
+  /** ISO timestamp, or null if the feed didn't provide a parseable date. */
+  publishedAt: string | null
+}
+
 export interface MarketData {
   updatedAt: string
   period: string
@@ -47,6 +59,7 @@ export interface MarketData {
     universe: string
     prices: string
     top20ByMarketCap: string
+    news: string
   }
   stocksBySymbol: Record<string, StockSummary>
   /** Symbols, best 3-month performer first. */
@@ -55,5 +68,8 @@ export interface MarketData {
   top20ByMarketCap: string[]
   /** Strongest average 3-month performance first. */
   sectors: SectorSummary[]
+  /** Symbols, best 1-week performer first — pool the home screen picks random cards from. */
+  topShortTerm: string[]
+  news: NewsItem[]
   detail: Record<string, StockDetailData>
 }

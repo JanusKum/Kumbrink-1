@@ -10,6 +10,7 @@ interface Props {
   isFavorite: boolean
   onToggleFavorite: (symbol: string) => void
   onBack: () => void
+  backLabel: string
 }
 
 const RANGE_LABELS: Record<ChartRange, string> = {
@@ -42,7 +43,7 @@ function formatPrice(price: number, currency: string) {
   return formatter.format(price)
 }
 
-export function StockDetail({ stock, isFavorite, onToggleFavorite, onBack }: Props) {
+export function StockDetail({ stock, isFavorite, onToggleFavorite, onBack, backLabel }: Props) {
   const [range, setRange] = useState<ChartRange>('3mo')
 
   const historyByRange: Record<ChartRange, typeof stock.history> = {
@@ -82,13 +83,13 @@ export function StockDetail({ stock, isFavorite, onToggleFavorite, onBack }: Pro
               strokeLinejoin="round"
             />
           </svg>
-          Top 50
+          {backLabel}
         </button>
 
         <div className="flex items-center gap-1">
           <ShareButton
             title={`${stock.symbol} – ${stock.name}`}
-            text={`${stock.symbol}: ${formatPrice(stock.price, stock.currency)} (${pctFormatter.format(changePct)}%) – Top 50 Aktien der letzten 3 Monate`}
+            text={`${stock.symbol}: ${formatPrice(stock.price, stock.currency)} (${pctFormatter.format(changePct)}%) – ChartPuls`}
             url={window.location.href}
           />
           <FavoriteButton

@@ -2,12 +2,16 @@
 // Fetches the current S&P 500 constituent list, pulls 3-month price
 // history for every ticker from Yahoo Finance's public chart API, and
 // derives several views from it: the 50 best performers, the strongest
-// sectors (with their own top 10), and — using market cap for a curated
-// large-cap pool — the 20 most valuable companies. Extra chart ranges
-// (1 month, 1 year) are fetched only for the stocks that actually show
-// up in one of these views. Designed to run on a schedule (GitHub
-// Actions) so the published site always reflects real current data
-// without any manual work or API key.
+// sectors (with their own top 10), and the 20 most valuable companies
+// (from a manually curated, publicly known large-cap list — Yahoo's
+// batched quote endpoint that would give live market-cap figures
+// requires an auth crumb/cookie handshake it doesn't grant to plain
+// requests, so we don't depend on it; every price and performance
+// figure shown for these companies is still fetched live). Extra chart
+// ranges (1 month, 1 year) are fetched only for the stocks that
+// actually show up in one of these views. Designed to run on a
+// schedule (GitHub Actions) so the published site always reflects real
+// current data without any manual work or API key.
 
 import { readFile, writeFile, mkdir } from 'node:fs/promises'
 import { fileURLToPath } from 'node:url'
@@ -19,14 +23,13 @@ const ROOT = path.resolve(__dirname, '..')
 const UNIVERSE_CSV_URL =
   'https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv'
 const FALLBACK_UNIVERSE_PATH = path.join(__dirname, 'universe-fallback.json')
+const TOP_MARKET_CAP_PATH = path.join(__dirname, 'top20-market-cap.json')
 const OUTPUT_PATH = path.join(ROOT, 'public', 'data', 'market.json')
 
 const TOP_PERFORMERS_SIZE = 50
-const TOP_MARKET_CAP_SIZE = 20
 const TOP_PER_SECTOR_SIZE = 10
 const RANGE = '3mo'
 const CONCURRENCY = 8
-const MARKET_CAP_BATCH_SIZE = 50
 const MIN_HISTORY_POINTS = 20
 const REQUEST_TIMEOUT_MS = 15_000
 const RETRIES_PER_TICKER = 2
@@ -186,45 +189,6 @@ async function fetchHistory(symbol, range = RANGE) {
   return { error: 'unreachable' }
 }
 
-/**
- * Batched market-cap lookup via Yahoo's quote endpoint. Only used for a
- * curated large-cap candidate pool (not the full universe) to keep this
- * cheap and avoid relying on an endpoint that's historically been more
- * bot-protected than the chart API.
- */
-async function fetchMarketCaps(symbols) {
-  const marketCapBySymbol = new Map()
-
-  for (let i = 0; i < symbols.length; i += MARKET_CAP_BATCH_SIZE) {
-    const batch = symbols.slice(i, i + MARKET_CAP_BATCH_SIZE).map(toYahooSymbol)
-    const url = `https://query1.finance.yahoo.com/v7/finance/quote?fields=marketCap&symbols=${encodeURIComponent(
-      batch.join(','),
-    )}`
-
-    try {
-      const res = await fetch(url, {
-        headers: {
-          'User-Agent': USER_AGENT,
-          Accept: 'application/json',
-        },
-        signal: AbortSignal.timeout(REQUEST_TIMEOUT_MS),
-      })
-      if (!res.ok) throw new Error(`HTTP ${res.status}`)
-      const json = await res.json()
-      const quotes = json?.quoteResponse?.result ?? []
-      for (const q of quotes) {
-        if (typeof q.marketCap === 'number' && q.symbol) {
-          marketCapBySymbol.set(q.symbol, q.marketCap)
-        }
-      }
-    } catch (err) {
-      console.warn(`Market-Cap-Batch ${i / MARKET_CAP_BATCH_SIZE + 1} fehlgeschlagen: ${err.message}`)
-    }
-  }
-
-  return marketCapBySymbol
-}
-
 /** Runs async tasks with a concurrency cap, preserving input order in the result array. */
 async function mapWithConcurrency(items, limit, worker) {
   const results = new Array(items.length)
@@ -286,7 +250,6 @@ async function main() {
       startPrice3mo: round2(history.startPrice),
       changeAbs3mo: round2(changeAbs3mo),
       changePct3mo: round2(changePct3mo),
-      marketCap: null,
       _points3mo: history.points,
     }
   })
@@ -316,29 +279,19 @@ async function main() {
     })
     .sort((a, b) => b.avgChangePct3mo - a.avgChangePct3mo)
 
-  // --- Top 20 wertvollste (Marktkapitalisierung) ---
-  // Aus einem kuratierten Large-Cap-Pool statt dem vollen Universum, um die
-  // Zahl der zusätzlichen Anfragen klein und robust zu halten.
-  const marketCapPoolRaw = await readFile(FALLBACK_UNIVERSE_PATH, 'utf-8')
-  const marketCapPool = JSON.parse(marketCapPoolRaw).map((s) => s.symbol)
-  console.log(`Lade Marktkapitalisierung für ${marketCapPool.length} Large-Cap-Kandidaten …`)
-  const marketCaps = await fetchMarketCaps(marketCapPool)
-
+  // --- Top 20 wertvollste ---
+  // Yahoo's live Marktkapitalisierungs-Endpunkt verlangt eine Auth-Crumb, die
+  // wir nicht besitzen (getestet: HTTP 401 auf jede Anfrage). Statt uns auf
+  // eine fragile Umgehung zu verlassen, nutzen wir eine manuell kuratierte,
+  // öffentlich bekannte Liste der größten S&P-500-Unternehmen – Kurs und
+  // Performance für diese Titel sind weiterhin zu 100% live geladen.
   const validBySymbol = new Map(valid.map((s) => [s.symbol, s]))
-  for (const [symbol, marketCap] of marketCaps) {
-    const stock = validBySymbol.get(symbol)
-    if (stock) stock.marketCap = marketCap
-  }
-
-  const top20ByMarketCap = [...valid]
-    .filter((s) => typeof s.marketCap === 'number')
-    .sort((a, b) => b.marketCap - a.marketCap)
-    .slice(0, TOP_MARKET_CAP_SIZE)
-    .map((s) => s.symbol)
+  const curatedRaw = await readFile(TOP_MARKET_CAP_PATH, 'utf-8')
+  const curatedTop20 = JSON.parse(curatedRaw)
+  const top20ByMarketCap = curatedTop20.filter((symbol) => validBySymbol.has(symbol))
 
   console.log(
-    `Marktkapitalisierung: ${marketCaps.size}/${marketCapPool.length} geladen, Top 5:`,
-    top20ByMarketCap.slice(0, 5).join(', ') || '(keine)',
+    `Top 20 wertvollste: ${top20ByMarketCap.length}/${curatedTop20.length} aus der kuratierten Liste im aktuellen Universum gefunden.`,
   )
 
   // --- Zusätzliche Zeiträume (1M, 1J) nur für Aktien, die irgendwo auftauchen ---
@@ -380,7 +333,6 @@ async function main() {
       startPrice3mo: s.startPrice3mo,
       changeAbs3mo: s.changeAbs3mo,
       changePct3mo: s.changePct3mo,
-      marketCap: s.marketCap,
     }
   }
 
@@ -391,7 +343,7 @@ async function main() {
     source: {
       universe: source,
       prices: 'Yahoo Finance chart API (query1.finance.yahoo.com)',
-      marketCap: 'Yahoo Finance quote API, Large-Cap-Kandidatenpool',
+      top20ByMarketCap: 'Manuell kuratierte Liste öffentlich bekannter Large Caps (scripts/top20-market-cap.json)',
     },
     stocksBySymbol,
     top50,

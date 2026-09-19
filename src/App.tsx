@@ -133,7 +133,12 @@ function App() {
   if (activeTab === 'home') {
     return (
       <div className="min-h-screen animate-[fade-slide-in_0.3s_ease-out]">
-        <HomeView spotlightStocks={spotlightStocks} news={data.news ?? []} onSelectStock={select} />
+        <HomeView
+          spotlightStocks={spotlightStocks}
+          news={data.news ?? []}
+          ipoNews={data.ipoNews ?? []}
+          onSelectStock={select}
+        />
         <BottomTabBar active={activeTab} onChange={handleTabChange} />
       </div>
     )

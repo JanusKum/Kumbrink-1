@@ -17,6 +17,13 @@ eigener Server nötig.
   (`scripts/universe-fallback.json`) zurück.
 - **Kurse:** Für jeden Titel wird die 3-Monats-Kurshistorie über die
   öffentliche Chart-API von Yahoo Finance abgerufen (kein API-Key nötig).
+  Zusätzliche Zeiträume (1 Tag, 1 Woche, 1 Monat, 1 Jahr) werden nur für die
+  Titel geladen, die in einer der Ranglisten auftauchen (Top 50, Wertvollste,
+  Branchen-Top-10, Startseite) – für alle anderen der 503 Aktien reicht der
+  3-Monats-Chart, der ohnehin schon für das Ranking geladen wird, aus.
+- **Suche:** Durchsucht per Symbol/Name das komplette S&P-500-Universum
+  (alle 503 Aktien), nicht nur die aktuell angezeigte Liste – jeder Treffer
+  hat dank der obigen Kursdaten mindestens einen echten 3-Monats-Chart.
 - **Top 20 wertvollste Unternehmen:** Yahoos Endpunkt für Live-Marktkapitalisierung
   verlangt einen Auth-Crumb, den unauthentifizierte Anfragen nicht bekommen
   (getestet: durchgehend HTTP 401). Statt uns auf eine fragile Umgehung zu

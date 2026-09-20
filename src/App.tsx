@@ -13,6 +13,7 @@ import { useSelectedSymbol } from './hooks/useSelectedSymbol'
 import { useWatchlist } from './hooks/useWatchlist'
 import { buildStock, buildStockList } from './lib/buildStock'
 import { pickSpotlight } from './lib/pickSpotlight'
+import { searchStocks } from './lib/searchStocks'
 
 const TAB_LABELS: Record<MainTab, string> = {
   home: 'Home',
@@ -77,17 +78,22 @@ function App() {
     [viewBase],
   )
 
-  const filtered = useMemo(() => {
-    const bySector = selectedSector
-      ? viewBase.filter((s) => s.sector === selectedSector)
-      : viewBase
-    const q = query.trim().toLowerCase()
-    if (!q) return bySector
-    return bySector.filter(
-      (s) =>
-        s.symbol.toLowerCase().includes(q) || s.name.toLowerCase().includes(q),
-    )
-  }, [viewBase, query, selectedSector])
+  const filtered = useMemo(
+    () => (selectedSector ? viewBase.filter((s) => s.sector === selectedSector) : viewBase),
+    [viewBase, selectedSector],
+  )
+
+  const isSearching = query.trim().length > 0
+
+  // Search looks across the whole S&P 500 universe, not just the current
+  // view/sector/watchlist filter - the point is to find a stock even if
+  // it isn't a top-50 performer or on the watchlist.
+  const searchResults = useMemo(
+    () => (data && isSearching ? searchStocks(data, query) : []),
+    [data, query, isSearching],
+  )
+
+  const displayedStocks = isSearching ? searchResults : filtered
 
   const selectedStock = useMemo(() => {
     if (!data || !selectedSymbol) return undefined
@@ -186,6 +192,8 @@ function App() {
         sectors={sectorFilterOptions}
         selectedSector={selectedSector}
         onSectorChange={setSelectedSector}
+        isSearching={isSearching}
+        resultCount={searchResults.length}
       />
 
       <main className="mx-auto max-w-xl px-1 sm:px-4 pb-24 pt-2">
@@ -195,17 +203,17 @@ function App() {
           </div>
         )}
 
-        {filtered.length === 0 ? (
+        {displayedStocks.length === 0 ? (
           <p className="px-4 py-12 text-center text-[15px] text-black/40 dark:text-white/40">
-            {view === 'watchlist' && !query && !selectedSector
-              ? 'Noch keine Favoriten – tippe auf den Stern bei einer Aktie, um sie zur Watchlist hinzuzufügen.'
-              : query
-                ? `Keine Treffer für „${query}“`
+            {isSearching
+              ? `Keine Treffer für „${query}“`
+              : view === 'watchlist' && !selectedSector
+                ? 'Noch keine Favoriten – tippe auf den Stern bei einer Aktie, um sie zur Watchlist hinzuzufügen.'
                 : `Keine Titel im Sektor „${selectedSector}“`}
           </p>
         ) : (
           <ul className="divide-y divide-black/[0.05] dark:divide-white/[0.07]">
-            {filtered.map((stock) => (
+            {displayedStocks.map((stock) => (
               <StockRow
                 key={stock.symbol}
                 stock={stock}

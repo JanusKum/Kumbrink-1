@@ -115,6 +115,7 @@ function App() {
           onToggleFavorite={toggle}
           onBack={clear}
           backLabel={backLabel}
+          benchmark={data?.benchmark}
         />
       </div>
     )

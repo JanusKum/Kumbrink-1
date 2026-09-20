@@ -53,6 +53,12 @@ export interface NewsItem {
   publishedAt: string | null
 }
 
+/** S&P 500 index history, for the optional comparison line in the detail chart. */
+export interface BenchmarkData extends StockDetailData {
+  symbol: string
+  name: string
+}
+
 export interface MarketData {
   updatedAt: string
   period: string
@@ -63,6 +69,7 @@ export interface MarketData {
     top20ByMarketCap: string
     news: string
     ipoNews?: string
+    benchmark?: string
   }
   stocksBySymbol: Record<string, StockSummary>
   /** Symbols, best 3-month performer first. */
@@ -76,5 +83,7 @@ export interface MarketData {
   news: NewsItem[]
   /** Real headlines from the same news feeds, keyword-matched for IPO/going-public stories. */
   ipoNews: NewsItem[]
+  /** S&P 500 index history for the detail chart's comparison line. Absent in stale cached data. */
+  benchmark?: BenchmarkData
   detail: Record<string, StockDetailData>
 }

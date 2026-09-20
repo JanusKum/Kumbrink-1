@@ -445,7 +445,29 @@ async function main() {
   // --- News-Feed (öffentliche RSS-Feeds, kein API-Key) ---
   const { general: news, ipo: ipoNews } = await fetchNews()
 
-  // --- Zusätzliche Zeiträume (1M, 1J) nur für Aktien, die irgendwo auftauchen ---
+  const toPoints = (points, max) =>
+    downsample(points, max).map((p) => ({ t: toIsoTimestamp(p.t), c: round2(p.c) }))
+
+  // --- 3-Monats-Chart für jede gültige Aktie ---
+  // Diese Daten wurden ohnehin schon fürs Ranking geladen (keine zusätzlichen
+  // Anfragen nötig), also bekommt jede der 503 Aktien mindestens einen echten
+  // Chart - wichtig, damit die Suche auch Titel außerhalb der Top-50/Wertvollste/
+  // Branchen-Listen mit Kursverlauf anzeigen kann, nicht nur eine leere Karte.
+  const detail = {}
+  for (const stock of valid) {
+    detail[stock.symbol] = {
+      history1d: [],
+      history1w: [],
+      history: toPoints(stock._points3mo, 40),
+      history1mo: [],
+      history1y: [],
+    }
+  }
+
+  // --- Zusätzliche Zeiträume (1D, 1W, 1M, 1J) nur für Aktien, die irgendwo
+  // prominent auftauchen - die brauchen eigene Yahoo-Anfragen pro Zeitraum,
+  // das für alle 503 Aktien zu tun wäre unnötig viel Traffic für Titel, die
+  // realistisch nur über die Suche gefunden werden.
   const detailSymbols = new Set([
     ...top50,
     ...top20ByMarketCap,
@@ -454,25 +476,18 @@ async function main() {
   ])
   console.log(`Lade zusätzliche Zeiträume (1D, 1W, 1M, 1J) für ${detailSymbols.size} Aktien …`)
 
-  const detail = {}
   await mapWithConcurrency([...detailSymbols], CONCURRENCY, async (symbol) => {
-    const stock = validBySymbol.get(symbol)
-    if (!stock) return
+    if (!validBySymbol.has(symbol)) return
     const [oneDay, fiveDay, oneMonth, oneYear] = await Promise.all([
       fetchHistory(symbol, '1d'),
       fetchHistory(symbol, '5d'),
       fetchHistory(symbol, '1mo'),
       fetchHistory(symbol, '1y'),
     ])
-    const toPoints = (points, max) =>
-      downsample(points, max).map((p) => ({ t: toIsoTimestamp(p.t), c: round2(p.c) }))
-    detail[symbol] = {
-      history1d: oneDay.error ? [] : toPoints(oneDay.points, 60),
-      history1w: fiveDay.error ? [] : toPoints(fiveDay.points, 60),
-      history: toPoints(stock._points3mo, 40),
-      history1mo: oneMonth.error ? [] : toPoints(oneMonth.points, 40),
-      history1y: oneYear.error ? [] : toPoints(oneYear.points, 40),
-    }
+    detail[symbol].history1d = oneDay.error ? [] : toPoints(oneDay.points, 60)
+    detail[symbol].history1w = fiveDay.error ? [] : toPoints(fiveDay.points, 60)
+    detail[symbol].history1mo = oneMonth.error ? [] : toPoints(oneMonth.points, 40)
+    detail[symbol].history1y = oneYear.error ? [] : toPoints(oneYear.points, 40)
   })
 
   // --- Ausgabe zusammenbauen ---

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-20T15:26:34.182Z",
+  "updatedAt": "2026-09-20T19:52:37.719Z",
   "period": "3mo",
   "universeSize": 503,
   "source": {
@@ -4696,10 +4696,10 @@
       "name": "Regeneron Pharmaceuticals",
       "sector": "Health Care",
       "currency": "USD",
-      "price": 784.85,
+      "price": 784.67,
       "startPrice3mo": 612.5,
-      "changeAbs3mo": 172.35,
-      "changePct3mo": 28.14,
+      "changeAbs3mo": 172.17,
+      "changePct3mo": 28.11,
       "changePct3d": 1.39,
       "changePct1w": 0.43
     },
@@ -6339,16 +6339,22 @@
   ],
   "news": [
     {
-      "title": "Nvidia CEO Jensen Huang emerges as Trump's top ally in AI safety debate",
-      "url": "https://www.cnbc.com/2026/09/20/nvidia-ceo-jensen-huang-emerges-as-trumps-top-ally-in-ai-debate.html",
-      "imageUrl": null,
-      "publishedAt": "2026-09-20T11:25:08.000Z"
-    },
-    {
       "title": "‘It's awful’: How tariffs, soaring fuel costs and higher interest rates are squeezing American companies",
       "url": "https://www.cnbc.com/2026/09/20/tariffs-fuel-prices-and-interest-rates-squeeze-us-companies.html",
       "imageUrl": null,
       "publishedAt": "2026-09-20T12:47:23.000Z"
+    },
+    {
+      "title": "Bessent meets China Vice Premier He Lifeng ahead of Trump-Xi summit",
+      "url": "https://www.cnbc.com/2026/09/20/bessent-he-lifeng-trump-xi-summit.html",
+      "imageUrl": null,
+      "publishedAt": "2026-09-20T16:56:14.000Z"
+    },
+    {
+      "title": "Nvidia CEO Jensen Huang emerges as Trump's top ally in AI safety debate",
+      "url": "https://www.cnbc.com/2026/09/20/nvidia-ceo-jensen-huang-emerges-as-trumps-top-ally-in-ai-debate.html",
+      "imageUrl": null,
+      "publishedAt": "2026-09-20T11:25:08.000Z"
     },
     {
       "title": "Williams-Sonoma's stock has soared in a sluggish housing market. Here's how it won over Wall Street",
@@ -6357,22 +6363,22 @@
       "publishedAt": "2026-09-20T12:00:01.000Z"
     },
     {
-      "title": "U.S. Treasury's Bessent, China's He to hold talks on AI, trade, critical minerals: Reuters",
-      "url": "https://www.cnbc.com/2026/09/20/bessent-chinas-he-to-hold-talks-on-ai-trade-minerals-reuters.html",
+      "title": "Trump to meet with NYC Mayor Zohran Mamdani on Monday ahead of UN General Assembly",
+      "url": "https://www.cnbc.com/2026/09/20/trump-mamdani-gracie-mansion-meeting.html",
       "imageUrl": null,
-      "publishedAt": "2026-09-20T06:17:46.000Z"
-    },
-    {
-      "title": "U.S. urges Americans to reconsider Middle East travel as Iran tensions rise",
-      "url": "https://www.cnbc.com/2026/09/20/us-middle-east-travel-warning-iran-war-hormuz.html",
-      "imageUrl": null,
-      "publishedAt": "2026-09-20T14:23:53.000Z"
+      "publishedAt": "2026-09-20T19:06:16.000Z"
     },
     {
       "title": "Morgan Stanley says stocks like Warner Music are a table-pounding buy right now",
       "url": "https://www.cnbc.com/2026/09/20/buy-stocks-such-as-warner-music-morgan-stanley-says-.html",
       "imageUrl": null,
       "publishedAt": "2026-09-20T12:10:13.000Z"
+    },
+    {
+      "title": "U.S. urges Americans to reconsider Middle East travel as Iran tensions rise",
+      "url": "https://www.cnbc.com/2026/09/20/us-middle-east-travel-warning-iran-war-hormuz.html",
+      "imageUrl": null,
+      "publishedAt": "2026-09-20T14:23:53.000Z"
     },
     {
       "title": "Caruso-Cabrera: The investing tailwinds for Latin America are the best in decades",
@@ -6391,12 +6397,6 @@
       "url": "https://www.cnbc.com/2026/09/20/ai-jobs-worker-fears.html",
       "imageUrl": null,
       "publishedAt": "2026-09-20T14:37:34.000Z"
-    },
-    {
-      "title": "Top Wall Street analysts find these 3 stocks attractive as long-term investments",
-      "url": "https://www.cnbc.com/2026/09/20/top-wall-street-analysts-find-these-3-stocks-attractive-as-long-term-investments.html",
-      "imageUrl": null,
-      "publishedAt": "2026-09-20T12:01:35.000Z"
     },
     {
       "title": "Ed Sheeran calls Israel's treatment of Gazans 'unjustifiable,' apologizes for Macklemore controversy",
@@ -174451,7 +174451,7 @@
         },
         {
           "t": "2026-09-18T20:00:00.000Z",
-          "c": 784.85
+          "c": 784.67
         }
       ],
       "history1w": [
@@ -174693,7 +174693,7 @@
         },
         {
           "t": "2026-09-18T20:00:00.000Z",
-          "c": 784.85
+          "c": 784.67
         }
       ],
       "history": [
@@ -175017,7 +175017,7 @@
         },
         {
           "t": "2026-09-18T20:00:00.000Z",
-          "c": 784.85
+          "c": 784.67
         }
       ],
       "history1y": [

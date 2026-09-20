@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import { useCountUp } from '../hooks/useCountUp'
-import type { ChartRange, Stock, StockHistoryPoint } from '../types'
+import type { BenchmarkData, ChartRange, Stock, StockHistoryPoint } from '../types'
 import { FavoriteButton } from './FavoriteButton'
 import { InteractiveChart } from './InteractiveChart'
 import { ShareButton } from './ShareButton'
@@ -12,6 +12,7 @@ interface Props {
   onToggleFavorite: (symbol: string) => void
   onBack: () => void
   backLabel: string
+  benchmark?: BenchmarkData
 }
 
 const RANGE_LABELS: Record<ChartRange, string> = {
@@ -61,9 +62,10 @@ function formatPointLabel(point: StockHistoryPoint, range: ChartRange) {
   return dateFormatter.format(date)
 }
 
-export function StockDetail({ stock, isFavorite, onToggleFavorite, onBack, backLabel }: Props) {
+export function StockDetail({ stock, isFavorite, onToggleFavorite, onBack, backLabel, benchmark }: Props) {
   const [range, setRange] = useState<ChartRange>('3mo')
   const [scrubPoint, setScrubPoint] = useState<StockHistoryPoint | null>(null)
+  const [showBenchmark, setShowBenchmark] = useState(false)
 
   const historyByRange: Record<ChartRange, typeof stock.history> = {
     '1d': stock.history1d ?? [],
@@ -74,6 +76,20 @@ export function StockDetail({ stock, isFavorite, onToggleFavorite, onBack, backL
   }
   const activeHistory = historyByRange[range]
   const hasHistory = activeHistory.length >= 2
+
+  const benchmarkHistory = benchmark
+    ? ({
+        '1d': benchmark.history1d,
+        '1w': benchmark.history1w,
+        '1mo': benchmark.history1mo,
+        '3mo': benchmark.history,
+        '1y': benchmark.history1y,
+      } satisfies Record<ChartRange, StockHistoryPoint[]>)[range]
+    : []
+  const hasBenchmark = benchmarkHistory.length >= 2
+  const benchmarkChangePct = hasBenchmark
+    ? ((benchmarkHistory[benchmarkHistory.length - 1].c - benchmarkHistory[0].c) / benchmarkHistory[0].c) * 100
+    : null
 
   const { changePct, high, low } = useMemo(() => {
     if (!hasHistory) {
@@ -174,6 +190,7 @@ export function StockDetail({ stock, isFavorite, onToggleFavorite, onBack, backL
               width={400}
               height={160}
               onScrub={setScrubPoint}
+              compareHistory={showBenchmark && hasBenchmark ? benchmarkHistory : undefined}
             />
           ) : (
             <div className="flex h-full items-center justify-center text-[14px] text-black/35 dark:text-white/35">
@@ -181,6 +198,28 @@ export function StockDetail({ stock, isFavorite, onToggleFavorite, onBack, backL
             </div>
           )}
         </div>
+
+        {benchmark && (
+          <button
+            type="button"
+            onClick={() => setShowBenchmark((v) => !v)}
+            disabled={!hasBenchmark}
+            aria-pressed={showBenchmark}
+            className={`mt-2 inline-flex items-center gap-1.5 rounded-full border px-2.5 py-1 text-[12px] font-medium transition-colors disabled:opacity-40 ${
+              showBenchmark
+                ? 'border-transparent bg-black text-white dark:bg-white dark:text-black'
+                : 'border-black/10 text-black/55 dark:border-white/15 dark:text-white/55'
+            }`}
+          >
+            <span
+              className={`inline-block h-0 w-3 border-t-2 border-dashed ${showBenchmark ? 'border-white dark:border-black' : 'border-black/40 dark:border-white/40'}`}
+            />
+            {benchmark.name}
+            {showBenchmark && hasBenchmark && benchmarkChangePct !== null
+              ? ` ${pctFormatter.format(benchmarkChangePct)}%`
+              : ''}
+          </button>
+        )}
 
         <div
           role="tablist"

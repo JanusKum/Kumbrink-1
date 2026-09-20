@@ -36,6 +36,7 @@ const REQUEST_TIMEOUT_MS = 15_000
 const RETRIES_PER_TICKER = 2
 const NEWS_ITEM_LIMIT = 12
 const IPO_ITEM_LIMIT = 8
+const BENCHMARK_SYMBOL = '^GSPC'
 // Public RSS feeds, no API key needed. All are fetched (not just the first
 // that works): the first successful one supplies the general news list, and
 // items from every successful feed are pooled for IPO keyword-matching, so
@@ -490,6 +491,32 @@ async function main() {
     detail[symbol].history1y = oneYear.error ? [] : toPoints(oneYear.points, 40)
   })
 
+  // --- Vergleichsindex (S&P 500) für die Vergleichslinie in der Detailansicht ---
+  // Selbe öffentliche Chart-API, funktioniert identisch für Indizes wie für
+  // einzelne Aktien - kein separater Datenquellen-Typ nötig.
+  console.log('Lade Vergleichsindex (S&P 500) …')
+  const [benchDay, benchWeek, benchMonth, benchQuarter, benchYear] = await Promise.all([
+    fetchHistory(BENCHMARK_SYMBOL, '1d'),
+    fetchHistory(BENCHMARK_SYMBOL, '5d'),
+    fetchHistory(BENCHMARK_SYMBOL, '1mo'),
+    fetchHistory(BENCHMARK_SYMBOL, '3mo'),
+    fetchHistory(BENCHMARK_SYMBOL, '1y'),
+  ])
+  const benchmark = {
+    symbol: BENCHMARK_SYMBOL,
+    name: 'S&P 500',
+    history1d: benchDay.error ? [] : toPoints(benchDay.points, 60),
+    history1w: benchWeek.error ? [] : toPoints(benchWeek.points, 60),
+    history: benchQuarter.error ? [] : toPoints(benchQuarter.points, 40),
+    history1mo: benchMonth.error ? [] : toPoints(benchMonth.points, 40),
+    history1y: benchYear.error ? [] : toPoints(benchYear.points, 40),
+  }
+  if (benchQuarter.error) {
+    console.warn(`Vergleichsindex konnte nicht geladen werden: ${benchQuarter.error}`)
+  } else {
+    console.log('Vergleichsindex geladen.')
+  }
+
   // --- Ausgabe zusammenbauen ---
   const stocksBySymbol = {}
   for (const s of valid) {
@@ -517,6 +544,7 @@ async function main() {
       top20ByMarketCap: 'Manuell kuratierte Liste öffentlich bekannter Large Caps (scripts/top20-market-cap.json)',
       news: 'Öffentliche RSS-Feeds (CNBC, MarketWatch)',
       ipoNews: 'Wie news, gefiltert auf IPO-/Börsengang-Schlagzeilen per Stichwortsuche',
+      benchmark: 'Yahoo Finance chart API, Symbol ^GSPC (S&P 500 Index)',
     },
     stocksBySymbol,
     top50,
@@ -525,6 +553,7 @@ async function main() {
     topShortTerm,
     news,
     ipoNews,
+    benchmark,
     detail,
   }
 
@@ -539,7 +568,7 @@ async function main() {
   )
   console.log('Stärkste Branche:', sectors[0]?.name, `(${sectors[0]?.avgChangePct3mo}%)`)
   console.log(
-    `Größte Wochenbewegungen: ${topShortTerm.length}, News-Artikel: ${news.length}, IPO-News: ${ipoNews.length}`,
+    `Größte Wochenbewegungen: ${topShortTerm.length}, News-Artikel: ${news.length}, IPO-News: ${ipoNews.length}, Vergleichsindex: ${benchmark.history.length > 0 ? 'ok' : 'fehlgeschlagen'}`,
   )
 
   if (top50.length < TOP_PERFORMERS_SIZE) {

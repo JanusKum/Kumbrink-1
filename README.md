@@ -49,7 +49,11 @@ eigener Server nötig.
 - **Detailansicht:** Zeigt den Kurs über 5 Zeiträume (1 Tag, 1 Woche, 1 Monat,
   3 Monate, 1 Jahr). Der Chart ist per Maus/Touch scrubbbar – beim Ziehen
   über den Verlauf werden Preis und Zeitpunkt der berührten Stelle live
-  angezeigt.
+  angezeigt. Per Umschalter lässt sich eine gestrichelte Vergleichslinie
+  zum S&P-500-Index (`^GSPC`, über dieselbe Yahoo-Chart-API geladen)
+  einblenden – beide Linien werden auf prozentuale Veränderung seit
+  Beginn des Zeitraums normiert, damit Aktie und Index trotz komplett
+  unterschiedlicher Kursniveaus vergleichbar sind.
 - **Auto-Update:** Ein GitHub-Actions-Workflow
   (`.github/workflows/update-data.yml`) läuft **alle 6 Stunden**, holt die
   frischen Daten, committet `public/data/market.json` und deployt die Seite

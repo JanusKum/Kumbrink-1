@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-21T21:16:59.004Z",
+  "updatedAt": "2026-09-22T01:59:49.816Z",
   "period": "3mo",
   "universeSize": 503,
   "source": {
@@ -2900,8 +2900,8 @@
       "startPrice3mo": 539.39,
       "changeAbs3mo": -81.9,
       "changePct3mo": -15.18,
-      "changePct3d": 4.2,
-      "changePct1w": 3.42
+      "changePct3d": 1.91,
+      "changePct1w": -2.93
     },
     "HUM": {
       "symbol": "HUM",
@@ -3741,7 +3741,7 @@
       "changeAbs3mo": 177.4,
       "changePct3mo": 31.46,
       "changePct3d": 10.09,
-      "changePct1w": 11.36
+      "changePct1w": 11.37
     },
     "MET": {
       "symbol": "MET",
@@ -6339,34 +6339,34 @@
   ],
   "news": [
     {
-      "title": "Nasdaq jumps 2% to close at a record, buoyed by surge in AI stocks, as well as cooling oil and yields",
-      "url": "https://www.cnbc.com/2026/09/20/stock-market-today-live-updates.html",
-      "imageUrl": null,
-      "publishedAt": "2026-09-21T20:26:04.000Z"
-    },
-    {
-      "title": "Flights disrupted into Newark, New York, Philadelphia after Verizon cable cut",
-      "url": "https://www.cnbc.com/2026/09/21/newark-philadelphia-nyc-flight-disruptions.html",
-      "imageUrl": null,
-      "publishedAt": "2026-09-21T19:36:24.000Z"
-    },
-    {
       "title": "Much of Trump’s promised midterm election spending has yet to surface, new filing shows",
       "url": "https://www.cnbc.com/2026/09/21/trump-maga-midterm-spending-war-chest.html",
       "imageUrl": null,
       "publishedAt": "2026-09-21T20:34:33.000Z"
     },
     {
-      "title": "OpenAI proposes development of global AI standards to guide alignment, RSI",
-      "url": "https://www.cnbc.com/2026/09/21/open-ai-alignment-rsi.html",
+      "title": "All Iranian airlines to be 'shut down' from Wednesday, Bessent tells CNBC",
+      "url": "https://www.cnbc.com/2026/09/22/us-iran-war-trump-hormuz.html",
       "imageUrl": null,
-      "publishedAt": "2026-09-21T20:51:11.000Z"
+      "publishedAt": "2026-09-22T01:51:44.000Z"
     },
     {
-      "title": "Trump media ban lawsuit set for Wednesday court hearing",
-      "url": "https://www.cnbc.com/2026/09/21/trump-lawsuit-white-house-ban-ms-now-cnn-politico.html",
+      "title": "Jamie Dimon says hyperscaler AI spending could hit $1 trillion next year",
+      "url": "https://www.cnbc.com/2026/09/21/jamie-dimon-jpm-jpmorgan-indiaconference.html",
       "imageUrl": null,
-      "publishedAt": "2026-09-21T20:24:40.000Z"
+      "publishedAt": "2026-09-22T01:30:01.000Z"
+    },
+    {
+      "title": "Stock futures are little changed after S&P 500 posts best day since early August: Live updates",
+      "url": "https://www.cnbc.com/2026/09/21/stock-market-today-live-updates.html",
+      "imageUrl": null,
+      "publishedAt": "2026-09-22T01:55:37.000Z"
+    },
+    {
+      "title": "Stocks had a great day on the surface. But something alarming occurred not seen since 1999",
+      "url": "https://www.cnbc.com/2026/09/21/stocks-had-a-great-day-on-the-surface-but-something-alarming-occurred-not-seen-since-1999.html",
+      "imageUrl": null,
+      "publishedAt": "2026-09-21T21:20:41.000Z"
     },
     {
       "title": "Buy these high-quality dividend stocks with plenty of free cash flow, Bank of America says",
@@ -6375,34 +6375,34 @@
       "publishedAt": "2026-09-21T19:45:33.000Z"
     },
     {
+      "title": "OpenAI proposes development of global AI standards to guide alignment, RSI",
+      "url": "https://www.cnbc.com/2026/09/21/open-ai-alignment-rsi.html",
+      "imageUrl": null,
+      "publishedAt": "2026-09-21T20:51:11.000Z"
+    },
+    {
+      "title": "Meta's Muse AI agent downloads are surging. Here's how it compares to ChatGPT, Grok and Claude",
+      "url": "https://www.cnbc.com/2026/09/21/meta-muse-personal-ai-agent-downloads.html",
+      "imageUrl": null,
+      "publishedAt": "2026-09-21T23:03:57.000Z"
+    },
+    {
+      "title": "Hundreds of flights into Newark, New York, Philadelphia disrupted after Verizon fiber line cut",
+      "url": "https://www.cnbc.com/2026/09/21/newark-philadelphia-nyc-flight-disruptions.html",
+      "imageUrl": null,
+      "publishedAt": "2026-09-21T23:03:04.000Z"
+    },
+    {
       "title": "Paramount and state AGs settle lawsuit, allowing Warner Bros. merger to proceed",
       "url": "https://www.cnbc.com/2026/09/21/paramount-reaches-settlement-over-warner-bros-merger.html",
       "imageUrl": null,
       "publishedAt": "2026-09-21T20:13:15.000Z"
     },
     {
-      "title": "Investors discover their new favorite consumer AI play in Meta. Options volume is surging",
-      "url": "https://www.cnbc.com/2026/09/21/meta-investors-discover-new-ai-play.html",
+      "title": "CNBC's The China Connection newsletter: Five things to watch for the Trump-Xi summit",
+      "url": "https://www.cnbc.com/2026/09/22/cnbcs-the-china-connection-newsletter-watch-this-at-trump-xi-summit.html",
       "imageUrl": null,
-      "publishedAt": "2026-09-21T20:13:33.000Z"
-    },
-    {
-      "title": "Retailer Revolve announces partnership with Donatella Versace",
-      "url": "https://www.cnbc.com/2026/09/21/revolve-partnership-donatella-versace.html",
-      "imageUrl": null,
-      "publishedAt": "2026-09-21T19:44:52.000Z"
-    },
-    {
-      "title": "Meta's Muse personal AI agent tops ChatGPT, Grok and Claude for post-launch downloads",
-      "url": "https://www.cnbc.com/2026/09/21/meta-muse-personal-ai-agent-downloads.html",
-      "imageUrl": null,
-      "publishedAt": "2026-09-21T21:06:53.000Z"
-    },
-    {
-      "title": "Trump to meet with NYC Mayor Zohran Mamdani on Monday ahead of UN General Assembly",
-      "url": "https://www.cnbc.com/2026/09/20/trump-mamdani-gracie-mansion-meeting.html",
-      "imageUrl": null,
-      "publishedAt": "2026-09-20T19:06:16.000Z"
+      "publishedAt": "2026-09-21T23:18:30.000Z"
     },
     {
       "title": "Iranian President Pezeshkian to head to New York for UN meeting as Trump warns of no-deal consequences",
@@ -112068,16 +112068,16 @@
           "c": 490.94
         },
         {
-          "t": "2026-07-14T13:30:00.000Z",
-          "c": 483.89
+          "t": "2026-07-13T13:30:00.000Z",
+          "c": 477.03
         },
         {
           "t": "2026-07-15T13:30:00.000Z",
           "c": 479.92
         },
         {
-          "t": "2026-07-17T13:30:00.000Z",
-          "c": 488.67
+          "t": "2026-07-16T13:30:00.000Z",
+          "c": 482.04
         },
         {
           "t": "2026-07-20T13:30:00.000Z",
@@ -112088,16 +112088,16 @@
           "c": 476.84
         },
         {
-          "t": "2026-07-24T13:30:00.000Z",
-          "c": 486.09
+          "t": "2026-07-23T13:30:00.000Z",
+          "c": 488.38
         },
         {
           "t": "2026-07-27T13:30:00.000Z",
           "c": 497.96
         },
         {
-          "t": "2026-07-29T13:30:00.000Z",
-          "c": 460.96
+          "t": "2026-07-28T13:30:00.000Z",
+          "c": 483.66
         },
         {
           "t": "2026-07-30T13:30:00.000Z",
@@ -112108,88 +112108,88 @@
           "c": 476.04
         },
         {
-          "t": "2026-08-05T13:30:00.000Z",
-          "c": 513.58
+          "t": "2026-08-04T13:30:00.000Z",
+          "c": 502.24
         },
         {
           "t": "2026-08-06T13:30:00.000Z",
           "c": 507.73
         },
         {
-          "t": "2026-08-10T13:30:00.000Z",
-          "c": 504.9
+          "t": "2026-08-07T13:30:00.000Z",
+          "c": 513.99
         },
         {
-          "t": "2026-08-12T13:30:00.000Z",
-          "c": 512.9
+          "t": "2026-08-11T13:30:00.000Z",
+          "c": 519.62
         },
         {
           "t": "2026-08-13T13:30:00.000Z",
           "c": 507.1
         },
         {
-          "t": "2026-08-17T13:30:00.000Z",
-          "c": 504.3
+          "t": "2026-08-14T13:30:00.000Z",
+          "c": 511.39
         },
         {
           "t": "2026-08-18T13:30:00.000Z",
           "c": 483.86
         },
         {
-          "t": "2026-08-20T13:30:00.000Z",
-          "c": 469.76
+          "t": "2026-08-19T13:30:00.000Z",
+          "c": 475.64
         },
         {
-          "t": "2026-08-24T13:30:00.000Z",
-          "c": 466.76
+          "t": "2026-08-21T13:30:00.000Z",
+          "c": 470.03
         },
         {
           "t": "2026-08-25T13:30:00.000Z",
           "c": 464.19
         },
         {
-          "t": "2026-08-27T13:30:00.000Z",
-          "c": 470.28
+          "t": "2026-08-26T13:30:00.000Z",
+          "c": 472.46
         },
         {
           "t": "2026-08-28T13:30:00.000Z",
           "c": 459.66
         },
         {
-          "t": "2026-09-01T13:30:00.000Z",
-          "c": 443.31
+          "t": "2026-08-31T13:30:00.000Z",
+          "c": 453
+        },
+        {
+          "t": "2026-09-02T13:30:00.000Z",
+          "c": 450.08
         },
         {
           "t": "2026-09-03T13:30:00.000Z",
           "c": 460.15
         },
         {
-          "t": "2026-09-04T13:30:00.000Z",
-          "c": 460.72
+          "t": "2026-09-08T13:30:00.000Z",
+          "c": 464.75
         },
         {
-          "t": "2026-09-09T13:30:00.000Z",
-          "c": 454.97
+          "t": "2026-09-10T13:30:00.000Z",
+          "c": 452.41
         },
         {
           "t": "2026-09-11T13:30:00.000Z",
           "c": 460.4
         },
         {
-          "t": "2026-09-14T13:30:00.000Z",
-          "c": 442.38
+          "t": "2026-09-15T13:30:00.000Z",
+          "c": 438.53
         },
         {
           "t": "2026-09-16T13:30:00.000Z",
           "c": 439.07
         },
         {
-          "t": "2026-09-17T13:30:00.000Z",
-          "c": 443.23
-        },
-        {
-          "t": "2026-09-21T13:30:00.000Z",
-          "c": 457.49
+          "t": "2026-09-18T13:30:00.000Z",
+          "c": 446.92
         }
       ],
       "history1mo": [],
@@ -141315,7 +141315,7 @@
         },
         {
           "t": "2026-09-21T13:30:00.000Z",
-          "c": 741.24
+          "c": 741.25
         }
       ],
       "history1mo": [
@@ -141639,7 +141639,7 @@
         },
         {
           "t": "2026-09-21T13:30:00.000Z",
-          "c": 741.24
+          "c": 741.25
         }
       ]
     },

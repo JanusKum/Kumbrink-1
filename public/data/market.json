@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-24T20:50:29.702Z",
+  "updatedAt": "2026-09-25T02:03:13.285Z",
   "period": "3mo",
   "universeSize": 503,
   "source": {
@@ -201,7 +201,7 @@
       "changeAbs3mo": -30.09,
       "changePct3mo": -17.12,
       "changePct3d": -1.34,
-      "changePct1w": -3.21
+      "changePct1w": -3.2
     },
     "ALLE": {
       "symbol": "ALLE",
@@ -1568,8 +1568,8 @@
       "startPrice3mo": 28.64,
       "changeAbs3mo": -0.78,
       "changePct3mo": -2.74,
-      "changePct3d": -4.25,
-      "changePct1w": -8.25
+      "changePct3d": -4.23,
+      "changePct1w": -8.23
     },
     "COST": {
       "symbol": "COST",
@@ -2900,8 +2900,8 @@
       "startPrice3mo": 536.04,
       "changeAbs3mo": -70.16,
       "changePct3mo": -13.09,
-      "changePct3d": 1.83,
-      "changePct1w": 5.11
+      "changePct3d": 3.75,
+      "changePct1w": 5.61
     },
     "HUM": {
       "symbol": "HUM",
@@ -6345,28 +6345,40 @@
       "publishedAt": "2026-09-24T20:36:15.000Z"
     },
     {
-      "title": "Surging Treasury yields pose a brand new problem for Kevin Warsh and the Fed",
-      "url": "https://www.cnbc.com/2026/09/24/surging-treasury-yields-are-posing-a-brand-new-problem-for-kevin-warsh-and-the-fed.html",
+      "title": "Trump, Xi to attend state dinner after White House meeting",
+      "url": "https://www.cnbc.com/2026/09/24/trump-xi-meeting-china-washington.html",
       "imageUrl": null,
-      "publishedAt": "2026-09-24T18:35:11.000Z"
+      "publishedAt": "2026-09-24T22:09:33.000Z"
     },
     {
-      "title": "Pete Hegseth reports at least $3.1 million in cash, investments and bitcoin",
-      "url": "https://www.cnbc.com/2026/09/24/pete-hegseth-financial-disclosure-cash-investments-bitcoin.html",
+      "title": "Atlanta is getting pandas: China's Xi revives a longtime diplomatic strategy at summit with U.S.",
+      "url": "https://www.cnbc.com/2026/09/25/china-us-xi-trump-visit-panda-student-visa-.html",
       "imageUrl": null,
-      "publishedAt": "2026-09-24T19:57:28.000Z"
+      "publishedAt": "2026-09-25T01:12:19.000Z"
     },
     {
-      "title": "Dow falls for a third day as bond yields hit fresh highs: Live updates",
-      "url": "https://www.cnbc.com/2026/09/23/stock-market-today-live-updates.html",
+      "title": "Stock futures are little changed as Dow heads for fourth straight losing week: Live updates",
+      "url": "https://www.cnbc.com/2026/09/24/stock-market-today-live-updates.html",
       "imageUrl": null,
-      "publishedAt": "2026-09-24T20:35:38.000Z"
+      "publishedAt": "2026-09-25T01:52:09.000Z"
     },
     {
-      "title": "Oracle sends 'force majeure' notice about data center project — stock drops 3%",
-      "url": "https://www.cnbc.com/2026/09/24/oracle-data-center-force-majeure.html",
+      "title": "China's Xi urges U.S. to cooperate on AI",
+      "url": "https://www.cnbc.com/2026/09/25/chinas-xi-urges-us-to-cooperate-on-ai.html",
       "imageUrl": null,
-      "publishedAt": "2026-09-24T20:00:31.000Z"
+      "publishedAt": "2026-09-25T01:22:17.000Z"
+    },
+    {
+      "title": "Oracle Japan shares surge 7% after record fiscal first quarter, bucking selloff of U.S. parent",
+      "url": "https://www.cnbc.com/2026/09/25/oracle-japan-shares-earnings.html",
+      "imageUrl": null,
+      "publishedAt": "2026-09-25T01:56:24.000Z"
+    },
+    {
+      "title": "30-year fixed mortgage rate jumps sharply Thursday to 7.45%",
+      "url": "https://www.cnbc.com/2026/09/24/30-year-fixed-mortgage-rate-spikes-thursday-to-7point45percent.html",
+      "imageUrl": null,
+      "publishedAt": "2026-09-24T23:08:16.000Z"
     },
     {
       "title": "Bond yields keep rising. How income investors can best take advantage of the moves",
@@ -6375,34 +6387,22 @@
       "publishedAt": "2026-09-24T19:51:22.000Z"
     },
     {
-      "title": "Bond liquidation wrecks small caps. Here's how bad some traders see it getting",
-      "url": "https://www.cnbc.com/2026/09/24/bond-liquidation-wrecks-small-caps-heres-how-bad-some-traders-see-it-getting.html",
+      "title": "Surging Treasury yields pose a brand new problem for Kevin Warsh and the Fed",
+      "url": "https://www.cnbc.com/2026/09/24/surging-treasury-yields-are-posing-a-brand-new-problem-for-kevin-warsh-and-the-fed.html",
       "imageUrl": null,
-      "publishedAt": "2026-09-24T18:22:51.000Z"
+      "publishedAt": "2026-09-24T21:40:19.000Z"
     },
     {
-      "title": "KFC debuts Open House restaurant in Texas to test new customer experiences",
-      "url": "https://www.cnbc.com/2026/09/24/kfc-open-house-concept-texas.html",
-      "imageUrl": null,
-      "publishedAt": "2026-09-24T19:47:56.000Z"
-    },
-    {
-      "title": "New York sues Polymarket U.S., two months after filing lawsuit against Kalshi",
+      "title": "Polymarket countersues New York state over ‘unregulated gambling’ allegation",
       "url": "https://www.cnbc.com/2026/09/24/new-york-sues-polymarket-us-two-months-after-filing-suit-against-kalshi-.html",
       "imageUrl": null,
-      "publishedAt": "2026-09-24T19:37:59.000Z"
+      "publishedAt": "2026-09-25T00:17:00.000Z"
     },
     {
-      "title": "FAFSA opens early: Why families should apply for college aid now",
-      "url": "https://www.cnbc.com/2026/09/24/fafsa-opens-early-college-aid.html",
+      "title": "Here's who is attending the Trump-Xi state dinner",
+      "url": "https://www.cnbc.com/2026/09/25/heres-who-is-attending-the-trump-xi-state-dinner.html",
       "imageUrl": null,
-      "publishedAt": "2026-09-24T18:19:40.000Z"
-    },
-    {
-      "title": "Student loan borrowers sue Trump administration over forgiven debts on credit reports",
-      "url": "https://www.cnbc.com/2026/09/24/student-loan-borrowers-sue-credit-reports-forgiven-loans.html",
-      "imageUrl": null,
-      "publishedAt": "2026-09-24T16:49:40.000Z"
+      "publishedAt": "2026-09-25T01:02:40.000Z"
     },
     {
       "title": "Rising Treasury yields could push car loan rates higher, experts say. What buyers need to know",
@@ -62667,7 +62667,7 @@
         },
         {
           "t": "2026-09-24T13:30:00.000Z",
-          "c": 27.85
+          "c": 27.86
         }
       ],
       "history1mo": [
@@ -62991,7 +62991,7 @@
         },
         {
           "t": "2026-09-24T13:30:00.000Z",
-          "c": 27.85
+          "c": 27.86
         }
       ]
     },
@@ -112872,16 +112872,16 @@
           "c": 479.92
         },
         {
-          "t": "2026-07-17T13:30:00.000Z",
-          "c": 488.67
+          "t": "2026-07-16T13:30:00.000Z",
+          "c": 482.04
         },
         {
           "t": "2026-07-20T13:30:00.000Z",
           "c": 484.98
         },
         {
-          "t": "2026-07-22T13:30:00.000Z",
-          "c": 476.84
+          "t": "2026-07-21T13:30:00.000Z",
+          "c": 479.93
         },
         {
           "t": "2026-07-23T13:30:00.000Z",
@@ -112892,16 +112892,16 @@
           "c": 497.96
         },
         {
-          "t": "2026-07-29T13:30:00.000Z",
-          "c": 460.96
+          "t": "2026-07-28T13:30:00.000Z",
+          "c": 483.66
         },
         {
           "t": "2026-07-30T13:30:00.000Z",
           "c": 473.69
         },
         {
-          "t": "2026-08-03T13:30:00.000Z",
-          "c": 476.04
+          "t": "2026-07-31T13:30:00.000Z",
+          "c": 472.55
         },
         {
           "t": "2026-08-04T13:30:00.000Z",
@@ -112912,88 +112912,88 @@
           "c": 507.73
         },
         {
-          "t": "2026-08-10T13:30:00.000Z",
-          "c": 504.9
+          "t": "2026-08-07T13:30:00.000Z",
+          "c": 513.99
         },
         {
           "t": "2026-08-11T13:30:00.000Z",
           "c": 519.62
         },
         {
-          "t": "2026-08-13T13:30:00.000Z",
-          "c": 507.1
+          "t": "2026-08-12T13:30:00.000Z",
+          "c": 512.9
         },
         {
-          "t": "2026-08-17T13:30:00.000Z",
-          "c": 504.3
+          "t": "2026-08-14T13:30:00.000Z",
+          "c": 511.39
         },
         {
           "t": "2026-08-18T13:30:00.000Z",
           "c": 483.86
         },
         {
-          "t": "2026-08-20T13:30:00.000Z",
-          "c": 469.76
+          "t": "2026-08-19T13:30:00.000Z",
+          "c": 475.64
         },
         {
           "t": "2026-08-21T13:30:00.000Z",
           "c": 470.03
         },
         {
-          "t": "2026-08-25T13:30:00.000Z",
-          "c": 464.19
+          "t": "2026-08-24T13:30:00.000Z",
+          "c": 466.76
         },
         {
-          "t": "2026-08-27T13:30:00.000Z",
-          "c": 470.28
+          "t": "2026-08-26T13:30:00.000Z",
+          "c": 472.46
         },
         {
           "t": "2026-08-28T13:30:00.000Z",
           "c": 459.66
         },
         {
-          "t": "2026-09-01T13:30:00.000Z",
-          "c": 443.31
+          "t": "2026-08-31T13:30:00.000Z",
+          "c": 453
         },
         {
           "t": "2026-09-02T13:30:00.000Z",
           "c": 450.08
         },
         {
-          "t": "2026-09-04T13:30:00.000Z",
-          "c": 460.72
+          "t": "2026-09-03T13:30:00.000Z",
+          "c": 460.15
+        },
+        {
+          "t": "2026-09-08T13:30:00.000Z",
+          "c": 464.75
         },
         {
           "t": "2026-09-09T13:30:00.000Z",
           "c": 454.97
         },
         {
-          "t": "2026-09-10T13:30:00.000Z",
-          "c": 452.41
+          "t": "2026-09-11T13:30:00.000Z",
+          "c": 460.4
         },
         {
-          "t": "2026-09-14T13:30:00.000Z",
-          "c": 442.38
+          "t": "2026-09-15T13:30:00.000Z",
+          "c": 438.53
         },
         {
           "t": "2026-09-16T13:30:00.000Z",
           "c": 439.07
         },
         {
-          "t": "2026-09-17T13:30:00.000Z",
-          "c": 443.23
+          "t": "2026-09-18T13:30:00.000Z",
+          "c": 446.92
         },
         {
           "t": "2026-09-21T13:30:00.000Z",
           "c": 457.49
         },
         {
-          "t": "2026-09-22T13:30:00.000Z",
-          "c": 458.83
-        },
-        {
-          "t": "2026-09-24T13:30:00.000Z",
-          "c": 465.88
+          "t": "2026-09-23T13:30:00.000Z",
+          "c": 463.7
         }
       ],
       "history1mo": [],
@@ -195684,16 +195684,16 @@
           "c": 619.43
         },
         {
-          "t": "2026-08-28T19:30:00.000Z",
-          "c": 622.02
+          "t": "2026-08-31T13:30:00.000Z",
+          "c": 614.14
         },
         {
-          "t": "2026-08-31T16:30:00.000Z",
-          "c": 614.7
+          "t": "2026-08-31T17:30:00.000Z",
+          "c": 616.69
         },
         {
-          "t": "2026-09-01T13:30:00.000Z",
-          "c": 609.51
+          "t": "2026-09-01T14:30:00.000Z",
+          "c": 605.09
         },
         {
           "t": "2026-09-01T17:30:00.000Z",
@@ -195736,44 +195736,44 @@
           "c": 608.32
         },
         {
-          "t": "2026-09-10T14:30:00.000Z",
-          "c": 601.43
+          "t": "2026-09-10T15:30:00.000Z",
+          "c": 601.74
         },
         {
-          "t": "2026-09-10T18:30:00.000Z",
-          "c": 603.38
+          "t": "2026-09-10T19:30:00.000Z",
+          "c": 603.12
         },
         {
-          "t": "2026-09-11T15:30:00.000Z",
-          "c": 612.49
+          "t": "2026-09-11T16:30:00.000Z",
+          "c": 611.36
         },
         {
-          "t": "2026-09-11T19:30:00.000Z",
-          "c": 609.88
+          "t": "2026-09-14T13:30:00.000Z",
+          "c": 608.67
         },
         {
-          "t": "2026-09-14T16:30:00.000Z",
-          "c": 612.86
+          "t": "2026-09-14T17:30:00.000Z",
+          "c": 610
         },
         {
-          "t": "2026-09-15T13:30:00.000Z",
-          "c": 626.86
+          "t": "2026-09-15T14:30:00.000Z",
+          "c": 635.42
         },
         {
-          "t": "2026-09-15T17:30:00.000Z",
-          "c": 636.27
+          "t": "2026-09-15T18:30:00.000Z",
+          "c": 638.54
         },
         {
-          "t": "2026-09-16T14:30:00.000Z",
-          "c": 644.59
+          "t": "2026-09-16T15:30:00.000Z",
+          "c": 647.55
         },
         {
-          "t": "2026-09-16T18:30:00.000Z",
-          "c": 650.16
+          "t": "2026-09-16T19:30:00.000Z",
+          "c": 648.43
         },
         {
-          "t": "2026-09-17T15:30:00.000Z",
-          "c": 654.34
+          "t": "2026-09-17T16:30:00.000Z",
+          "c": 654.83
         },
         {
           "t": "2026-09-17T19:30:00.000Z",
@@ -195788,28 +195788,28 @@
           "c": 650.46
         },
         {
-          "t": "2026-09-21T16:30:00.000Z",
-          "c": 655.6
+          "t": "2026-09-21T17:30:00.000Z",
+          "c": 658.5
         },
         {
-          "t": "2026-09-22T13:30:00.000Z",
-          "c": 657.61
+          "t": "2026-09-22T14:30:00.000Z",
+          "c": 660.79
         },
         {
-          "t": "2026-09-22T17:30:00.000Z",
-          "c": 658.33
+          "t": "2026-09-22T18:30:00.000Z",
+          "c": 658.03
         },
         {
-          "t": "2026-09-23T14:30:00.000Z",
-          "c": 656.84
+          "t": "2026-09-23T15:30:00.000Z",
+          "c": 659.16
         },
         {
-          "t": "2026-09-23T18:30:00.000Z",
-          "c": 660.37
+          "t": "2026-09-23T19:30:00.000Z",
+          "c": 665.51
         },
         {
-          "t": "2026-09-24T15:30:00.000Z",
-          "c": 670.45
+          "t": "2026-09-24T16:30:00.000Z",
+          "c": 673.24
         },
         {
           "t": "2026-09-24T20:00:00.000Z",

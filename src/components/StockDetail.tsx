@@ -21,9 +21,11 @@ const RANGE_LABELS: Record<ChartRange, string> = {
   '1mo': '1M',
   '3mo': '3M',
   '1y': '1J',
+  '3y': '3J',
+  '5y': '5J',
 }
 
-const RANGES: ChartRange[] = ['1d', '1w', '1mo', '3mo', '1y']
+const RANGES: ChartRange[] = ['1d', '1w', '1mo', '3mo', '1y', '3y', '5y']
 
 const priceFormatterCache = new Map<string, Intl.NumberFormat>()
 
@@ -73,6 +75,8 @@ export function StockDetail({ stock, isFavorite, onToggleFavorite, onBack, backL
     '1mo': stock.history1mo ?? [],
     '3mo': stock.history ?? [],
     '1y': stock.history1y ?? [],
+    '3y': stock.history3y ?? [],
+    '5y': stock.history5y ?? [],
   }
   const activeHistory = historyByRange[range]
   const hasHistory = activeHistory.length >= 2
@@ -84,6 +88,8 @@ export function StockDetail({ stock, isFavorite, onToggleFavorite, onBack, backL
         '1mo': benchmark.history1mo,
         '3mo': benchmark.history,
         '1y': benchmark.history1y,
+        '3y': benchmark.history3y,
+        '5y': benchmark.history5y,
       } satisfies Record<ChartRange, StockHistoryPoint[]>)[range]
     : []
   const hasBenchmark = benchmarkHistory.length >= 2

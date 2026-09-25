@@ -8,8 +8,11 @@
 // requires an auth crumb/cookie handshake it doesn't grant to plain
 // requests, so we don't depend on it; every price and performance
 // figure shown for these companies is still fetched live). Extra chart
-// ranges (1 day, 1 week, 1 month, 1 year) are fetched only for the
-// stocks that actually show up in one of these views. Designed to run on a
+// ranges (1 day, 1 week, 1 month, 1 year, 5 years) are fetched only for
+// the stocks that actually show up in one of these views; the 3-month and
+// 3-year ranges are fetched for every stock, since those two also feed the
+// 1-month/1-year/3-year performance figures used for ranking (Top 50,
+// Branchen). Designed to run on a
 // schedule (GitHub Actions) so the published site always reflects real
 // current data without any manual work or API key.
 
@@ -163,6 +166,8 @@ const RANGE_INTERVAL = {
   '1mo': '1h',
   '3mo': '1d',
   '1y': '1d',
+  '3y': '1wk',
+  '5y': '1wk',
 }
 
 async function fetchHistory(symbol, range = RANGE) {
@@ -351,7 +356,7 @@ function round2(n) {
   return Math.round(n * 100) / 100
 }
 
-/** % change over the last `n` trading days, using points already fetched for the 3mo ranking. */
+/** % change over the last `n` points of an already-fetched history series. */
 function changeOverLastNPoints(points, n) {
   if (points.length < n + 1) return null
   const end = points[points.length - 1].c
@@ -388,6 +393,7 @@ async function main() {
       changePct3mo: round2(changePct3mo),
       changePct3d: changeOverLastNPoints(history.points, 3),
       changePct1w: changeOverLastNPoints(history.points, 5),
+      changePct1mo: changeOverLastNPoints(history.points, 21),
       _points3mo: history.points,
     }
   })
@@ -395,11 +401,39 @@ async function main() {
   const valid = results.filter(Boolean)
   console.log(`Fertig: ${ok} ok, ${failed} fehlgeschlagen (3-Monats-Kurse).`)
 
+  // --- 3-Jahres-Kurse für jede gültige Aktie ---
+  // Liefert nebenbei die 1-Jahres- und 3-Jahres-Performance (aus derselben
+  // Reihe, keine weiteren Anfragen) sowie einen echten 3-Jahres-Chart für
+  // jede Aktie - dieselbe Überlegung wie beim 3-Monats-Chart: für eine
+  // faire, universumsweite "1 Jahr"/"3 Jahre"-Branchenauswertung reicht ein
+  // kuratierter Ausschnitt nicht.
+  console.log(`Lade 3-Jahres-Kurse für ${valid.length} Aktien (1J/3J-Performance + Charts) …`)
+  await mapWithConcurrency(valid, CONCURRENCY, async (stock) => {
+    const threeYear = await fetchHistory(stock.symbol, '3y')
+    if (threeYear.error) {
+      stock.changePct1y = null
+      stock.changePct3y = null
+      stock._points3y = []
+      return
+    }
+    stock.changePct1y = changeOverLastNPoints(threeYear.points, 52)
+    stock.changePct3y = changeOverLastNPoints(threeYear.points, threeYear.points.length - 1)
+    stock._points3y = threeYear.points
+  })
+
   // --- Top 50 nach Performance ---
   const byPerformance = [...valid].sort((a, b) => b.changePct3mo - a.changePct3mo)
   const top50 = byPerformance.slice(0, TOP_PERFORMERS_SIZE).map((s) => s.symbol)
 
-  // --- Branchen: Durchschnittsperformance + Top 10 je Branche ---
+  // --- Branchen: Durchschnittsperformance + Top 10 je Branche, für mehrere
+  // Zeiträume (die "Branchen"-Ansicht kann zwischen ihnen umschalten) ---
+  const SECTOR_PERIODS = [
+    { key: '1w', field: 'changePct1w' },
+    { key: '1mo', field: 'changePct1mo' },
+    { key: '3mo', field: 'changePct3mo' },
+    { key: '1y', field: 'changePct1y' },
+    { key: '3y', field: 'changePct3y' },
+  ]
   const bySector = new Map()
   for (const stock of valid) {
     if (!bySector.has(stock.sector)) bySector.set(stock.sector, [])
@@ -407,15 +441,21 @@ async function main() {
   }
   const sectors = [...bySector.entries()]
     .map(([name, stocks]) => {
-      const avgChangePct3mo =
-        stocks.reduce((sum, s) => sum + s.changePct3mo, 0) / stocks.length
-      const top10 = [...stocks]
-        .sort((a, b) => b.changePct3mo - a.changePct3mo)
-        .slice(0, TOP_PER_SECTOR_SIZE)
-        .map((s) => s.symbol)
-      return { name, avgChangePct3mo: round2(avgChangePct3mo), stockCount: stocks.length, top10 }
+      const periods = {}
+      for (const { key, field } of SECTOR_PERIODS) {
+        const withValue = stocks.filter((s) => typeof s[field] === 'number')
+        const avgChangePct = withValue.length
+          ? round2(withValue.reduce((sum, s) => sum + s[field], 0) / withValue.length)
+          : 0
+        const top10 = [...withValue]
+          .sort((a, b) => b[field] - a[field])
+          .slice(0, TOP_PER_SECTOR_SIZE)
+          .map((s) => s.symbol)
+        periods[key] = { avgChangePct, top10 }
+      }
+      return { name, stockCount: stocks.length, periods }
     })
-    .sort((a, b) => b.avgChangePct3mo - a.avgChangePct3mo)
+    .sort((a, b) => b.periods['3mo'].avgChangePct - a.periods['3mo'].avgChangePct)
 
   // --- Top 20 wertvollste ---
   // Yahoo's live Marktkapitalisierungs-Endpunkt verlangt eine Auth-Crumb, die
@@ -449,67 +489,77 @@ async function main() {
   const toPoints = (points, max) =>
     downsample(points, max).map((p) => ({ t: toIsoTimestamp(p.t), c: round2(p.c) }))
 
-  // --- 3-Monats-Chart für jede gültige Aktie ---
-  // Diese Daten wurden ohnehin schon fürs Ranking geladen (keine zusätzlichen
-  // Anfragen nötig), also bekommt jede der 503 Aktien mindestens einen echten
-  // Chart - wichtig, damit die Suche auch Titel außerhalb der Top-50/Wertvollste/
-  // Branchen-Listen mit Kursverlauf anzeigen kann, nicht nur eine leere Karte.
+  // --- 3-Monats- und 3-Jahres-Chart für jede gültige Aktie ---
+  // Beide Reihen wurden ohnehin schon fürs Ranking geladen (keine
+  // zusätzlichen Anfragen nötig), also bekommt jede der 503 Aktien
+  // mindestens diese beiden echten Charts - wichtig, damit die Suche auch
+  // Titel außerhalb der Top-50/Wertvollste/Branchen-Listen mit Kursverlauf
+  // anzeigen kann, nicht nur eine leere Karte.
   const detail = {}
   for (const stock of valid) {
     detail[stock.symbol] = {
       history1d: [],
       history1w: [],
-      history: toPoints(stock._points3mo, 40),
       history1mo: [],
+      history: toPoints(stock._points3mo, 40),
       history1y: [],
+      history3y: toPoints(stock._points3y ?? [], 40),
+      history5y: [],
     }
   }
 
-  // --- Zusätzliche Zeiträume (1D, 1W, 1M, 1J) nur für Aktien, die irgendwo
-  // prominent auftauchen - die brauchen eigene Yahoo-Anfragen pro Zeitraum,
-  // das für alle 503 Aktien zu tun wäre unnötig viel Traffic für Titel, die
-  // realistisch nur über die Suche gefunden werden.
+  // --- Zusätzliche Zeiträume (1D, 1W, 1M, 1J, 5J) nur für Aktien, die
+  // irgendwo prominent auftauchen - die brauchen eigene Yahoo-Anfragen pro
+  // Zeitraum, das für alle 503 Aktien zu tun wäre unnötig viel Traffic für
+  // Titel, die realistisch nur über die Suche gefunden werden.
   const detailSymbols = new Set([
     ...top50,
     ...top20ByMarketCap,
-    ...sectors.flatMap((s) => s.top10),
+    ...sectors.flatMap((s) => Object.values(s.periods).flatMap((p) => p.top10)),
     ...topShortTerm,
   ])
-  console.log(`Lade zusätzliche Zeiträume (1D, 1W, 1M, 1J) für ${detailSymbols.size} Aktien …`)
+  console.log(`Lade zusätzliche Zeiträume (1D, 1W, 1M, 1J, 5J) für ${detailSymbols.size} Aktien …`)
 
   await mapWithConcurrency([...detailSymbols], CONCURRENCY, async (symbol) => {
     if (!validBySymbol.has(symbol)) return
-    const [oneDay, fiveDay, oneMonth, oneYear] = await Promise.all([
+    const [oneDay, fiveDay, oneMonth, oneYear, fiveYear] = await Promise.all([
       fetchHistory(symbol, '1d'),
       fetchHistory(symbol, '5d'),
       fetchHistory(symbol, '1mo'),
       fetchHistory(symbol, '1y'),
+      fetchHistory(symbol, '5y'),
     ])
     detail[symbol].history1d = oneDay.error ? [] : toPoints(oneDay.points, 60)
     detail[symbol].history1w = fiveDay.error ? [] : toPoints(fiveDay.points, 60)
     detail[symbol].history1mo = oneMonth.error ? [] : toPoints(oneMonth.points, 40)
     detail[symbol].history1y = oneYear.error ? [] : toPoints(oneYear.points, 40)
+    detail[symbol].history5y = fiveYear.error ? [] : toPoints(fiveYear.points, 40)
   })
 
   // --- Vergleichsindex (S&P 500) für die Vergleichslinie in der Detailansicht ---
   // Selbe öffentliche Chart-API, funktioniert identisch für Indizes wie für
   // einzelne Aktien - kein separater Datenquellen-Typ nötig.
   console.log('Lade Vergleichsindex (S&P 500) …')
-  const [benchDay, benchWeek, benchMonth, benchQuarter, benchYear] = await Promise.all([
-    fetchHistory(BENCHMARK_SYMBOL, '1d'),
-    fetchHistory(BENCHMARK_SYMBOL, '5d'),
-    fetchHistory(BENCHMARK_SYMBOL, '1mo'),
-    fetchHistory(BENCHMARK_SYMBOL, '3mo'),
-    fetchHistory(BENCHMARK_SYMBOL, '1y'),
-  ])
+  const [benchDay, benchWeek, benchMonth, benchQuarter, benchYear, benchThreeYear, benchFiveYear] =
+    await Promise.all([
+      fetchHistory(BENCHMARK_SYMBOL, '1d'),
+      fetchHistory(BENCHMARK_SYMBOL, '5d'),
+      fetchHistory(BENCHMARK_SYMBOL, '1mo'),
+      fetchHistory(BENCHMARK_SYMBOL, '3mo'),
+      fetchHistory(BENCHMARK_SYMBOL, '1y'),
+      fetchHistory(BENCHMARK_SYMBOL, '3y'),
+      fetchHistory(BENCHMARK_SYMBOL, '5y'),
+    ])
   const benchmark = {
     symbol: BENCHMARK_SYMBOL,
     name: 'S&P 500',
     history1d: benchDay.error ? [] : toPoints(benchDay.points, 60),
     history1w: benchWeek.error ? [] : toPoints(benchWeek.points, 60),
-    history: benchQuarter.error ? [] : toPoints(benchQuarter.points, 40),
     history1mo: benchMonth.error ? [] : toPoints(benchMonth.points, 40),
+    history: benchQuarter.error ? [] : toPoints(benchQuarter.points, 40),
     history1y: benchYear.error ? [] : toPoints(benchYear.points, 40),
+    history3y: benchThreeYear.error ? [] : toPoints(benchThreeYear.points, 40),
+    history5y: benchFiveYear.error ? [] : toPoints(benchFiveYear.points, 40),
   }
   if (benchQuarter.error) {
     console.warn(`Vergleichsindex konnte nicht geladen werden: ${benchQuarter.error}`)
@@ -531,6 +581,9 @@ async function main() {
       changePct3mo: s.changePct3mo,
       changePct3d: s.changePct3d,
       changePct1w: s.changePct1w,
+      changePct1mo: s.changePct1mo,
+      changePct1y: s.changePct1y,
+      changePct3y: s.changePct3y,
     }
   }
 
@@ -566,9 +619,10 @@ async function main() {
     'Top 5 Performer:',
     top50.slice(0, 5).map((sym) => `${sym} ${stocksBySymbol[sym].changePct3mo}%`).join(', '),
   )
-  console.log('Stärkste Branche:', sectors[0]?.name, `(${sectors[0]?.avgChangePct3mo}%)`)
+  console.log('Stärkste Branche:', sectors[0]?.name, `(${sectors[0]?.periods['3mo'].avgChangePct}%)`)
+  const stocksWith1y = valid.filter((s) => typeof s.changePct1y === 'number').length
   console.log(
-    `Größte Wochenbewegungen: ${topShortTerm.length}, News-Artikel: ${news.length}, IPO-News: ${ipoNews.length}, Vergleichsindex: ${benchmark.history.length > 0 ? 'ok' : 'fehlgeschlagen'}`,
+    `Größte Wochenbewegungen: ${topShortTerm.length}, News-Artikel: ${news.length}, IPO-News: ${ipoNews.length}, Vergleichsindex: ${benchmark.history.length > 0 ? 'ok' : 'fehlgeschlagen'}, 1J/3J-Performance: ${stocksWith1y}/${valid.length} Aktien`,
   )
 
   if (top50.length < TOP_PERFORMERS_SIZE) {

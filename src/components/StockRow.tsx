@@ -8,6 +8,8 @@ interface Props {
   isFavorite: boolean
   onToggleFavorite: (symbol: string) => void
   onSelect: (symbol: string) => void
+  /** Overrides the displayed/colored change % (defaults to the 3-month figure). */
+  changePct?: number
 }
 
 const priceFormatterCache = new Map<string, Intl.NumberFormat>()
@@ -26,8 +28,9 @@ function formatPrice(price: number, currency: string) {
   return formatter.format(price)
 }
 
-export function StockRow({ stock, isFavorite, onToggleFavorite, onSelect }: Props) {
-  const positive = stock.changePct3mo >= 0
+export function StockRow({ stock, isFavorite, onToggleFavorite, onSelect, changePct }: Props) {
+  const displayChangePct = changePct ?? stock.changePct3mo
+  const positive = displayChangePct >= 0
 
   return (
     <li className="group flex items-center gap-1 sm:gap-2 rounded-2xl pl-3 sm:pl-4 transition-colors hover:bg-black/[0.03] dark:hover:bg-white/[0.06]">
@@ -71,7 +74,7 @@ export function StockRow({ stock, isFavorite, onToggleFavorite, onSelect }: Prop
           <span className="text-[15px] font-semibold tabular-nums">
             {formatPrice(stock.price, stock.currency)}
           </span>
-          <StatBadge changePct={stock.changePct3mo} />
+          <StatBadge changePct={displayChangePct} />
         </div>
       </button>
     </li>

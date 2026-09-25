@@ -3,9 +3,11 @@ import type { MarketData, Stock, StockDetailData } from '../types'
 const EMPTY_DETAIL: StockDetailData = {
   history1d: [],
   history1w: [],
-  history: [],
   history1mo: [],
+  history: [],
   history1y: [],
+  history3y: [],
+  history5y: [],
 }
 
 /** Merges a stock's base data with its chart history (if loaded) into the UI's view-model. */

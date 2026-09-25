@@ -5,7 +5,7 @@ export interface StockHistoryPoint {
   c: number
 }
 
-export type ChartRange = '1d' | '1w' | '1mo' | '3mo' | '1y'
+export type ChartRange = '1d' | '1w' | '1mo' | '3mo' | '1y' | '3y' | '5y'
 
 /** Base fields available for every stock in the S&P-500 universe. */
 export interface StockSummary {
@@ -21,15 +21,23 @@ export interface StockSummary {
   changePct3d: number | null
   /** % change over the last 5 trading days (~1 week), or null if not enough history. */
   changePct1w: number | null
+  /** % change over the last ~21 trading days (~1 month), or null if not enough history. */
+  changePct1mo: number | null
+  /** % change over the last ~52 weeks, or null if not enough history (e.g. a recent IPO). */
+  changePct1y: number | null
+  /** % change over the fetched 3-year window, or null if not enough history. */
+  changePct3y: number | null
 }
 
 /** Chart history, only fetched for stocks shown in one of the ranked views. */
 export interface StockDetailData {
   history1d: StockHistoryPoint[]
   history1w: StockHistoryPoint[]
-  history: StockHistoryPoint[]
   history1mo: StockHistoryPoint[]
+  history: StockHistoryPoint[]
   history1y: StockHistoryPoint[]
+  history3y: StockHistoryPoint[]
+  history5y: StockHistoryPoint[]
 }
 
 /** Merged view-model used by the UI: a summary plus its rank in the current list plus chart data. */
@@ -37,12 +45,19 @@ export interface Stock extends StockSummary, StockDetailData {
   rank: number
 }
 
+/** Time windows the "Branchen" view can rank sectors and their top 10 by. */
+export type SectorRange = '1w' | '1mo' | '3mo' | '1y' | '3y'
+
+export interface SectorPeriodStats {
+  avgChangePct: number
+  /** Symbols, best performer first for this period. */
+  top10: string[]
+}
+
 export interface SectorSummary {
   name: string
-  avgChangePct3mo: number
   stockCount: number
-  /** Symbols, best performer first. */
-  top10: string[]
+  periods: Record<SectorRange, SectorPeriodStats>
 }
 
 export interface NewsItem {

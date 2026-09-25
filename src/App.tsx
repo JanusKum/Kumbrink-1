@@ -14,6 +14,7 @@ import { useWatchlist } from './hooks/useWatchlist'
 import { buildStock, buildStockList } from './lib/buildStock'
 import { pickSpotlight } from './lib/pickSpotlight'
 import { searchStocks } from './lib/searchStocks'
+import type { SectorRange } from './types'
 
 const TAB_LABELS: Record<MainTab, string> = {
   home: 'Home',
@@ -33,6 +34,7 @@ function App() {
   const [selectedSector, setSelectedSector] = useState<string | null>(null)
   const [activeTab, setActiveTab] = useState<MainTab>('home')
   const [openSector, setOpenSector] = useState<string | null>(null)
+  const [sectorPeriod, setSectorPeriod] = useState<SectorRange>('3mo')
 
   function handleViewChange(next: View) {
     setView(next)
@@ -59,11 +61,21 @@ function App() {
     [data],
   )
 
+  const sortedSectors = useMemo(
+    () =>
+      data
+        ? [...data.sectors].sort(
+            (a, b) => b.periods[sectorPeriod].avgChangePct - a.periods[sectorPeriod].avgChangePct,
+          )
+        : [],
+    [data, sectorPeriod],
+  )
+
   const sectorStocks = useMemo(() => {
     if (!data || !openSector) return []
     const sector = data.sectors.find((s) => s.name === openSector)
-    return sector ? buildStockList(data, sector.top10) : []
-  }, [data, openSector])
+    return sector ? buildStockList(data, sector.periods[sectorPeriod].top10) : []
+  }, [data, openSector, sectorPeriod])
 
   const viewBase = useMemo(
     () =>
@@ -97,10 +109,11 @@ function App() {
 
   const selectedStock = useMemo(() => {
     if (!data || !selectedSymbol) return undefined
+    const allSectorTop10 = data.sectors.flatMap((s) => Object.values(s.periods).flatMap((p) => p.top10))
     const rank =
       data.top50.indexOf(selectedSymbol) + 1 ||
       data.top20ByMarketCap.indexOf(selectedSymbol) + 1 ||
-      data.sectors.flatMap((s) => s.top10).indexOf(selectedSymbol) + 1 ||
+      allSectorTop10.indexOf(selectedSymbol) + 1 ||
       (data.topShortTerm ?? []).indexOf(selectedSymbol) + 1
     return buildStock(data, selectedSymbol, rank)
   }, [data, selectedSymbol])
@@ -169,10 +182,12 @@ function App() {
     return (
       <div className="min-h-screen animate-[fade-slide-in_0.3s_ease-out]">
         <SectorsView
-          sectors={data.sectors}
+          sectors={sortedSectors}
           openSector={openSector}
           onOpenSector={setOpenSector}
           sectorStocks={sectorStocks}
+          period={sectorPeriod}
+          onPeriodChange={setSectorPeriod}
           isFavorite={isFavorite}
           onToggleFavorite={toggle}
           onSelect={select}

@@ -4,10 +4,11 @@ import { StatBadge } from './StatBadge'
 interface Props {
   sector: SectorSummary
   rank: number
+  avgChangePct: number
   onSelect: (name: string) => void
 }
 
-export function SectorRow({ sector, rank, onSelect }: Props) {
+export function SectorRow({ sector, rank, avgChangePct, onSelect }: Props) {
   return (
     <li>
       <button
@@ -26,7 +27,7 @@ export function SectorRow({ sector, rank, onSelect }: Props) {
           </div>
         </div>
 
-        <StatBadge changePct={sector.avgChangePct3mo} />
+        <StatBadge changePct={avgChangePct} />
 
         <svg
           width="7"

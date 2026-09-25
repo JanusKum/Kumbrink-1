@@ -7,6 +7,8 @@ interface Props {
   onToggleFavorite: (symbol: string) => void
   onSelect: (symbol: string) => void
   emptyMessage?: string
+  /** Picks which change % each row shows/colors by (defaults to the 3-month figure). */
+  getChangePct?: (stock: Stock) => number
 }
 
 export function RankedStockList({
@@ -15,6 +17,7 @@ export function RankedStockList({
   onToggleFavorite,
   onSelect,
   emptyMessage = 'Keine Titel gefunden.',
+  getChangePct,
 }: Props) {
   if (stocks.length === 0) {
     return (
@@ -33,6 +36,7 @@ export function RankedStockList({
           isFavorite={isFavorite(stock.symbol)}
           onToggleFavorite={onToggleFavorite}
           onSelect={onSelect}
+          changePct={getChangePct?.(stock)}
         />
       ))}
     </ul>

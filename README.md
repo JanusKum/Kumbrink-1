@@ -15,15 +15,19 @@ eigener Server nötig.
   ([`datasets/s-and-p-500-companies`](https://github.com/datasets/s-and-p-500-companies)).
   Schlägt das fehl, springt das Skript auf eine lokale Fallback-Liste
   (`scripts/universe-fallback.json`) zurück.
-- **Kurse:** Für jeden Titel wird die 3-Monats-Kurshistorie über die
-  öffentliche Chart-API von Yahoo Finance abgerufen (kein API-Key nötig).
-  Zusätzliche Zeiträume (1 Tag, 1 Woche, 1 Monat, 1 Jahr) werden nur für die
-  Titel geladen, die in einer der Ranglisten auftauchen (Top 50, Wertvollste,
-  Branchen-Top-10, Startseite) – für alle anderen der 503 Aktien reicht der
-  3-Monats-Chart, der ohnehin schon für das Ranking geladen wird, aus.
+- **Kurse:** Für jeden Titel werden die 3-Monats- und die 3-Jahres-Kurshistorie
+  über die öffentliche Chart-API von Yahoo Finance abgerufen (kein API-Key
+  nötig) – aus der 3-Jahres-Reihe werden nebenbei auch die 1-Monats-,
+  1-Jahres- und 3-Jahres-Performance berechnet, ohne weitere Anfragen.
+  Zusätzliche Zeiträume (1 Tag, 1 Woche, 1 Monat, 1 Jahr, 5 Jahre) werden nur
+  für die Titel geladen, die in einer der Ranglisten auftauchen (Top 50,
+  Wertvollste, Branchen-Top-10 in jedem Zeitraum, Startseite) – für alle
+  anderen der 503 Aktien reichen die 3-Monats- und 3-Jahres-Charts, die
+  ohnehin schon fürs Ranking geladen werden, aus.
 - **Suche:** Durchsucht per Symbol/Name das komplette S&P-500-Universum
   (alle 503 Aktien), nicht nur die aktuell angezeigte Liste – jeder Treffer
-  hat dank der obigen Kursdaten mindestens einen echten 3-Monats-Chart.
+  hat dank der obigen Kursdaten mindestens einen echten 3-Monats- und
+  3-Jahres-Chart.
 - **Top 20 wertvollste Unternehmen:** Yahoos Endpunkt für Live-Marktkapitalisierung
   verlangt einen Auth-Crumb, den unauthentifizierte Anfragen nicht bekommen
   (getestet: durchgehend HTTP 401). Statt uns auf eine fragile Umgehung zu
@@ -32,9 +36,10 @@ eigener Server nötig.
   Performance für diese Titel sind weiterhin zu 100 % live geladen, nur die
   Auswahl/Reihenfolge der 20 Unternehmen ist kuratiert statt live berechnet.
 - **Ranking:** Alle Titel werden nach prozentualer Veränderung (aktueller
-  Kurs vs. Kurs vor 3 Monaten) sortiert – daraus entstehen die Top 50
-  Performer sowie die stärksten Branchen (Durchschnittsperformance je Sektor,
-  mit eigenen Top 10).
+  Kurs vs. Kurs vor 3 Monaten) sortiert – daraus entsteht die Top-50-Liste.
+  Die Branchen-Ansicht berechnet Durchschnittsperformance und Top 10 je
+  Sektor für fünf Zeiträume (1 Woche, 1 Monat, 3 Monate, 1 Jahr, 3 Jahre)
+  und lässt zwischen ihnen umschalten.
 - **Startseite:** Zeigt 4 Aktien aus dem Pool der größten 1-Wochen-Kursbewegungen
   (Gewinner und Verlierer, berechnet aus den ohnehin schon geladenen
   3-Monats-Kursdaten, keine zusätzlichen Anfragen) – die dramatischste
@@ -46,8 +51,8 @@ eigener Server nötig.
   Feeds per Stichwortsuche (z. B. „IPO", „going public", „Börsengang")
   echte Artikel zu Börsengängen heraus – erscheint nur, wenn die Feeds an
   dem Tag tatsächlich passende Artikel enthalten.
-- **Detailansicht:** Zeigt den Kurs über 5 Zeiträume (1 Tag, 1 Woche, 1 Monat,
-  3 Monate, 1 Jahr). Der Chart ist per Maus/Touch scrubbbar – beim Ziehen
+- **Detailansicht:** Zeigt den Kurs über 7 Zeiträume (1 Tag, 1 Woche, 1 Monat,
+  3 Monate, 1 Jahr, 3 Jahre, 5 Jahre). Der Chart ist per Maus/Touch scrubbbar – beim Ziehen
   über den Verlauf werden Preis und Zeitpunkt der berührten Stelle live
   angezeigt. Per Umschalter lässt sich eine gestrichelte Vergleichslinie
   zum S&P-500-Index (`^GSPC`, über dieselbe Yahoo-Chart-API geladen)

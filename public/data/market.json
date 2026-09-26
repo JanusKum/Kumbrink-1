@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-26T10:21:57.452Z",
+  "updatedAt": "2026-09-26T15:11:11.069Z",
   "period": "3mo",
   "universeSize": 503,
   "source": {
@@ -8552,22 +8552,40 @@
   ],
   "news": [
     {
+      "title": "The 10-year Treasury yield is at its highest in nearly two decades. How we got here",
+      "url": "https://www.cnbc.com/2026/09/26/10-year-treasury-yield-is-at-its-highest-in-19-years-how-we-got-here.html",
+      "imageUrl": null,
+      "publishedAt": "2026-09-26T13:30:06.000Z"
+    },
+    {
       "title": "Trump, Xi wrap state visit centered on spectacle over substance. Here are the top takeaways",
       "url": "https://www.cnbc.com/2026/09/25/trump-xi-summit-takeaways.html",
       "imageUrl": null,
       "publishedAt": "2026-09-25T21:38:38.000Z"
     },
     {
-      "title": "Airlines waive change fees ahead of nor'easter as flight delays trickle in",
-      "url": "https://www.cnbc.com/2026/09/25/flights-storm-new-york-boston-east-coast.html",
+      "title": "Apple faces $5.7 billion patent infringement verdict over iPhone and Apple Watch haptics",
+      "url": "https://www.cnbc.com/2026/09/26/apple-taction-technology-patent-infringement-verdict.html",
       "imageUrl": null,
-      "publishedAt": "2026-09-25T19:59:45.000Z"
+      "publishedAt": "2026-09-26T14:55:59.000Z"
     },
     {
-      "title": "Audemars Piguet says its Royal Pop collaboration with Swatch is breaking sales records, despite luxury watch slump and tariffs",
-      "url": "https://www.cnbc.com/2026/09/26/audemars-piguet-and-royal-pop-defy-luxury-watch-slump-and-tariffs.html",
+      "title": "Trump rejects Iran's conditional ceasefire proposal, WSJ reports, as Saudi coalition intercepts projectiles",
+      "url": "https://www.cnbc.com/2026/09/26/trump-rejects-irans-conditional-ceasefire-proposal-wsj-reports.html",
       "imageUrl": null,
-      "publishedAt": "2026-09-26T10:00:01.000Z"
+      "publishedAt": "2026-09-26T15:05:38.000Z"
+    },
+    {
+      "title": "Airlines waive change fees ahead of nor'easter as flight disruptions trickle in",
+      "url": "https://www.cnbc.com/2026/09/25/flights-storm-new-york-boston-east-coast.html",
+      "imageUrl": null,
+      "publishedAt": "2026-09-26T12:19:38.000Z"
+    },
+    {
+      "title": "Bank of America says Nvidia and these other stocks are on sale",
+      "url": "https://www.cnbc.com/2026/09/26/nvidia-and-these-other-stocks-are-on-sale-bank-of-america-says.html",
+      "imageUrl": null,
+      "publishedAt": "2026-09-26T13:43:15.000Z"
     },
     {
       "title": "Here's exactly what Paramount promised Hollywood to land WBD — and why some are still skeptical",
@@ -8576,40 +8594,16 @@
       "publishedAt": "2026-09-25T22:53:52.000Z"
     },
     {
-      "title": "Chinese AI models surge in global popularity — and Washington is worried",
-      "url": "https://www.cnbc.com/2026/09/26/china-ai-global-adoption.html",
+      "title": "This may be the ‘missing piece’ for investors looking to boost AI exposure",
+      "url": "https://www.cnbc.com/2026/09/26/ai-portfolios-may-need-china-to-grab-the-biggest-gains.html",
       "imageUrl": null,
-      "publishedAt": "2026-09-26T05:00:01.000Z"
+      "publishedAt": "2026-09-26T15:00:01.000Z"
     },
     {
-      "title": "Dow jumps more than 470 points Friday; stocks notch winning week despite Treasury yield surge",
-      "url": "https://www.cnbc.com/2026/09/24/stock-market-today-live-updates.html",
+      "title": "China wants in on U.S. AI data center boom. Here's why",
+      "url": "https://www.cnbc.com/2026/09/26/china-us-ai-data-centers.html",
       "imageUrl": null,
-      "publishedAt": "2026-09-25T22:41:12.000Z"
-    },
-    {
-      "title": "Bond market alarms are ringing on Wall Street. Here's what's ahead",
-      "url": "https://www.cnbc.com/2026/09/25/stock-market-next-week-outlook-for-sept-28-oct-2-2026.html",
-      "imageUrl": null,
-      "publishedAt": "2026-09-25T20:16:52.000Z"
-    },
-    {
-      "title": "TikTok reaches first state settlement over teen safety claims, agrees to user limits",
-      "url": "https://www.cnbc.com/2026/09/26/tiktok-reaches-first-state-settlement-over-teen-safety-claims.html",
-      "imageUrl": null,
-      "publishedAt": "2026-09-26T08:16:19.000Z"
-    },
-    {
-      "title": "CEO who posted 'Lake America' sweatshirt photos is no longer with the company",
-      "url": "https://www.cnbc.com/2026/09/25/ceo-who-posted-lake-america-sweatshirt-photos-has-left-the-company.html",
-      "imageUrl": null,
-      "publishedAt": "2026-09-25T13:32:57.000Z"
-    },
-    {
-      "title": "U.S. appeals court upholds Pentagon designation of Anthropic as supply chain risk",
-      "url": "https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.html",
-      "imageUrl": null,
-      "publishedAt": "2026-09-25T17:19:19.000Z"
+      "publishedAt": "2026-09-26T12:00:01.000Z"
     },
     {
       "title": "History shows financial calamities occur when rates rise rapidly like this: 'Something always breaks'",
@@ -8618,10 +8612,16 @@
       "publishedAt": "2026-09-24T20:57:11.000Z"
     },
     {
-      "title": "Iran offers to reopen Strait of Hormuz within 7 days and restart nuclear talks",
-      "url": "https://www.cnbc.com/2026/09/25/us-iran-trump-hormuz-.html",
+      "title": "Audemars Piguet says its Royal Pop collaboration with Swatch is breaking sales records, despite luxury watch slump and tariffs",
+      "url": "https://www.cnbc.com/2026/09/26/audemars-piguet-and-royal-pop-defy-luxury-watch-slump-and-tariffs.html",
       "imageUrl": null,
-      "publishedAt": "2026-09-25T13:45:18.000Z"
+      "publishedAt": "2026-09-26T10:00:01.000Z"
+    },
+    {
+      "title": "Supply glut, lab-grown alternatives: What's behind the fall of diamond prices to record lows",
+      "url": "https://www.cnbc.com/2026/09/26/whats-behind-the-fall-of-diamond-prices-to-record-lows.html",
+      "imageUrl": null,
+      "publishedAt": "2026-09-26T13:09:33.000Z"
     }
   ],
   "ipoNews": [],
@@ -152103,7 +152103,7 @@
           "c": 29.44
         },
         {
-          "t": "2026-09-25T20:00:02.000Z",
+          "t": "2026-09-25T20:00:03.000Z",
           "c": 28.02
         }
       ],
@@ -152265,7 +152265,7 @@
           "c": 31.07
         },
         {
-          "t": "2026-09-25T20:00:02.000Z",
+          "t": "2026-09-25T20:00:03.000Z",
           "c": 28.02
         }
       ]
@@ -372007,23 +372007,23 @@
       "history1d": [
         {
           "t": "2026-09-25T13:30:00.000Z",
-          "c": 241.27
+          "c": 239.8
         },
         {
           "t": "2026-09-25T13:35:00.000Z",
-          "c": 238.32
+          "c": 240.32
         },
         {
           "t": "2026-09-25T13:45:00.000Z",
-          "c": 239.56
+          "c": 239.63
         },
         {
           "t": "2026-09-25T13:50:00.000Z",
-          "c": 240.56
+          "c": 240.63
         },
         {
           "t": "2026-09-25T13:55:00.000Z",
-          "c": 240
+          "c": 239.74
         },
         {
           "t": "2026-09-25T14:05:00.000Z",
@@ -372437,7 +372437,7 @@
         },
         {
           "t": "2026-09-25T13:30:00.000Z",
-          "c": 240.25
+          "c": 239.52
         },
         {
           "t": "2026-09-25T14:00:00.000Z",

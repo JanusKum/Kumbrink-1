@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-27T10:53:52.517Z",
+  "updatedAt": "2026-09-27T15:52:11.901Z",
   "period": "3mo",
   "universeSize": 503,
   "source": {
@@ -8552,10 +8552,28 @@
   ],
   "news": [
     {
-      "title": "OpenAI expands review of model behavior after more rogue agent incidents emerge",
-      "url": "https://www.cnbc.com/2026/09/26/openai-agent-model-behavior-review.html",
+      "title": "Debt-hungry AI companies face increased risk as bond yields spike",
+      "url": "https://www.cnbc.com/2026/09/27/debt-hungry-data-center-companies-increased-risk-bond-yields-spike.html",
       "imageUrl": null,
-      "publishedAt": "2026-09-26T17:10:32.000Z"
+      "publishedAt": "2026-09-27T15:35:34.000Z"
+    },
+    {
+      "title": "At NFL games this season, drone defense tech aims to bring down disruptions",
+      "url": "https://www.cnbc.com/2026/09/27/nfl-drone-defense-tech-game-disruptions.html",
+      "imageUrl": null,
+      "publishedAt": "2026-09-27T15:22:03.000Z"
+    },
+    {
+      "title": "Wall Street money takes back over from small investors as driving force of the stock market",
+      "url": "https://www.cnbc.com/2026/09/27/institutional-investors-stocks-treaurys-retail-traders.html",
+      "imageUrl": null,
+      "publishedAt": "2026-09-27T11:32:35.000Z"
+    },
+    {
+      "title": "Meta's Muse agent is attacking one of the economy's most profitable weak spots",
+      "url": "https://www.cnbc.com/2026/09/27/meta-muse-ai-personal-agent.html",
+      "imageUrl": null,
+      "publishedAt": "2026-09-27T14:33:22.000Z"
     },
     {
       "title": "Apple faces $5.7 billion patent infringement verdict over iPhone and Apple Watch haptics",
@@ -8564,52 +8582,34 @@
       "publishedAt": "2026-09-26T16:57:57.000Z"
     },
     {
-      "title": "Police declare major incident at UK's Fairford air base used by U.S. forces",
+      "title": "This key part of the stock market could be headed for a meaningful breakout",
+      "url": "https://www.cnbc.com/2026/09/27/this-key-part-of-the-stock-market-could-be-headed-for-a-meaningful-breakout.html",
+      "imageUrl": null,
+      "publishedAt": "2026-09-27T11:27:11.000Z"
+    },
+    {
+      "title": "Men arrested in major incident at UK air base used by U.S. forces",
       "url": "https://www.cnbc.com/2026/09/27/police-declare-major-incident-at-uk-air-base-used-by-us-forces.html",
       "imageUrl": null,
-      "publishedAt": "2026-09-27T09:26:39.000Z"
+      "publishedAt": "2026-09-27T11:06:08.000Z"
     },
     {
-      "title": "'Funflation' is on the rise as hobbies get pricier, but consumers keep spending anyway",
-      "url": "https://www.cnbc.com/2026/09/27/funflation-consumer-spending-pricier-hobbies.html",
+      "title": "Iran's foreign minister keeps indirect talks with the U.S. open; Iranian navy claims capture of underwater drone",
+      "url": "https://www.cnbc.com/2026/09/27/iran-foreign-minister-keeps-indirect-talks-with-us-open-state-media.html",
       "imageUrl": null,
-      "publishedAt": "2026-09-27T05:00:02.000Z"
+      "publishedAt": "2026-09-27T13:30:02.000Z"
     },
     {
-      "title": "Powerful nor'easter batters the U.S. Northeast, causing coastal flooding, outages and at least 1 death",
-      "url": "https://www.cnbc.com/2026/09/26/powerful-noreaster-causes-flooding-and-knocks-out-power.html",
+      "title": "Airlines waive change fees ahead of nor'easter as flight disruptions trickle in",
+      "url": "https://www.cnbc.com/2026/09/25/flights-storm-new-york-boston-east-coast.html",
       "imageUrl": null,
-      "publishedAt": "2026-09-27T10:15:16.000Z"
+      "publishedAt": "2026-09-27T13:39:11.000Z"
     },
     {
-      "title": "Bank of America says Nvidia and these other stocks are on sale",
-      "url": "https://www.cnbc.com/2026/09/26/nvidia-and-these-other-stocks-are-on-sale-bank-of-america-says.html",
+      "title": "OpenAI expands review of model behavior after more rogue agent incidents emerge",
+      "url": "https://www.cnbc.com/2026/09/26/openai-agent-model-behavior-review.html",
       "imageUrl": null,
-      "publishedAt": "2026-09-26T13:43:15.000Z"
-    },
-    {
-      "title": "Inside AT&S and the race to make the critical layer beneath AI chips",
-      "url": "https://www.cnbc.com/video/2026/09/26/ats-ai-chip-substrate-bottleneck.html",
-      "imageUrl": null,
-      "publishedAt": "2026-09-26T22:00:01.000Z"
-    },
-    {
-      "title": "This may be the ‘missing piece’ for investors looking to boost AI exposure",
-      "url": "https://www.cnbc.com/2026/09/26/ai-portfolios-may-need-china-to-grab-the-biggest-gains.html",
-      "imageUrl": null,
-      "publishedAt": "2026-09-26T15:00:01.000Z"
-    },
-    {
-      "title": "Boeing flags 737 Max software glitch affecting some automated approach functions",
-      "url": "https://www.cnbc.com/2026/09/26/boeing-737-max-navigation-software-glitch.html",
-      "imageUrl": null,
-      "publishedAt": "2026-09-26T21:55:01.000Z"
-    },
-    {
-      "title": "Trump rejects Iran's conditional ceasefire proposal, WSJ reports, as Saudi coalition intercepts projectiles",
-      "url": "https://www.cnbc.com/2026/09/26/trump-rejects-irans-conditional-ceasefire-proposal-wsj-reports.html",
-      "imageUrl": null,
-      "publishedAt": "2026-09-26T15:05:38.000Z"
+      "publishedAt": "2026-09-26T17:10:32.000Z"
     },
     {
       "title": "Audemars Piguet says its Royal Pop collaboration with Swatch is breaking sales records, despite luxury watch slump and tariffs",

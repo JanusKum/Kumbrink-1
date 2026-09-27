@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-27T15:52:11.901Z",
+  "updatedAt": "2026-09-27T20:30:27.223Z",
   "period": "3mo",
   "universeSize": 503,
   "source": {
@@ -8552,16 +8552,16 @@
   ],
   "news": [
     {
-      "title": "Debt-hungry AI companies face increased risk as bond yields spike",
-      "url": "https://www.cnbc.com/2026/09/27/debt-hungry-data-center-companies-increased-risk-bond-yields-spike.html",
-      "imageUrl": null,
-      "publishedAt": "2026-09-27T15:35:34.000Z"
-    },
-    {
       "title": "At NFL games this season, drone defense tech aims to bring down disruptions",
       "url": "https://www.cnbc.com/2026/09/27/nfl-drone-defense-tech-game-disruptions.html",
       "imageUrl": null,
       "publishedAt": "2026-09-27T15:22:03.000Z"
+    },
+    {
+      "title": "Debt-hungry AI companies face increased risk as bond yields spike",
+      "url": "https://www.cnbc.com/2026/09/27/debt-hungry-data-center-companies-increased-risk-bond-yields-spike.html",
+      "imageUrl": null,
+      "publishedAt": "2026-09-27T15:35:34.000Z"
     },
     {
       "title": "Wall Street money takes back over from small investors as driving force of the stock market",
@@ -8570,16 +8570,16 @@
       "publishedAt": "2026-09-27T11:32:35.000Z"
     },
     {
+      "title": "Anthropic CEO Amodei set to meet with Trump after missing state dinner",
+      "url": "https://www.cnbc.com/2026/09/27/dario-amodei-set-to-have-dinner-with-trump-after-missing-state-dinner.html",
+      "imageUrl": null,
+      "publishedAt": "2026-09-27T19:13:27.000Z"
+    },
+    {
       "title": "Meta's Muse agent is attacking one of the economy's most profitable weak spots",
       "url": "https://www.cnbc.com/2026/09/27/meta-muse-ai-personal-agent.html",
       "imageUrl": null,
       "publishedAt": "2026-09-27T14:33:22.000Z"
-    },
-    {
-      "title": "Apple faces $5.7 billion patent infringement verdict over iPhone and Apple Watch haptics",
-      "url": "https://www.cnbc.com/2026/09/26/apple-taction-technology-patent-infringement-verdict.html",
-      "imageUrl": null,
-      "publishedAt": "2026-09-26T16:57:57.000Z"
     },
     {
       "title": "This key part of the stock market could be headed for a meaningful breakout",
@@ -8588,28 +8588,28 @@
       "publishedAt": "2026-09-27T11:27:11.000Z"
     },
     {
-      "title": "Men arrested in major incident at UK air base used by U.S. forces",
+      "title": "Trump says men arrested at UK air base used by U.S. forces were looking to do 'big damage'",
       "url": "https://www.cnbc.com/2026/09/27/police-declare-major-incident-at-uk-air-base-used-by-us-forces.html",
       "imageUrl": null,
-      "publishedAt": "2026-09-27T11:06:08.000Z"
+      "publishedAt": "2026-09-27T16:47:52.000Z"
     },
     {
-      "title": "Iran's foreign minister keeps indirect talks with the U.S. open; Iranian navy claims capture of underwater drone",
+      "title": "Iran's foreign minister says Tehran ready for 'doomsday' war with U.S., but leaves diplomacy on the table",
       "url": "https://www.cnbc.com/2026/09/27/iran-foreign-minister-keeps-indirect-talks-with-us-open-state-media.html",
       "imageUrl": null,
-      "publishedAt": "2026-09-27T13:30:02.000Z"
+      "publishedAt": "2026-09-27T18:45:27.000Z"
     },
     {
-      "title": "Airlines waive change fees ahead of nor'easter as flight disruptions trickle in",
-      "url": "https://www.cnbc.com/2026/09/25/flights-storm-new-york-boston-east-coast.html",
+      "title": "China weighs allowing ByteDance, Alibaba to buy new Nvidia chips, The Information reports",
+      "url": "https://www.cnbc.com/2026/09/27/china-bytedance-alibaba-nvidia-chips.html",
       "imageUrl": null,
-      "publishedAt": "2026-09-27T13:39:11.000Z"
+      "publishedAt": "2026-09-27T18:16:49.000Z"
     },
     {
-      "title": "OpenAI expands review of model behavior after more rogue agent incidents emerge",
-      "url": "https://www.cnbc.com/2026/09/26/openai-agent-model-behavior-review.html",
+      "title": "Apple faces $5.7 billion patent infringement verdict over iPhone and Apple Watch haptics",
+      "url": "https://www.cnbc.com/2026/09/26/apple-taction-technology-patent-infringement-verdict.html",
       "imageUrl": null,
-      "publishedAt": "2026-09-26T17:10:32.000Z"
+      "publishedAt": "2026-09-26T16:57:57.000Z"
     },
     {
       "title": "Audemars Piguet says its Royal Pop collaboration with Swatch is breaking sales records, despite luxury watch slump and tariffs",

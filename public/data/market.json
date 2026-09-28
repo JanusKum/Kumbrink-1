@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-27T20:30:27.223Z",
+  "updatedAt": "2026-09-28T02:06:23.056Z",
   "period": "3mo",
   "universeSize": 503,
   "source": {
@@ -8552,6 +8552,48 @@
   ],
   "news": [
     {
+      "title": "China posts weakest industrial profit growth this year, expanding 4.2% in August",
+      "url": "https://www.cnbc.com/2026/09/28/china-posts-weakest-industrial-profit-growth-this-year-expanding-4point2percent-in-august-.html",
+      "imageUrl": null,
+      "publishedAt": "2026-09-28T02:04:54.000Z"
+    },
+    {
+      "title": "Oil gains over 1% as Trump rejects Iranian proposal to reopen Hormuz Strait",
+      "url": "https://www.cnbc.com/2026/09/28/oil-price-today-wti-brent-trump-iran.html",
+      "imageUrl": null,
+      "publishedAt": "2026-09-28T00:32:09.000Z"
+    },
+    {
+      "title": "Stock futures slip after winning week on Wall Street: Live updates",
+      "url": "https://www.cnbc.com/2026/09/27/stock-market-today-live-updates.html",
+      "imageUrl": null,
+      "publishedAt": "2026-09-28T01:56:07.000Z"
+    },
+    {
+      "title": "Taxpayer-funded Trump ads draw bipartisan scrutiny ahead of midterms",
+      "url": "https://www.cnbc.com/2026/09/27/trump-government-funded-ads-midterms.html",
+      "imageUrl": null,
+      "publishedAt": "2026-09-27T21:38:59.000Z"
+    },
+    {
+      "title": "Northern Star shares pop as Australian gold miner rejects $27-billion takeover proposal",
+      "url": "https://www.cnbc.com/2026/09/28/northern-star-shares-gold-fields-takeover-bid.html",
+      "imageUrl": null,
+      "publishedAt": "2026-09-28T01:19:23.000Z"
+    },
+    {
+      "title": "Anthropic CEO Amodei set to meet with Trump after missing state dinner",
+      "url": "https://www.cnbc.com/2026/09/27/dario-amodei-set-to-have-dinner-with-trump-after-missing-state-dinner.html",
+      "imageUrl": null,
+      "publishedAt": "2026-09-27T19:13:27.000Z"
+    },
+    {
+      "title": "Trump says men arrested at UK air base used by U.S. forces were looking to do 'big damage'",
+      "url": "https://www.cnbc.com/2026/09/27/police-declare-major-incident-at-uk-air-base-used-by-us-forces.html",
+      "imageUrl": null,
+      "publishedAt": "2026-09-27T16:47:52.000Z"
+    },
+    {
       "title": "At NFL games this season, drone defense tech aims to bring down disruptions",
       "url": "https://www.cnbc.com/2026/09/27/nfl-drone-defense-tech-game-disruptions.html",
       "imageUrl": null,
@@ -8564,52 +8606,10 @@
       "publishedAt": "2026-09-27T15:35:34.000Z"
     },
     {
-      "title": "Wall Street money takes back over from small investors as driving force of the stock market",
-      "url": "https://www.cnbc.com/2026/09/27/institutional-investors-stocks-treaurys-retail-traders.html",
-      "imageUrl": null,
-      "publishedAt": "2026-09-27T11:32:35.000Z"
-    },
-    {
-      "title": "Anthropic CEO Amodei set to meet with Trump after missing state dinner",
-      "url": "https://www.cnbc.com/2026/09/27/dario-amodei-set-to-have-dinner-with-trump-after-missing-state-dinner.html",
-      "imageUrl": null,
-      "publishedAt": "2026-09-27T19:13:27.000Z"
-    },
-    {
-      "title": "Meta's Muse agent is attacking one of the economy's most profitable weak spots",
-      "url": "https://www.cnbc.com/2026/09/27/meta-muse-ai-personal-agent.html",
-      "imageUrl": null,
-      "publishedAt": "2026-09-27T14:33:22.000Z"
-    },
-    {
-      "title": "This key part of the stock market could be headed for a meaningful breakout",
-      "url": "https://www.cnbc.com/2026/09/27/this-key-part-of-the-stock-market-could-be-headed-for-a-meaningful-breakout.html",
-      "imageUrl": null,
-      "publishedAt": "2026-09-27T11:27:11.000Z"
-    },
-    {
-      "title": "Trump says men arrested at UK air base used by U.S. forces were looking to do 'big damage'",
-      "url": "https://www.cnbc.com/2026/09/27/police-declare-major-incident-at-uk-air-base-used-by-us-forces.html",
-      "imageUrl": null,
-      "publishedAt": "2026-09-27T16:47:52.000Z"
-    },
-    {
       "title": "Iran's foreign minister says Tehran ready for 'doomsday' war with U.S., but leaves diplomacy on the table",
       "url": "https://www.cnbc.com/2026/09/27/iran-foreign-minister-keeps-indirect-talks-with-us-open-state-media.html",
       "imageUrl": null,
       "publishedAt": "2026-09-27T18:45:27.000Z"
-    },
-    {
-      "title": "China weighs allowing ByteDance, Alibaba to buy new Nvidia chips, The Information reports",
-      "url": "https://www.cnbc.com/2026/09/27/china-bytedance-alibaba-nvidia-chips.html",
-      "imageUrl": null,
-      "publishedAt": "2026-09-27T18:16:49.000Z"
-    },
-    {
-      "title": "Apple faces $5.7 billion patent infringement verdict over iPhone and Apple Watch haptics",
-      "url": "https://www.cnbc.com/2026/09/26/apple-taction-technology-patent-infringement-verdict.html",
-      "imageUrl": null,
-      "publishedAt": "2026-09-26T16:57:57.000Z"
     },
     {
       "title": "Audemars Piguet says its Royal Pop collaboration with Swatch is breaking sales records, despite luxury watch slump and tariffs",

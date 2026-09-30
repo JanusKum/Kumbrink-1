@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-29T21:33:55.356Z",
+  "updatedAt": "2026-09-30T02:34:05.706Z",
   "period": "3mo",
   "universeSize": 503,
   "source": {
@@ -8552,10 +8552,10 @@
   ],
   "news": [
     {
-      "title": "Trump says he and tech leaders signed AI agreement that is 'morally binding'",
-      "url": "https://www.cnbc.com/2026/09/29/tech-white-house-ai-lunch-trump.html",
+      "title": "Trump tries to rename AI 'super intelligence' as polls show him sinking on key issue",
+      "url": "https://www.cnbc.com/2026/09/29/trump-ai-super-intelligence.html",
       "imageUrl": null,
-      "publishedAt": "2026-09-29T21:18:27.000Z"
+      "publishedAt": "2026-09-29T22:42:35.000Z"
     },
     {
       "title": "The Fed's main inflation measure will be released Wednesday. Here's what to expect",
@@ -8564,16 +8564,40 @@
       "publishedAt": "2026-09-29T20:51:43.000Z"
     },
     {
+      "title": "Beijing warns of retaliation if Europe imposes curbs on Chinese businesses",
+      "url": "https://www.cnbc.com/2026/09/30/china-warns-europe-increases-trade-pressure.html",
+      "imageUrl": null,
+      "publishedAt": "2026-09-30T02:31:30.000Z"
+    },
+    {
+      "title": "Stock futures inch higher as traders weather latest rise in Treasury yields: Live updates",
+      "url": "https://www.cnbc.com/2026/09/29/stock-market-today-live-updates.html",
+      "imageUrl": null,
+      "publishedAt": "2026-09-30T01:55:31.000Z"
+    },
+    {
       "title": "30-year Treasury bond yield scales to highest level since 2002",
       "url": "https://www.cnbc.com/2026/09/29/treasury-yields-bonds.html",
       "imageUrl": null,
       "publishedAt": "2026-09-29T20:03:39.000Z"
     },
     {
-      "title": "Dow posts back-to-back losses as Treasury yields continue their ascent",
-      "url": "https://www.cnbc.com/2026/09/28/stock-market-today-live-updates.html",
+      "title": "Most traders are looking at Micron into earnings. But don't count out Nike",
+      "url": "https://www.cnbc.com/2026/09/29/most-traders-are-looking-at-micron-into-earnings-but-dont-count-out-nike.html",
       "imageUrl": null,
-      "publishedAt": "2026-09-29T20:43:07.000Z"
+      "publishedAt": "2026-09-29T21:34:48.000Z"
+    },
+    {
+      "title": "China factory activity snaps 2-month contractionary streak in September",
+      "url": "https://www.cnbc.com/2026/09/30/china-manufacturing-exports-capacity-economy-.html",
+      "imageUrl": null,
+      "publishedAt": "2026-09-30T01:52:50.000Z"
+    },
+    {
+      "title": "Hedge funds hold a record share of the $30 trillion Treasury market. What could go wrong?",
+      "url": "https://www.cnbc.com/2026/09/30/us-treasury-market-is-relying-more-on-hedge-funds.html",
+      "imageUrl": null,
+      "publishedAt": "2026-09-30T00:19:09.000Z"
     },
     {
       "title": "Goldman Sachs CEO succession planning faces one big problem",
@@ -8582,40 +8606,16 @@
       "publishedAt": "2026-09-29T20:50:10.000Z"
     },
     {
-      "title": "Get paid even more on your cash holdings with this strategy",
-      "url": "https://www.cnbc.com/2026/09/29/get-paid-even-more-on-your-cash-holdings-with-this-strategy.html",
-      "imageUrl": null,
-      "publishedAt": "2026-09-29T19:26:23.000Z"
-    },
-    {
       "title": "IPO postponements are accelerating in third quarter, even beyond Oura",
       "url": "https://www.cnbc.com/2026/09/29/ipo-postponements-are-accelerating-in-third-quarter-even-beyond-oura.html",
       "imageUrl": null,
       "publishedAt": "2026-09-29T21:05:26.000Z"
     },
     {
-      "title": "Homeowners are sitting on record equity – and not using it",
-      "url": "https://www.cnbc.com/2026/09/29/homeowners-are-sitting-on-record-equity-and-not-using-it.html",
-      "imageUrl": null,
-      "publishedAt": "2026-09-29T19:23:06.000Z"
-    },
-    {
-      "title": "Supreme Court lets Trump resume third-country deportations",
-      "url": "https://www.cnbc.com/2026/09/29/supreme-court-lets-trump-resume-third-country-deportations.html",
-      "imageUrl": null,
-      "publishedAt": "2026-09-29T19:32:09.000Z"
-    },
-    {
-      "title": "Ford CEO says it's 'too late' for Europe to fend off Chinese automakers, but not for U.S.",
-      "url": "https://www.cnbc.com/2026/09/29/ford-ceo-jim-farley-china-automakers.html",
-      "imageUrl": null,
-      "publishedAt": "2026-09-29T21:08:05.000Z"
-    },
-    {
       "title": "Trump Accounts will auto-enroll children, potentially adding 60 million accounts: Treasury",
       "url": "https://www.cnbc.com/2026/09/29/trump-accounts-auto-enroll.html",
       "imageUrl": null,
-      "publishedAt": "2026-09-29T20:26:59.000Z"
+      "publishedAt": "2026-09-29T21:43:50.000Z"
     },
     {
       "title": "New AI-powered government website uses Gemini, Grok, Trump official Gebbia says",
@@ -188891,7 +188891,7 @@
         },
         {
           "t": "2026-09-28T04:00:00.000Z",
-          "c": 112.3
+          "c": 112.06
         },
         {
           "t": "2026-09-29T20:00:02.000Z",
@@ -352008,7 +352008,7 @@
         },
         {
           "t": "2026-09-29T13:30:00.000Z",
-          "c": 209.22
+          "c": 209.18
         },
         {
           "t": "2026-09-29T14:00:00.000Z",
@@ -360031,7 +360031,7 @@
         },
         {
           "t": "2026-09-28T04:00:00.000Z",
-          "c": 124.91
+          "c": 125.61
         },
         {
           "t": "2026-09-29T20:00:02.000Z",
@@ -373490,7 +373490,7 @@
         },
         {
           "t": "2026-09-29T13:30:00.000Z",
-          "c": 258.09
+          "c": 257.84
         },
         {
           "t": "2026-09-29T14:00:00.000Z",
@@ -456747,8 +456747,8 @@
           "c": 226.07
         },
         {
-          "t": "2026-09-01T13:30:00.000Z",
-          "c": 225
+          "t": "2026-09-01T14:30:00.000Z",
+          "c": 222.67
         },
         {
           "t": "2026-09-01T17:30:00.000Z",
@@ -456763,8 +456763,8 @@
           "c": 221.37
         },
         {
-          "t": "2026-09-03T14:30:00.000Z",
-          "c": 221.24
+          "t": "2026-09-03T15:30:00.000Z",
+          "c": 221.66
         },
         {
           "t": "2026-09-03T18:30:00.000Z",
@@ -456779,8 +456779,8 @@
           "c": 227.37
         },
         {
-          "t": "2026-09-08T15:30:00.000Z",
-          "c": 229.21
+          "t": "2026-09-08T16:30:00.000Z",
+          "c": 229.67
         },
         {
           "t": "2026-09-08T19:30:00.000Z",
@@ -456795,12 +456795,12 @@
           "c": 222.93
         },
         {
-          "t": "2026-09-10T16:30:00.000Z",
-          "c": 223.58
+          "t": "2026-09-10T17:30:00.000Z",
+          "c": 223.32
         },
         {
-          "t": "2026-09-11T13:30:00.000Z",
-          "c": 226.52
+          "t": "2026-09-11T14:30:00.000Z",
+          "c": 227.09
         },
         {
           "t": "2026-09-11T17:30:00.000Z",
@@ -456811,12 +456811,12 @@
           "c": 224.62
         },
         {
-          "t": "2026-09-14T17:30:00.000Z",
-          "c": 228.69
+          "t": "2026-09-14T18:30:00.000Z",
+          "c": 229.1
         },
         {
-          "t": "2026-09-15T14:30:00.000Z",
-          "c": 222.94
+          "t": "2026-09-15T15:30:00.000Z",
+          "c": 224.29
         },
         {
           "t": "2026-09-15T18:30:00.000Z",
@@ -456827,12 +456827,12 @@
           "c": 222.4
         },
         {
-          "t": "2026-09-16T18:30:00.000Z",
-          "c": 216.73
+          "t": "2026-09-16T19:30:00.000Z",
+          "c": 218.24
         },
         {
-          "t": "2026-09-17T15:30:00.000Z",
-          "c": 221.34
+          "t": "2026-09-17T16:30:00.000Z",
+          "c": 220.51
         },
         {
           "t": "2026-09-17T19:30:00.000Z",
@@ -456843,56 +456843,56 @@
           "c": 222.69
         },
         {
-          "t": "2026-09-18T19:30:00.000Z",
-          "c": 224.15
+          "t": "2026-09-21T13:30:00.000Z",
+          "c": 226.94
         },
         {
-          "t": "2026-09-21T16:30:00.000Z",
-          "c": 228.63
+          "t": "2026-09-21T17:30:00.000Z",
+          "c": 228.44
         },
         {
-          "t": "2026-09-22T13:30:00.000Z",
-          "c": 231.7
+          "t": "2026-09-22T14:30:00.000Z",
+          "c": 231.26
         },
         {
           "t": "2026-09-22T17:30:00.000Z",
           "c": 233.38
         },
         {
-          "t": "2026-09-23T13:30:00.000Z",
-          "c": 231.01
+          "t": "2026-09-23T14:30:00.000Z",
+          "c": 230.13
         },
         {
-          "t": "2026-09-23T17:30:00.000Z",
-          "c": 230.66
+          "t": "2026-09-23T18:30:00.000Z",
+          "c": 229.06
         },
         {
-          "t": "2026-09-24T14:30:00.000Z",
-          "c": 227.12
+          "t": "2026-09-24T15:30:00.000Z",
+          "c": 228.88
         },
         {
           "t": "2026-09-24T18:30:00.000Z",
           "c": 226.74
         },
         {
-          "t": "2026-09-25T14:30:00.000Z",
-          "c": 230.37
+          "t": "2026-09-25T15:30:00.000Z",
+          "c": 233.45
         },
         {
-          "t": "2026-09-25T18:30:00.000Z",
-          "c": 231.47
+          "t": "2026-09-25T19:30:00.000Z",
+          "c": 231.89
         },
         {
-          "t": "2026-09-28T15:30:00.000Z",
-          "c": 231.74
+          "t": "2026-09-28T16:30:00.000Z",
+          "c": 231.2
         },
         {
           "t": "2026-09-28T19:30:00.000Z",
           "c": 231.03
         },
         {
-          "t": "2026-09-29T15:30:00.000Z",
-          "c": 229.89
+          "t": "2026-09-29T16:30:00.000Z",
+          "c": 228.27
         },
         {
           "t": "2026-09-29T20:00:00.000Z",

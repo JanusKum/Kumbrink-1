@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-03T10:42:41.281Z",
+  "updatedAt": "2026-10-03T15:17:07.388Z",
   "period": "3mo",
   "universeSize": 503,
   "source": {
@@ -8552,10 +8552,52 @@
   ],
   "news": [
     {
+      "title": "David Ellison just brought in a co-CEO to run his new empire: Meet Ynon Kreiz",
+      "url": "https://www.cnbc.com/2026/10/03/david-ellison-ynon-kreiz-skydance.html",
+      "imageUrl": null,
+      "publishedAt": "2026-10-03T11:00:01.000Z"
+    },
+    {
+      "title": "Tesla’s Cybercab had a rocky first month in Austin. Now comes the hard part: expanding",
+      "url": "https://www.cnbc.com/2026/10/03/tesla-cybercab-pressure-to-expand-after-rocky-first-month-in-austin.html",
+      "imageUrl": null,
+      "publishedAt": "2026-10-03T11:00:01.000Z"
+    },
+    {
+      "title": "FlyDubai plane attack by co-pilot was an attempted 'terrorist' act, UAE says",
+      "url": "https://www.cnbc.com/2026/10/03/flydubai-co-pilot-attacked-pilot-with-axe-uae-says.html",
+      "imageUrl": null,
+      "publishedAt": "2026-10-03T12:34:59.000Z"
+    },
+    {
+      "title": "Berkshire buys more Lennar shares, but pace of purchases slows",
+      "url": "https://www.cnbc.com/2026/10/03/berkshire-buys-more-lennar-shares-but-pace-of-purchases-slows.html",
+      "imageUrl": null,
+      "publishedAt": "2026-10-03T12:55:31.000Z"
+    },
+    {
+      "title": "Novig credits Sydney Sweeney-backed campaign for platform’s surge in growth",
+      "url": "https://www.cnbc.com/2026/10/03/novig-credits-sydney-sweeney-backed-campaign-for-platforms-surge-in-growth.html",
+      "imageUrl": null,
+      "publishedAt": "2026-10-03T13:30:48.000Z"
+    },
+    {
+      "title": "Goldman Sachs says buy these stocks now, ahead of their earnings",
+      "url": "https://www.cnbc.com/2026/10/03/stocks-to-buy-now-ahead-of-their-earnings-according-to-goldman-sachs.html",
+      "imageUrl": null,
+      "publishedAt": "2026-10-03T13:21:59.000Z"
+    },
+    {
       "title": "America’s data center fight is a preview of what's to come for the rest of the world",
       "url": "https://www.cnbc.com/2026/10/03/data-center-backlash-europe-asia-africa.html",
       "imageUrl": null,
-      "publishedAt": "2026-10-03T05:00:01.000Z"
+      "publishedAt": "2026-10-03T12:39:29.000Z"
+    },
+    {
+      "title": "Private capital is reshaping Hollywood moviemaking",
+      "url": "https://www.cnbc.com/2026/10/03/private-capital-hollywood-film-financing.html",
+      "imageUrl": null,
+      "publishedAt": "2026-10-03T12:00:01.000Z"
     },
     {
       "title": "Ford fends off Hyundai to retain No. 3 U.S. sales position in third quarter",
@@ -8564,64 +8606,22 @@
       "publishedAt": "2026-10-02T17:20:33.000Z"
     },
     {
-      "title": "Flydubai co-pilot attacked pilot with axe, attempted 'terrorist' attack, UAE says",
-      "url": "https://www.cnbc.com/2026/10/03/flydubai-co-pilot-attacked-pilot-with-axe-uae-says.html",
+      "title": "Lula or Bolsonaro: Wall Street braces for two wildly different results in Brazil election",
+      "url": "https://www.cnbc.com/2026/10/03/lula-or-bolsonaro-wall-street-braces-for-two-wildly-different-results-in-brazil-election.html",
       "imageUrl": null,
-      "publishedAt": "2026-10-03T07:38:59.000Z"
+      "publishedAt": "2026-10-03T13:12:27.000Z"
     },
     {
-      "title": "G7 nations to release diesel stocks as wars in Europe and Middle East constrain fuel supplies",
-      "url": "https://www.cnbc.com/2026/10/02/diesel-oil-trump-europe-export-ban.html",
+      "title": "High-tech vehicles are driving up auto repair costs for shops and consumers",
+      "url": "https://www.cnbc.com/2026/10/03/vehicle-repair-costs.html",
       "imageUrl": null,
-      "publishedAt": "2026-10-02T19:25:36.000Z"
+      "publishedAt": "2026-10-03T12:00:01.000Z"
     },
     {
-      "title": "'Handful' of G20 countries reject U.S. stance on excess industrial capacity",
-      "url": "https://www.cnbc.com/2026/10/03/handful-of-g20-countries-reject-us-stance-on-industrial-capacity-.html",
+      "title": "High interest rates are foreclosing on the American home remodeling dream",
+      "url": "https://www.cnbc.com/2026/10/03/mortgage-rates-home-equity-heloc-remodeling.html",
       "imageUrl": null,
-      "publishedAt": "2026-10-03T08:53:44.000Z"
-    },
-    {
-      "title": "Stocks remain under the thrall of higher yields and higher oil. Here's what's ahead",
-      "url": "https://www.cnbc.com/2026/10/02/stock-market-next-week-outlook-for-oct-5-9-2026-.html",
-      "imageUrl": null,
-      "publishedAt": "2026-10-02T20:09:52.000Z"
-    },
-    {
-      "title": "Oil prices lower as G7 nations to release diesel stocks, Saudis reportedly plan attack on Houthis",
-      "url": "https://www.cnbc.com/2026/10/02/oil-wti-brent-diesel-stock-release-europe.html",
-      "imageUrl": null,
-      "publishedAt": "2026-10-02T20:04:42.000Z"
-    },
-    {
-      "title": "FAA says Boeing 737 Max software glitch not a flight-safety issue",
-      "url": "https://www.cnbc.com/2026/10/02/faa-says-boeing-737-max-10-software-glitch-not-a-flight-safety-issue.html",
-      "imageUrl": null,
-      "publishedAt": "2026-10-02T19:19:15.000Z"
-    },
-    {
-      "title": "Cerebras stock hits post-IPO low, tumbling 20% for the week on Nvidia pressure and lockup expiration",
-      "url": "https://www.cnbc.com/2026/10/02/cerebras-stock-hits-post-ipo-low-on-nvidia-pressure-lockup-expiration.html",
-      "imageUrl": null,
-      "publishedAt": "2026-10-02T22:38:49.000Z"
-    },
-    {
-      "title": "Men are losing ground in the labor market. Here's why",
-      "url": "https://www.cnbc.com/2026/10/02/men-labor-market-jobs-report.html",
-      "imageUrl": null,
-      "publishedAt": "2026-10-02T17:38:59.000Z"
-    },
-    {
-      "title": "Treasury Sec. Bessent, IRS crack down on ETF strategy the wealthy are using to avoid capital gains taxes",
-      "url": "https://www.cnbc.com/2026/10/02/treasury-irs-capital-gains-income-tax-section-351-warning.html",
-      "imageUrl": null,
-      "publishedAt": "2026-10-02T13:48:40.000Z"
-    },
-    {
-      "title": "Your health insurance premiums may take a big jump in 2027 — here's why",
-      "url": "https://www.cnbc.com/2026/10/02/health-insurance-premiums-2027-inflation-aca-obamacare.html",
-      "imageUrl": null,
-      "publishedAt": "2026-10-02T16:26:57.000Z"
+      "publishedAt": "2026-10-03T13:11:37.000Z"
     }
   ],
   "ipoNews": [
@@ -8630,12 +8630,6 @@
       "url": "https://www.cnbc.com/2026/10/02/cerebras-stock-hits-post-ipo-low-on-nvidia-pressure-lockup-expiration.html",
       "imageUrl": null,
       "publishedAt": "2026-10-02T22:38:49.000Z"
-    },
-    {
-      "title": "Anthropic warns government attitudes may hurt customer ties, IPO prospectus shows: Reuters",
-      "url": "https://www.cnbc.com/2026/10/02/anthropic-warns-govt-attitudes-may-hurt-ties-ipo-shows.html",
-      "imageUrl": null,
-      "publishedAt": "2026-10-02T15:09:34.000Z"
     }
   ],
   "benchmark": {
@@ -180409,7 +180403,7 @@
           "c": 259.71
         },
         {
-          "t": "2026-10-02T20:00:03.000Z",
+          "t": "2026-10-02T20:00:02.000Z",
           "c": 266
         }
       ],
@@ -180571,7 +180565,7 @@
           "c": 299.91
         },
         {
-          "t": "2026-10-02T20:00:03.000Z",
+          "t": "2026-10-02T20:00:02.000Z",
           "c": 266
         }
       ]
@@ -183332,7 +183326,7 @@
           "c": 114.36
         },
         {
-          "t": "2026-10-02T20:00:03.000Z",
+          "t": "2026-10-02T20:00:02.000Z",
           "c": 106.69
         }
       ],
@@ -183494,7 +183488,7 @@
           "c": 116.74
         },
         {
-          "t": "2026-10-02T20:00:03.000Z",
+          "t": "2026-10-02T20:00:02.000Z",
           "c": 106.69
         }
       ]
@@ -213172,7 +213166,7 @@
           "c": 91.54
         },
         {
-          "t": "2026-10-02T20:00:00.000Z",
+          "t": "2026-10-02T20:00:01.000Z",
           "c": 89.54
         }
       ],
@@ -213334,7 +213328,7 @@
           "c": 93.54
         },
         {
-          "t": "2026-10-02T20:00:00.000Z",
+          "t": "2026-10-02T20:00:01.000Z",
           "c": 89.54
         }
       ]
@@ -317358,7 +317352,7 @@
           "c": 218.29
         },
         {
-          "t": "2026-10-02T20:00:00.000Z",
+          "t": "2026-10-02T20:00:01.000Z",
           "c": 233.95
         }
       ],
@@ -317520,7 +317514,7 @@
           "c": 214.72
         },
         {
-          "t": "2026-10-02T20:00:00.000Z",
+          "t": "2026-10-02T20:00:01.000Z",
           "c": 233.95
         }
       ]
@@ -329873,7 +329867,7 @@
           "c": 330.65
         },
         {
-          "t": "2026-10-02T20:00:00.000Z",
+          "t": "2026-10-02T20:00:01.000Z",
           "c": 403.24
         }
       ],
@@ -330535,7 +330529,7 @@
           "c": 950.23
         },
         {
-          "t": "2026-10-02T20:00:03.000Z",
+          "t": "2026-10-02T20:00:02.000Z",
           "c": 972.55
         }
       ],
@@ -343864,23 +343858,23 @@
       "history1d": [
         {
           "t": "2026-10-02T13:30:00.000Z",
-          "c": 209.97
+          "c": 209.98
         },
         {
           "t": "2026-10-02T13:35:00.000Z",
-          "c": 210.45
+          "c": 210.69
         },
         {
           "t": "2026-10-02T13:45:00.000Z",
-          "c": 211.81
+          "c": 211.71
         },
         {
           "t": "2026-10-02T13:50:00.000Z",
-          "c": 211.57
+          "c": 210.76
         },
         {
           "t": "2026-10-02T13:55:00.000Z",
-          "c": 210.63
+          "c": 210.6
         },
         {
           "t": "2026-10-02T14:05:00.000Z",
@@ -344294,7 +344288,7 @@
         },
         {
           "t": "2026-10-02T13:30:00.000Z",
-          "c": 210.97
+          "c": 211.44
         },
         {
           "t": "2026-10-02T14:00:00.000Z",
@@ -361590,7 +361584,7 @@
           "c": 124.31
         },
         {
-          "t": "2026-10-02T20:02:39.000Z",
+          "t": "2026-10-02T20:02:38.000Z",
           "c": 151.53
         }
       ],
@@ -361752,7 +361746,7 @@
           "c": 124.75
         },
         {
-          "t": "2026-10-02T20:02:39.000Z",
+          "t": "2026-10-02T20:02:38.000Z",
           "c": 151.53
         }
       ]
@@ -366311,23 +366305,23 @@
       "history1d": [
         {
           "t": "2026-10-02T13:30:00.000Z",
-          "c": 273.87
+          "c": 272.24
         },
         {
           "t": "2026-10-02T13:35:00.000Z",
-          "c": 274.31
+          "c": 274.35
         },
         {
           "t": "2026-10-02T13:45:00.000Z",
-          "c": 276.1
+          "c": 275.73
         },
         {
           "t": "2026-10-02T13:50:00.000Z",
-          "c": 275.56
+          "c": 275.14
         },
         {
           "t": "2026-10-02T13:55:00.000Z",
-          "c": 275.05
+          "c": 274.45
         },
         {
           "t": "2026-10-02T14:05:00.000Z",
@@ -366741,7 +366735,7 @@
         },
         {
           "t": "2026-10-02T13:30:00.000Z",
-          "c": 274.45
+          "c": 275.94
         },
         {
           "t": "2026-10-02T14:00:00.000Z",
@@ -420239,7 +420233,7 @@
           "c": 109.82
         },
         {
-          "t": "2026-10-02T20:00:00.000Z",
+          "t": "2026-10-02T20:00:01.000Z",
           "c": 112.51
         }
       ],

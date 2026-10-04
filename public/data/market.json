@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-04T11:23:32.281Z",
+  "updatedAt": "2026-10-04T16:01:42.612Z",
   "period": "3mo",
   "universeSize": 503,
   "source": {
@@ -8552,10 +8552,16 @@
   ],
   "news": [
     {
+      "title": "A 'weird' IPO pull, a tainted reputation and the stalled breakout moment for AI wearables",
+      "url": "https://www.cnbc.com/2026/10/04/ai-wearables-oura-ipo-privacy.html",
+      "imageUrl": null,
+      "publishedAt": "2026-10-04T13:22:39.000Z"
+    },
+    {
       "title": "Trump taps Director of National Intelligence Jay Clayton as AI czar",
       "url": "https://www.cnbc.com/2026/10/03/trump-jay-clayton-ai-czar.html",
       "imageUrl": null,
-      "publishedAt": "2026-10-04T09:25:01.000Z"
+      "publishedAt": "2026-10-04T12:53:12.000Z"
     },
     {
       "title": "Ukraine’s surprise robot offensive exposes a vulnerability in Putin’s war machine",
@@ -8570,16 +8576,10 @@
       "publishedAt": "2026-10-04T09:44:25.000Z"
     },
     {
-      "title": "Berkshire buys more Lennar shares, but pace of purchases slows",
-      "url": "https://www.cnbc.com/2026/10/03/berkshire-buys-more-lennar-shares-but-pace-of-purchases-slows.html",
+      "title": "Sports betting is increasingly the norm for Gen Z.  Here’s why some financial and mental health experts are worried",
+      "url": "https://www.cnbc.com/2026/10/04/gen-z-sports-betting-financial-and-mental-health-risks.html",
       "imageUrl": null,
-      "publishedAt": "2026-10-04T09:33:19.000Z"
-    },
-    {
-      "title": "David Ellison just brought in a co-CEO to run his new empire: Meet Ynon Kreiz",
-      "url": "https://www.cnbc.com/2026/10/03/david-ellison-ynon-kreiz-skydance.html",
-      "imageUrl": null,
-      "publishedAt": "2026-10-03T11:00:01.000Z"
+      "publishedAt": "2026-10-04T12:57:45.000Z"
     },
     {
       "title": "Goldman Sachs says buy these stocks now, ahead of their earnings",
@@ -8588,22 +8588,22 @@
       "publishedAt": "2026-10-03T13:21:59.000Z"
     },
     {
-      "title": "Tesla’s Cybercab had a rocky first month in Austin. Now comes the hard part: expanding",
-      "url": "https://www.cnbc.com/2026/10/03/tesla-cybercab-pressure-to-expand-after-rocky-first-month-in-austin.html",
+      "title": "Why brands like E.l.f., Wendy's and Gap are branching out into original music",
+      "url": "https://www.cnbc.com/2026/10/04/elf-wendys-gap-music-marketing.html",
       "imageUrl": null,
-      "publishedAt": "2026-10-03T20:29:07.000Z"
+      "publishedAt": "2026-10-04T12:00:01.000Z"
     },
     {
-      "title": "Singapore debuts a state-backed dating app for young government workers as it works to slow a demographic crisis",
-      "url": "https://www.cnbc.com/2026/10/04/government-dating-app-fertility-singapore-asia.html",
+      "title": "Top Wall Street analysts are upbeat about the prospects for these 3 stocks",
+      "url": "https://www.cnbc.com/2026/10/04/top-analysts-are-upbeat-about-the-prospects-for-these-3-stocks.html",
       "imageUrl": null,
-      "publishedAt": "2026-10-04T05:09:49.000Z"
+      "publishedAt": "2026-10-04T13:24:16.000Z"
     },
     {
-      "title": "FlyDubai plane attack by co-pilot was an attempted 'terrorist' act, UAE says",
-      "url": "https://www.cnbc.com/2026/10/03/flydubai-co-pilot-attacked-pilot-with-axe-uae-says.html",
+      "title": "Chick-fil-A wants to stay a family business even as it expands in the U.S. and abroad",
+      "url": "https://www.cnbc.com/2026/10/04/chick-fil-a-ceo-andrew-cathy-family-ownership-growth.html",
       "imageUrl": null,
-      "publishedAt": "2026-10-03T12:34:59.000Z"
+      "publishedAt": "2026-10-04T12:08:54.000Z"
     },
     {
       "title": "Lula or Bolsonaro: Wall Street braces for two wildly different results in Brazil election",
@@ -8612,10 +8612,10 @@
       "publishedAt": "2026-10-03T13:12:27.000Z"
     },
     {
-      "title": "High-tech vehicles are driving up auto repair costs for shops and consumers",
-      "url": "https://www.cnbc.com/2026/10/03/vehicle-repair-costs.html",
+      "title": "Starting a watch collection? What beginners should know before buying",
+      "url": "https://www.cnbc.com/2026/10/04/watch-collecting-beginners.html",
       "imageUrl": null,
-      "publishedAt": "2026-10-03T12:00:01.000Z"
+      "publishedAt": "2026-10-04T13:44:31.000Z"
     },
     {
       "title": "High mortgage rates are trapping homeowners in place, and making renovations harder to afford",
@@ -8626,10 +8626,10 @@
   ],
   "ipoNews": [
     {
-      "title": "Cerebras stock hits post-IPO low, tumbling 20% for the week on Nvidia pressure and lockup expiration",
-      "url": "https://www.cnbc.com/2026/10/02/cerebras-stock-hits-post-ipo-low-on-nvidia-pressure-lockup-expiration.html",
+      "title": "A 'weird' IPO pull, a tainted reputation and the stalled breakout moment for AI wearables",
+      "url": "https://www.cnbc.com/2026/10/04/ai-wearables-oura-ipo-privacy.html",
       "imageUrl": null,
-      "publishedAt": "2026-10-02T22:38:49.000Z"
+      "publishedAt": "2026-10-04T13:22:39.000Z"
     }
   ],
   "benchmark": {

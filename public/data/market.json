@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-04T16:01:42.612Z",
+  "updatedAt": "2026-10-04T20:32:18.565Z",
   "period": "3mo",
   "universeSize": 503,
   "source": {
@@ -8552,16 +8552,40 @@
   ],
   "news": [
     {
+      "title": "Sports betting is increasingly the norm for Gen Z.  Here’s why some financial and mental health experts are worried",
+      "url": "https://www.cnbc.com/2026/10/04/gen-z-sports-betting-financial-and-mental-health-risks.html",
+      "imageUrl": null,
+      "publishedAt": "2026-10-04T12:57:45.000Z"
+    },
+    {
+      "title": "Supreme Court Justice Alito said he's 'thought about' retirement as Senate control hangs in balance",
+      "url": "https://www.cnbc.com/2026/10/04/supreme-court-justice-alito-thought-about-retiring.html",
+      "imageUrl": null,
+      "publishedAt": "2026-10-04T17:53:11.000Z"
+    },
+    {
+      "title": "Trump reiterates pledge to send $5,000 checks, and hands out smaller payments, as midterm elections loom",
+      "url": "https://www.cnbc.com/2026/10/04/trump-5000-checks-cash-payments-midterms.html",
+      "imageUrl": null,
+      "publishedAt": "2026-10-04T20:28:47.000Z"
+    },
+    {
+      "title": "Why brands like E.l.f., Wendy's and Gap are branching out into original music",
+      "url": "https://www.cnbc.com/2026/10/04/elf-wendys-gap-music-marketing.html",
+      "imageUrl": null,
+      "publishedAt": "2026-10-04T12:00:01.000Z"
+    },
+    {
       "title": "A 'weird' IPO pull, a tainted reputation and the stalled breakout moment for AI wearables",
       "url": "https://www.cnbc.com/2026/10/04/ai-wearables-oura-ipo-privacy.html",
       "imageUrl": null,
       "publishedAt": "2026-10-04T13:22:39.000Z"
     },
     {
-      "title": "Trump taps Director of National Intelligence Jay Clayton as AI czar",
-      "url": "https://www.cnbc.com/2026/10/03/trump-jay-clayton-ai-czar.html",
+      "title": "Goldman Sachs says buy these stocks now, ahead of their earnings",
+      "url": "https://www.cnbc.com/2026/10/03/stocks-to-buy-now-ahead-of-their-earnings-according-to-goldman-sachs.html",
       "imageUrl": null,
-      "publishedAt": "2026-10-04T12:53:12.000Z"
+      "publishedAt": "2026-10-03T13:21:59.000Z"
     },
     {
       "title": "Ukraine’s surprise robot offensive exposes a vulnerability in Putin’s war machine",
@@ -8576,34 +8600,10 @@
       "publishedAt": "2026-10-04T09:44:25.000Z"
     },
     {
-      "title": "Sports betting is increasingly the norm for Gen Z.  Here’s why some financial and mental health experts are worried",
-      "url": "https://www.cnbc.com/2026/10/04/gen-z-sports-betting-financial-and-mental-health-risks.html",
+      "title": "Trump taps Director of National Intelligence Jay Clayton as AI czar",
+      "url": "https://www.cnbc.com/2026/10/03/trump-jay-clayton-ai-czar.html",
       "imageUrl": null,
-      "publishedAt": "2026-10-04T12:57:45.000Z"
-    },
-    {
-      "title": "Goldman Sachs says buy these stocks now, ahead of their earnings",
-      "url": "https://www.cnbc.com/2026/10/03/stocks-to-buy-now-ahead-of-their-earnings-according-to-goldman-sachs.html",
-      "imageUrl": null,
-      "publishedAt": "2026-10-03T13:21:59.000Z"
-    },
-    {
-      "title": "Why brands like E.l.f., Wendy's and Gap are branching out into original music",
-      "url": "https://www.cnbc.com/2026/10/04/elf-wendys-gap-music-marketing.html",
-      "imageUrl": null,
-      "publishedAt": "2026-10-04T12:00:01.000Z"
-    },
-    {
-      "title": "Top Wall Street analysts are upbeat about the prospects for these 3 stocks",
-      "url": "https://www.cnbc.com/2026/10/04/top-analysts-are-upbeat-about-the-prospects-for-these-3-stocks.html",
-      "imageUrl": null,
-      "publishedAt": "2026-10-04T13:24:16.000Z"
-    },
-    {
-      "title": "Chick-fil-A wants to stay a family business even as it expands in the U.S. and abroad",
-      "url": "https://www.cnbc.com/2026/10/04/chick-fil-a-ceo-andrew-cathy-family-ownership-growth.html",
-      "imageUrl": null,
-      "publishedAt": "2026-10-04T12:08:54.000Z"
+      "publishedAt": "2026-10-04T12:53:12.000Z"
     },
     {
       "title": "Lula or Bolsonaro: Wall Street braces for two wildly different results in Brazil election",

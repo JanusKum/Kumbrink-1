@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-04T02:58:31.123Z",
+  "updatedAt": "2026-10-04T11:23:32.281Z",
   "period": "3mo",
   "universeSize": 503,
   "source": {
@@ -8552,10 +8552,28 @@
   ],
   "news": [
     {
-      "title": "Tesla’s Cybercab had a rocky first month in Austin. Now comes the hard part: expanding",
-      "url": "https://www.cnbc.com/2026/10/03/tesla-cybercab-pressure-to-expand-after-rocky-first-month-in-austin.html",
+      "title": "Trump taps Director of National Intelligence Jay Clayton as AI czar",
+      "url": "https://www.cnbc.com/2026/10/03/trump-jay-clayton-ai-czar.html",
       "imageUrl": null,
-      "publishedAt": "2026-10-03T20:29:07.000Z"
+      "publishedAt": "2026-10-04T09:25:01.000Z"
+    },
+    {
+      "title": "Ukraine’s surprise robot offensive exposes a vulnerability in Putin’s war machine",
+      "url": "https://www.cnbc.com/2026/10/04/russia-ukraine-war-putin-zelenskyy-donbas-lyman.html",
+      "imageUrl": null,
+      "publishedAt": "2026-10-04T05:00:01.000Z"
+    },
+    {
+      "title": "In crude Ohio rally speech, Trump says he may not help if Democrats win",
+      "url": "https://www.cnbc.com/2026/10/04/in-ohio-rally-speech-trump-says-he-may-not-help-if-democrats-win.html",
+      "imageUrl": null,
+      "publishedAt": "2026-10-04T09:44:25.000Z"
+    },
+    {
+      "title": "Berkshire buys more Lennar shares, but pace of purchases slows",
+      "url": "https://www.cnbc.com/2026/10/03/berkshire-buys-more-lennar-shares-but-pace-of-purchases-slows.html",
+      "imageUrl": null,
+      "publishedAt": "2026-10-04T09:33:19.000Z"
     },
     {
       "title": "David Ellison just brought in a co-CEO to run his new empire: Meet Ynon Kreiz",
@@ -8564,46 +8582,28 @@
       "publishedAt": "2026-10-03T11:00:01.000Z"
     },
     {
-      "title": "Trump taps Director of National Intelligence Jay Clayton as AI czar: WSJ reports",
-      "url": "https://www.cnbc.com/2026/10/03/trump-jay-clayton-ai-czar.html",
-      "imageUrl": null,
-      "publishedAt": "2026-10-03T23:37:23.000Z"
-    },
-    {
-      "title": "FlyDubai plane attack by co-pilot was an attempted 'terrorist' act, UAE says",
-      "url": "https://www.cnbc.com/2026/10/03/flydubai-co-pilot-attacked-pilot-with-axe-uae-says.html",
-      "imageUrl": null,
-      "publishedAt": "2026-10-03T12:34:59.000Z"
-    },
-    {
-      "title": "Berkshire buys more Lennar shares, but pace of purchases slows",
-      "url": "https://www.cnbc.com/2026/10/03/berkshire-buys-more-lennar-shares-but-pace-of-purchases-slows.html",
-      "imageUrl": null,
-      "publishedAt": "2026-10-03T12:55:31.000Z"
-    },
-    {
       "title": "Goldman Sachs says buy these stocks now, ahead of their earnings",
       "url": "https://www.cnbc.com/2026/10/03/stocks-to-buy-now-ahead-of-their-earnings-according-to-goldman-sachs.html",
       "imageUrl": null,
       "publishedAt": "2026-10-03T13:21:59.000Z"
     },
     {
-      "title": "Novig credits Sydney Sweeney-backed campaign for platform’s surge in growth",
-      "url": "https://www.cnbc.com/2026/10/03/novig-credits-sydney-sweeney-backed-campaign-for-platforms-surge-in-growth.html",
+      "title": "Tesla’s Cybercab had a rocky first month in Austin. Now comes the hard part: expanding",
+      "url": "https://www.cnbc.com/2026/10/03/tesla-cybercab-pressure-to-expand-after-rocky-first-month-in-austin.html",
       "imageUrl": null,
-      "publishedAt": "2026-10-03T13:30:48.000Z"
+      "publishedAt": "2026-10-03T20:29:07.000Z"
     },
     {
-      "title": "America’s data center fight is a preview of what's to come for the rest of the world",
-      "url": "https://www.cnbc.com/2026/10/03/data-center-backlash-europe-asia-africa.html",
+      "title": "Singapore debuts a state-backed dating app for young government workers as it works to slow a demographic crisis",
+      "url": "https://www.cnbc.com/2026/10/04/government-dating-app-fertility-singapore-asia.html",
       "imageUrl": null,
-      "publishedAt": "2026-10-03T12:39:29.000Z"
+      "publishedAt": "2026-10-04T05:09:49.000Z"
     },
     {
-      "title": "Private capital is reshaping Hollywood moviemaking",
-      "url": "https://www.cnbc.com/2026/10/03/private-capital-hollywood-film-financing.html",
+      "title": "FlyDubai plane attack by co-pilot was an attempted 'terrorist' act, UAE says",
+      "url": "https://www.cnbc.com/2026/10/03/flydubai-co-pilot-attacked-pilot-with-axe-uae-says.html",
       "imageUrl": null,
-      "publishedAt": "2026-10-03T12:00:01.000Z"
+      "publishedAt": "2026-10-03T12:34:59.000Z"
     },
     {
       "title": "Lula or Bolsonaro: Wall Street braces for two wildly different results in Brazil election",

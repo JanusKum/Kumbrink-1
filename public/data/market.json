@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-03T20:15:44.838Z",
+  "updatedAt": "2026-10-04T02:58:31.123Z",
   "period": "3mo",
   "universeSize": 503,
   "source": {
@@ -8555,13 +8555,19 @@
       "title": "Tesla’s Cybercab had a rocky first month in Austin. Now comes the hard part: expanding",
       "url": "https://www.cnbc.com/2026/10/03/tesla-cybercab-pressure-to-expand-after-rocky-first-month-in-austin.html",
       "imageUrl": null,
-      "publishedAt": "2026-10-03T11:00:01.000Z"
+      "publishedAt": "2026-10-03T20:29:07.000Z"
     },
     {
       "title": "David Ellison just brought in a co-CEO to run his new empire: Meet Ynon Kreiz",
       "url": "https://www.cnbc.com/2026/10/03/david-ellison-ynon-kreiz-skydance.html",
       "imageUrl": null,
       "publishedAt": "2026-10-03T11:00:01.000Z"
+    },
+    {
+      "title": "Trump taps Director of National Intelligence Jay Clayton as AI czar: WSJ reports",
+      "url": "https://www.cnbc.com/2026/10/03/trump-jay-clayton-ai-czar.html",
+      "imageUrl": null,
+      "publishedAt": "2026-10-03T23:37:23.000Z"
     },
     {
       "title": "FlyDubai plane attack by co-pilot was an attempted 'terrorist' act, UAE says",
@@ -8576,16 +8582,16 @@
       "publishedAt": "2026-10-03T12:55:31.000Z"
     },
     {
-      "title": "Novig credits Sydney Sweeney-backed campaign for platform’s surge in growth",
-      "url": "https://www.cnbc.com/2026/10/03/novig-credits-sydney-sweeney-backed-campaign-for-platforms-surge-in-growth.html",
-      "imageUrl": null,
-      "publishedAt": "2026-10-03T13:30:48.000Z"
-    },
-    {
       "title": "Goldman Sachs says buy these stocks now, ahead of their earnings",
       "url": "https://www.cnbc.com/2026/10/03/stocks-to-buy-now-ahead-of-their-earnings-according-to-goldman-sachs.html",
       "imageUrl": null,
       "publishedAt": "2026-10-03T13:21:59.000Z"
+    },
+    {
+      "title": "Novig credits Sydney Sweeney-backed campaign for platform’s surge in growth",
+      "url": "https://www.cnbc.com/2026/10/03/novig-credits-sydney-sweeney-backed-campaign-for-platforms-surge-in-growth.html",
+      "imageUrl": null,
+      "publishedAt": "2026-10-03T13:30:48.000Z"
     },
     {
       "title": "America’s data center fight is a preview of what's to come for the rest of the world",
@@ -8598,12 +8604,6 @@
       "url": "https://www.cnbc.com/2026/10/03/private-capital-hollywood-film-financing.html",
       "imageUrl": null,
       "publishedAt": "2026-10-03T12:00:01.000Z"
-    },
-    {
-      "title": "Ford fends off Hyundai to retain No. 3 U.S. sales position in third quarter",
-      "url": "https://www.cnbc.com/2026/10/02/ford-q3-sales.html",
-      "imageUrl": null,
-      "publishedAt": "2026-10-02T17:20:33.000Z"
     },
     {
       "title": "Lula or Bolsonaro: Wall Street braces for two wildly different results in Brazil election",

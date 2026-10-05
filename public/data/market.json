@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-04T20:32:18.565Z",
+  "updatedAt": "2026-10-05T02:32:24.468Z",
   "period": "3mo",
   "universeSize": 503,
   "source": {
@@ -8552,16 +8552,34 @@
   ],
   "news": [
     {
-      "title": "Sports betting is increasingly the norm for Gen Z.  Here’s why some financial and mental health experts are worried",
-      "url": "https://www.cnbc.com/2026/10/04/gen-z-sports-betting-financial-and-mental-health-risks.html",
+      "title": "Trump tells South Korea to sign on to Alaska LNG deal or 'I'll just charge them more'",
+      "url": "https://www.cnbc.com/2026/10/05/trump-alaska-lng-south-korea-pay.html",
       "imageUrl": null,
-      "publishedAt": "2026-10-04T12:57:45.000Z"
+      "publishedAt": "2026-10-05T00:47:47.000Z"
     },
     {
-      "title": "Supreme Court Justice Alito said he's 'thought about' retirement as Senate control hangs in balance",
-      "url": "https://www.cnbc.com/2026/10/04/supreme-court-justice-alito-thought-about-retiring.html",
+      "title": "Surging Treasury yields don’t signal a U.S. 'fiscal apocalypse' — yet",
+      "url": "https://www.cnbc.com/2026/10/05/treasury-yields-fiscal-concerns-not-crisis-yet.html",
       "imageUrl": null,
-      "publishedAt": "2026-10-04T17:53:11.000Z"
+      "publishedAt": "2026-10-05T02:24:07.000Z"
+    },
+    {
+      "title": "‘Unwelcome and unsafe’: Why Japanese companies are retreating from China at a historic rate",
+      "url": "https://www.cnbc.com/2026/10/05/japanese-companies-leaving-china-takaichi-comment-taiwan.html",
+      "imageUrl": null,
+      "publishedAt": "2026-10-05T02:15:12.000Z"
+    },
+    {
+      "title": "Stock futures are flat as investors grapple with higher yields, await Fed minutes: Live updates",
+      "url": "https://www.cnbc.com/2026/10/04/stock-market-today-live-updates.html",
+      "imageUrl": null,
+      "publishedAt": "2026-10-05T00:17:32.000Z"
+    },
+    {
+      "title": "All U.S. bombers leave UK air base on concerns of suspected terror plots; more tankers struck near Iran in the Middle East",
+      "url": "https://www.cnbc.com/2026/10/04/more-tankers-struck-in-gulf-waters-as-iran-reiterates-conditions.html",
+      "imageUrl": null,
+      "publishedAt": "2026-10-04T21:46:15.000Z"
     },
     {
       "title": "Trump reiterates pledge to send $5,000 checks, and hands out smaller payments, as midterm elections loom",
@@ -8570,46 +8588,28 @@
       "publishedAt": "2026-10-04T20:28:47.000Z"
     },
     {
+      "title": "They survived World War II and lost decades, but not 2026. Japan's century-old businesses are disappearing at a record pace",
+      "url": "https://www.cnbc.com/2026/10/05/japan-old-business-kadoya-subeshoten-.html",
+      "imageUrl": null,
+      "publishedAt": "2026-10-05T01:08:10.000Z"
+    },
+    {
+      "title": "Supreme Court Justice Alito said he's 'thought about' retirement as Senate control hangs in balance",
+      "url": "https://www.cnbc.com/2026/10/04/supreme-court-justice-alito-thought-about-retiring.html",
+      "imageUrl": null,
+      "publishedAt": "2026-10-04T22:08:34.000Z"
+    },
+    {
       "title": "Why brands like E.l.f., Wendy's and Gap are branching out into original music",
       "url": "https://www.cnbc.com/2026/10/04/elf-wendys-gap-music-marketing.html",
       "imageUrl": null,
       "publishedAt": "2026-10-04T12:00:01.000Z"
     },
     {
-      "title": "A 'weird' IPO pull, a tainted reputation and the stalled breakout moment for AI wearables",
-      "url": "https://www.cnbc.com/2026/10/04/ai-wearables-oura-ipo-privacy.html",
+      "title": "Sports betting is increasingly the norm for Gen Z.  Here’s why some financial and mental health experts are worried",
+      "url": "https://www.cnbc.com/2026/10/04/gen-z-sports-betting-financial-and-mental-health-risks.html",
       "imageUrl": null,
-      "publishedAt": "2026-10-04T13:22:39.000Z"
-    },
-    {
-      "title": "Goldman Sachs says buy these stocks now, ahead of their earnings",
-      "url": "https://www.cnbc.com/2026/10/03/stocks-to-buy-now-ahead-of-their-earnings-according-to-goldman-sachs.html",
-      "imageUrl": null,
-      "publishedAt": "2026-10-03T13:21:59.000Z"
-    },
-    {
-      "title": "Ukraine’s surprise robot offensive exposes a vulnerability in Putin’s war machine",
-      "url": "https://www.cnbc.com/2026/10/04/russia-ukraine-war-putin-zelenskyy-donbas-lyman.html",
-      "imageUrl": null,
-      "publishedAt": "2026-10-04T05:00:01.000Z"
-    },
-    {
-      "title": "In crude Ohio rally speech, Trump says he may not help if Democrats win",
-      "url": "https://www.cnbc.com/2026/10/04/in-ohio-rally-speech-trump-says-he-may-not-help-if-democrats-win.html",
-      "imageUrl": null,
-      "publishedAt": "2026-10-04T09:44:25.000Z"
-    },
-    {
-      "title": "Trump taps Director of National Intelligence Jay Clayton as AI czar",
-      "url": "https://www.cnbc.com/2026/10/03/trump-jay-clayton-ai-czar.html",
-      "imageUrl": null,
-      "publishedAt": "2026-10-04T12:53:12.000Z"
-    },
-    {
-      "title": "Lula or Bolsonaro: Wall Street braces for two wildly different results in Brazil election",
-      "url": "https://www.cnbc.com/2026/10/03/lula-or-bolsonaro-wall-street-braces-for-two-wildly-different-results-in-brazil-election.html",
-      "imageUrl": null,
-      "publishedAt": "2026-10-03T13:12:27.000Z"
+      "publishedAt": "2026-10-04T12:57:45.000Z"
     },
     {
       "title": "Starting a watch collection? What beginners should know before buying",

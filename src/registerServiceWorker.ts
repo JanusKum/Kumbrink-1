@@ -18,6 +18,11 @@ export function registerServiceWorker() {
         }
       }
 
+      // Also check right away: on some platforms (notably iOS home-screen
+      // apps resumed from the app switcher) the browser's own navigation-time
+      // update check doesn't reliably run, and visibilitychange only fires on
+      // a hidden→visible transition, not on this initial load.
+      checkForUpdate()
       setInterval(checkForUpdate, UPDATE_CHECK_INTERVAL_MS)
       document.addEventListener('visibilitychange', checkForUpdate)
     },

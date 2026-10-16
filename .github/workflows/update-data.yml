@@ -2,8 +2,8 @@ name: ChartPuls – Daten aktualisieren & Deploy
 
 on:
   schedule:
-    # Alle 6 Stunden: 3-Monats-Performance neu berechnen und Seite neu veröffentlichen.
-    - cron: '0 */6 * * *'
+    # Stündlich: 3-Monats-Performance neu berechnen und Seite neu veröffentlichen.
+    - cron: '0 * * * *'
   push:
     branches: [main]
   workflow_dispatch: {}

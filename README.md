@@ -60,7 +60,7 @@ eigener Server nötig.
   Beginn des Zeitraums normiert, damit Aktie und Index trotz komplett
   unterschiedlicher Kursniveaus vergleichbar sind.
 - **Auto-Update:** Ein GitHub-Actions-Workflow
-  (`.github/workflows/update-data.yml`) läuft **alle 6 Stunden**, holt die
+  (`.github/workflows/update-data.yml`) läuft **stündlich**, holt die
   frischen Daten, committet `public/data/market.json` und deployt die Seite
   automatisch neu auf GitHub Pages. Kein manuelles Eingreifen nötig.
 - **Installierbar (PWA):** Die App lässt sich über „Zum Home-Bildschirm
@@ -94,7 +94,7 @@ Marktdaten.
    **„GitHub Actions“** auswählen.
 2. Den Branch `main` als Standard-Branch pushen/mergen – der Workflow
    `update-data.yml` baut und veröffentlicht die Seite automatisch bei jedem
-   Push auf `main`, alle 6 Stunden und bei manuellem Start
+   Push auf `main`, stündlich und bei manuellem Start
    („Run workflow“ im Actions-Tab).
 3. Falls die App unter einem anderen Pfad als `/Kumbrink-1/` läuft (z. B.
    Vercel/Netlify unter `/`), `VITE_BASE_PATH=/` beim Build setzen.

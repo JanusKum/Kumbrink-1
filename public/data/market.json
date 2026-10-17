@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-17T11:55:03.864Z",
+  "updatedAt": "2026-10-17T14:47:31.718Z",
   "period": "3mo",
   "universeSize": 503,
   "source": {
@@ -8543,16 +8543,46 @@
       "publishedAt": "2026-10-17T10:20:44.000Z"
     },
     {
-      "title": "Nasdaq slides 2% Friday to post worst week since June, pressured by AI sell-off and oil prices: Live updates",
-      "url": "https://www.cnbc.com/2026/10/15/stock-market-today-live-updates.html",
+      "title": "Bending Spoons wants to revive software castoffs. Berkshire is backing the plan",
+      "url": "https://www.cnbc.com/2026/10/17/bending-spoons-wants-to-revive-software-castoffs-berkshire-investing.html",
       "imageUrl": null,
-      "publishedAt": "2026-10-16T20:27:46.000Z"
+      "publishedAt": "2026-10-17T12:00:01.000Z"
+    },
+    {
+      "title": "Berkshire shares buck market sell-off, rally to highest since Buffett said he would step down as CEO",
+      "url": "https://www.cnbc.com/2026/10/17/berkshire-rally-to-highest-since-buffett-announcement.html",
+      "imageUrl": null,
+      "publishedAt": "2026-10-17T12:46:21.000Z"
     },
     {
       "title": "5 midterm money takeaways: Democrats have candidate cash. Republicans have Elon Musk",
       "url": "https://www.cnbc.com/2026/10/16/midterm-election-fundraising-elon-musk.html",
       "imageUrl": null,
       "publishedAt": "2026-10-16T21:49:13.000Z"
+    },
+    {
+      "title": "Trump's student loan overhaul could lead to more bankruptcy filings, former judge says",
+      "url": "https://www.cnbc.com/2026/10/17/trump-student-loans-bankruptcy.html",
+      "imageUrl": null,
+      "publishedAt": "2026-10-17T13:30:01.000Z"
+    },
+    {
+      "title": "These tech stocks are a buy ahead of their earnings reports, Bank of America says",
+      "url": "https://www.cnbc.com/2026/10/17/tech-stocks-to-buy-going-into-their-earnings-reports.html",
+      "imageUrl": null,
+      "publishedAt": "2026-10-17T12:49:53.000Z"
+    },
+    {
+      "title": "Investors are buying up vast tracts of timberland across U.S. in one of market's longest-term bets",
+      "url": "https://www.cnbc.com/2026/10/17/timberland-investing-returns-risk.html",
+      "imageUrl": null,
+      "publishedAt": "2026-10-17T13:47:59.000Z"
+    },
+    {
+      "title": "Nasdaq slides 2% Friday to post worst week since June, pressured by AI sell-off and oil prices: Live updates",
+      "url": "https://www.cnbc.com/2026/10/15/stock-market-today-live-updates.html",
+      "imageUrl": null,
+      "publishedAt": "2026-10-16T20:27:46.000Z"
     },
     {
       "title": "IMFC chair says global economy resilient; delegates walk out on Russian official",
@@ -8567,56 +8597,19 @@
       "publishedAt": "2026-10-16T22:34:29.000Z"
     },
     {
-      "title": "Major earnings reports are due next week, but strong results may not be enough to quell market fears",
-      "url": "https://www.cnbc.com/2026/10/16/major-earnings-reports-market-fears-next-week.html",
-      "imageUrl": null,
-      "publishedAt": "2026-10-16T20:50:39.000Z"
-    },
-    {
-      "title": "Some companies give AI to everyone. This CEO is doing the opposite",
-      "url": "https://www.cnbc.com/2026/10/17/ai-workplace-tokenmaxxing-paysend.html",
-      "imageUrl": null,
-      "publishedAt": "2026-10-17T05:00:01.000Z"
-    },
-    {
-      "title": "Apple’s $1,999 iPhone Duo puts the company's status-symbol power to the test",
-      "url": "https://www.cnbc.com/2026/10/16/apple-iphone-duo-demand-price.html",
-      "imageUrl": null,
-      "publishedAt": "2026-10-16T22:31:26.000Z"
-    },
-    {
-      "title": "Wall Street's fear gauge is ripping. Traders see it going even higher",
-      "url": "https://www.cnbc.com/2026/10/16/wall-streets-fear-gauge-is-ripping-traders-see-it-going-even-higher.html",
-      "imageUrl": null,
-      "publishedAt": "2026-10-16T19:28:10.000Z"
-    },
-    {
       "title": "KFC to switch to Coca-Cola beverages in U.S. restaurants for the first time in decades",
       "url": "https://www.cnbc.com/2026/10/15/kfc-coca-cola-pepsi-switch.html",
       "imageUrl": null,
       "publishedAt": "2026-10-16T11:02:24.000Z"
     },
     {
-      "title": "Tesla unveils long-delayed Roadster developed with SpaceX, fueling merger speculation",
-      "url": "https://www.cnbc.com/2026/10/15/tesla-roadster-reveal-what-to-know-about-the-delayed-ev.html",
+      "title": "'Everyone laughed' when he started a pumpkin farm—now it brings in $2 million a year",
+      "url": "https://www.cnbc.com/make-it/2026/10/17/great-pumpkin-farm-new-york-2-million-revenue.html",
       "imageUrl": null,
-      "publishedAt": "2026-10-16T15:52:41.000Z"
-    },
-    {
-      "title": "Prediction market odds on Tesla-SpaceX merger are above 50% for early 2027",
-      "url": "https://www.cnbc.com/2026/10/16/tesla-spacex-merger-odds-rise-on-kalshi.html",
-      "imageUrl": null,
-      "publishedAt": "2026-10-16T17:02:40.000Z"
+      "publishedAt": "2026-10-17T13:00:01.000Z"
     }
   ],
-  "ipoNews": [
-    {
-      "title": "Could an Anthropic IPO put your 401(k) at risk? The AI safety debate hits a new dimension.",
-      "url": "https://www.marketwatch.com/story/could-an-anthropic-ipo-put-your-401-k-at-risk-the-ai-safety-debate-hits-a-new-dimension-db3f09f7?mod=mw_rss_topstories",
-      "imageUrl": "https://images.mktw.net/im-73170524",
-      "publishedAt": "2026-10-16T21:35:00.000Z"
-    }
-  ],
+  "ipoNews": [],
   "benchmark": {
     "symbol": "^GSPC",
     "name": "S&P 500",

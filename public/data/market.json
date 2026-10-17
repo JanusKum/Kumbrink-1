@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-17T07:25:16.077Z",
+  "updatedAt": "2026-10-17T11:55:03.864Z",
   "period": "3mo",
   "universeSize": 503,
   "source": {
@@ -8537,28 +8537,28 @@
   ],
   "news": [
     {
-      "title": "Brent oil touches $110 as Iran escalates Hormuz attacks, Ukraine vows to hit Russian refineries",
-      "url": "https://www.cnbc.com/2026/10/16/oil-price-today-iran-strait-hormuz-ukraine-russia.html",
+      "title": "Trump waives broad new Russia sanctions and tariffs under Graham Act, citing national interest",
+      "url": "https://www.cnbc.com/2026/10/17/trump-waives-russia-related-sanctions-tariffs-before-they-take-effect-.html",
       "imageUrl": null,
-      "publishedAt": "2026-10-16T20:02:21.000Z"
+      "publishedAt": "2026-10-17T10:20:44.000Z"
     },
     {
-      "title": "Trump's Russia diesel deal may offer Putin more than money — and spell trouble for Ukraine",
-      "url": "https://www.cnbc.com/2026/10/17/trump-diesel-russia-ukraine-war.html",
+      "title": "Nasdaq slides 2% Friday to post worst week since June, pressured by AI sell-off and oil prices: Live updates",
+      "url": "https://www.cnbc.com/2026/10/15/stock-market-today-live-updates.html",
       "imageUrl": null,
-      "publishedAt": "2026-10-17T05:46:20.000Z"
+      "publishedAt": "2026-10-16T20:27:46.000Z"
     },
     {
-      "title": "Some companies give AI to everyone. This CEO is doing the opposite",
-      "url": "https://www.cnbc.com/2026/10/17/ai-workplace-tokenmaxxing-paysend.html",
+      "title": "5 midterm money takeaways: Democrats have candidate cash. Republicans have Elon Musk",
+      "url": "https://www.cnbc.com/2026/10/16/midterm-election-fundraising-elon-musk.html",
       "imageUrl": null,
-      "publishedAt": "2026-10-17T05:00:01.000Z"
+      "publishedAt": "2026-10-16T21:49:13.000Z"
     },
     {
-      "title": "Apple’s $1,999 iPhone Duo puts the company's status-symbol power to the test",
-      "url": "https://www.cnbc.com/2026/10/16/apple-iphone-duo-demand-price.html",
+      "title": "IMFC chair says global economy resilient; delegates walk out on Russian official",
+      "url": "https://www.cnbc.com/2026/10/17/imf-members-call-for-more-support-amid-war-shocks-advanced-intelligence-risks.html",
       "imageUrl": null,
-      "publishedAt": "2026-10-16T22:31:26.000Z"
+      "publishedAt": "2026-10-17T11:41:06.000Z"
     },
     {
       "title": "U.S. budget deficit swells to almost $2 trillion for fiscal 2026, up 12% in a single year",
@@ -8573,10 +8573,16 @@
       "publishedAt": "2026-10-16T20:50:39.000Z"
     },
     {
-      "title": "Nasdaq slides 2% Friday to post worst week since June, pressured by AI sell-off and oil prices: Live updates",
-      "url": "https://www.cnbc.com/2026/10/15/stock-market-today-live-updates.html",
+      "title": "Some companies give AI to everyone. This CEO is doing the opposite",
+      "url": "https://www.cnbc.com/2026/10/17/ai-workplace-tokenmaxxing-paysend.html",
       "imageUrl": null,
-      "publishedAt": "2026-10-16T20:27:46.000Z"
+      "publishedAt": "2026-10-17T05:00:01.000Z"
+    },
+    {
+      "title": "Apple’s $1,999 iPhone Duo puts the company's status-symbol power to the test",
+      "url": "https://www.cnbc.com/2026/10/16/apple-iphone-duo-demand-price.html",
+      "imageUrl": null,
+      "publishedAt": "2026-10-16T22:31:26.000Z"
     },
     {
       "title": "Wall Street's fear gauge is ripping. Traders see it going even higher",
@@ -8585,16 +8591,10 @@
       "publishedAt": "2026-10-16T19:28:10.000Z"
     },
     {
-      "title": "Katie Zacharia out as Trump's White House press secretary",
-      "url": "https://www.cnbc.com/2026/10/16/trump-katie-zacharia-white-house.html",
+      "title": "KFC to switch to Coca-Cola beverages in U.S. restaurants for the first time in decades",
+      "url": "https://www.cnbc.com/2026/10/15/kfc-coca-cola-pepsi-switch.html",
       "imageUrl": null,
-      "publishedAt": "2026-10-16T21:26:15.000Z"
-    },
-    {
-      "title": "Why Trump and the GOP's billion-dollar midterm blitz isn’t working",
-      "url": "https://www.cnbc.com/2026/10/16/republicans-midterms-spending-trump-musk-2026.html",
-      "imageUrl": null,
-      "publishedAt": "2026-10-16T17:55:05.000Z"
+      "publishedAt": "2026-10-16T11:02:24.000Z"
     },
     {
       "title": "Tesla unveils long-delayed Roadster developed with SpaceX, fueling merger speculation",
@@ -9748,7 +9748,7 @@
         "c": 7743.41
       },
       {
-        "t": "2026-10-16T20:00:00.000Z",
+        "t": "2026-10-16T20:42:08.000Z",
         "c": 7659.44
       }
     ],
@@ -9910,7 +9910,7 @@
         "c": 7718.6
       },
       {
-        "t": "2026-10-16T20:00:00.000Z",
+        "t": "2026-10-16T20:42:08.000Z",
         "c": 7659.44
       }
     ]

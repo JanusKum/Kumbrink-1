@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-18T07:39:43.780Z",
+  "updatedAt": "2026-10-18T12:22:37.336Z",
   "period": "3mo",
   "universeSize": 503,
   "source": {
@@ -8537,6 +8537,12 @@
   ],
   "news": [
     {
+      "title": "Always on, always listening: New AI devices are pushing legal limits and could put users in jeopardy",
+      "url": "https://www.cnbc.com/2026/10/18/ai-wearables-privacy-wiretap-laws.html",
+      "imageUrl": null,
+      "publishedAt": "2026-10-18T12:00:01.000Z"
+    },
+    {
       "title": "Why hedge funds could be making a bond market shock more likely",
       "url": "https://www.cnbc.com/2026/10/18/hedge-funds-bond-market-turmoil.html",
       "imageUrl": null,
@@ -8561,40 +8567,34 @@
       "publishedAt": "2026-10-17T15:11:30.000Z"
     },
     {
-      "title": "Nasdaq slides 2% Friday to post worst week since June, pressured by AI sell-off and oil prices: Live updates",
-      "url": "https://www.cnbc.com/2026/10/15/stock-market-today-live-updates.html",
-      "imageUrl": null,
-      "publishedAt": "2026-10-16T20:27:46.000Z"
-    },
-    {
       "title": "These tech stocks are a buy ahead of their earnings reports, Bank of America says",
       "url": "https://www.cnbc.com/2026/10/17/tech-stocks-to-buy-going-into-their-earnings-reports.html",
       "imageUrl": null,
       "publishedAt": "2026-10-17T12:49:53.000Z"
     },
     {
+      "title": "Vance faces tough questions on Iran war, immigration and more in CBS town hall",
+      "url": "https://www.cnbc.com/2026/10/18/jd-vance-town-hall-interview.html",
+      "imageUrl": null,
+      "publishedAt": "2026-10-18T11:11:22.000Z"
+    },
+    {
+      "title": "Deaths confirmed after 'serious incident,' fire at Canada military base in Alberta",
+      "url": "https://www.cnbc.com/2026/10/18/deaths-confirmed-after-fire-at-canada-military-base-in-alberta.html",
+      "imageUrl": null,
+      "publishedAt": "2026-10-18T11:03:05.000Z"
+    },
+    {
+      "title": "Hurricane Trudy brings heavy rain and strong winds to Mexico’s Pacific coast",
+      "url": "https://www.cnbc.com/2026/10/18/hurricane-trudy-brings-heavy-rain-winds-to-mexicos-pacific-coast.html",
+      "imageUrl": null,
+      "publishedAt": "2026-10-18T12:00:56.000Z"
+    },
+    {
       "title": "Brent oil touches $110 as Iran escalates Hormuz attacks, Ukraine vows to hit Russian refineries",
       "url": "https://www.cnbc.com/2026/10/16/oil-price-today-iran-strait-hormuz-ukraine-russia.html",
       "imageUrl": null,
       "publishedAt": "2026-10-16T20:02:21.000Z"
-    },
-    {
-      "title": "Trump touts his power at Kentucky rally to energize voters ahead of midterm elections",
-      "url": "https://www.cnbc.com/2026/10/17/trump-touts-his-power-at-kentucky-rally-ahead-of-midterms.html",
-      "imageUrl": null,
-      "publishedAt": "2026-10-18T05:56:03.000Z"
-    },
-    {
-      "title": "Trump's Russia diesel deal may offer Putin more than money — and spell trouble for Ukraine",
-      "url": "https://www.cnbc.com/2026/10/17/trump-diesel-russia-ukraine-war.html",
-      "imageUrl": null,
-      "publishedAt": "2026-10-18T07:22:07.000Z"
-    },
-    {
-      "title": "Berkshire shares buck market sell-off, rally to highest since Buffett said he would step down as CEO",
-      "url": "https://www.cnbc.com/2026/10/17/berkshire-rally-to-highest-since-buffett-announcement.html",
-      "imageUrl": null,
-      "publishedAt": "2026-10-17T12:46:21.000Z"
     },
     {
       "title": "KFC to switch to Coca-Cola beverages in U.S. restaurants for the first time in decades",

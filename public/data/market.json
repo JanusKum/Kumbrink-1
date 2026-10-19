@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-19T00:41:24.805Z",
+  "updatedAt": "2026-10-19T05:34:48.373Z",
   "period": "3mo",
   "universeSize": 503,
   "source": {
@@ -8537,10 +8537,58 @@
   ],
   "news": [
     {
+      "title": "Putin reportedly suggests summit with Trump and Xi to decide fate of Ukraine",
+      "url": "https://www.cnbc.com/2026/10/19/putin-trump-xi-ukraine-war-energy.html",
+      "imageUrl": null,
+      "publishedAt": "2026-10-19T03:56:03.000Z"
+    },
+    {
+      "title": "France hit by worst unrest in years as attempts to rein in government spending meet citizen ire",
+      "url": "https://www.cnbc.com/2026/10/19/france-protests-worst-in-years-unrest-macron-.html",
+      "imageUrl": null,
+      "publishedAt": "2026-10-19T03:18:51.000Z"
+    },
+    {
       "title": "Always on, always listening: New AI devices are pushing legal limits and could put users in jeopardy",
       "url": "https://www.cnbc.com/2026/10/18/ai-wearables-privacy-wiretap-laws.html",
       "imageUrl": null,
       "publishedAt": "2026-10-18T12:00:01.000Z"
+    },
+    {
+      "title": "Nasdaq futures gain as investors buy the dip in the AI trade: Live updates",
+      "url": "https://www.cnbc.com/2026/10/18/stock-market-today-live-updates.html",
+      "imageUrl": null,
+      "publishedAt": "2026-10-19T04:19:30.000Z"
+    },
+    {
+      "title": "'Where there's smoke there's fire': Why BTIG is sounding the alarm on tech",
+      "url": "https://www.cnbc.com/2026/10/19/tech-semiconductor-chips-ai-stocks.html",
+      "imageUrl": null,
+      "publishedAt": "2026-10-19T04:17:15.000Z"
+    },
+    {
+      "title": "Indonesian stocks plunge to six-year low as MSCI downgrade fears mount",
+      "url": "https://www.cnbc.com/2026/10/19/indonesian-stocks-msci-downgrade-fears-mount.html",
+      "imageUrl": null,
+      "publishedAt": "2026-10-19T03:00:33.000Z"
+    },
+    {
+      "title": "China's third-quarter economic growth quickens to 4.5% as exports surge, beating estimates",
+      "url": "https://www.cnbc.com/2026/10/19/chinas-economic-growth-quickens-to-4point6percent-as-exports-surge-stimulus-rolls-out.html",
+      "imageUrl": null,
+      "publishedAt": "2026-10-19T04:36:39.000Z"
+    },
+    {
+      "title": "China's CXMT sees shares drop over 6% as investors look past chipmaker's profit turnaround",
+      "url": "https://www.cnbc.com/2026/10/19/china-cxmt-profit-outlook-shares.html",
+      "imageUrl": null,
+      "publishedAt": "2026-10-19T01:56:34.000Z"
+    },
+    {
+      "title": "India’s Finance Minister says easy exits and excess liquidity fuel equity market's underperformance",
+      "url": "https://www.cnbc.com/2026/10/18/india-ai-nifty50-sensex-investors.html",
+      "imageUrl": null,
+      "publishedAt": "2026-10-19T04:46:26.000Z"
     },
     {
       "title": "Meta Platforms and Tesla are among the companies set to report next week. What to expect",
@@ -8549,64 +8597,16 @@
       "publishedAt": "2026-10-18T12:41:18.000Z"
     },
     {
-      "title": "India’s Finance Minister blames easy exits and excess liquidity for equity market's underperformance",
-      "url": "https://www.cnbc.com/2026/10/18/india-ai-nifty50-sensex-investors.html",
-      "imageUrl": null,
-      "publishedAt": "2026-10-18T23:00:01.000Z"
-    },
-    {
-      "title": "Why hedge funds could be making a bond market shock more likely",
-      "url": "https://www.cnbc.com/2026/10/18/hedge-funds-bond-market-turmoil.html",
-      "imageUrl": null,
-      "publishedAt": "2026-10-18T06:13:05.000Z"
-    },
-    {
-      "title": "AI rapidly improving, could vastly boost U.S. GDP, Anthropic's Clark tells policymakers",
-      "url": "https://www.cnbc.com/2026/10/17/ai-us-gdp-anthropics-clark.html",
-      "imageUrl": null,
-      "publishedAt": "2026-10-17T23:04:00.000Z"
-    },
-    {
-      "title": "Vance faces tough questions on Iran war, immigration and more in CBS town hall",
-      "url": "https://www.cnbc.com/2026/10/18/jd-vance-town-hall-interview.html",
-      "imageUrl": null,
-      "publishedAt": "2026-10-18T11:11:22.000Z"
-    },
-    {
-      "title": "KFC to switch to Coca-Cola beverages in U.S. restaurants for the first time in decades",
-      "url": "https://www.cnbc.com/2026/10/15/kfc-coca-cola-pepsi-switch.html",
-      "imageUrl": null,
-      "publishedAt": "2026-10-16T11:02:24.000Z"
-    },
-    {
-      "title": "'Everyone laughed' when he started a pumpkin farm—now it brings in $2 million a year",
-      "url": "https://www.cnbc.com/make-it/2026/10/17/great-pumpkin-farm-new-york-2-million-revenue.html",
-      "imageUrl": null,
-      "publishedAt": "2026-10-17T13:00:01.000Z"
-    },
-    {
       "title": "U.S. presses China on Mastercard, Citigroup market access in bilateral Bangkok talks, official says",
       "url": "https://www.cnbc.com/2026/10/16/us-china-mastercard-citigroup-market-access.html",
       "imageUrl": null,
       "publishedAt": "2026-10-16T16:46:18.000Z"
     },
     {
-      "title": "Looking for a non-AI trade? This bank stock is poised for a breakout next week",
-      "url": "https://www.cnbc.com/2026/10/16/ja.html",
-      "imageUrl": null,
-      "publishedAt": "2026-10-16T19:19:28.000Z"
-    },
-    {
       "title": "France's Macron vows to hold accountable those who 'sought to bring down the Republic'",
       "url": "https://www.cnbc.com/2026/10/18/macron-tv-speech-protests-riots.html",
       "imageUrl": null,
       "publishedAt": "2026-10-18T19:16:12.000Z"
-    },
-    {
-      "title": "Roth conversions: When the ‘juice isn't really worth the squeeze,’ according to a top-ranked advisor",
-      "url": "https://www.cnbc.com/2026/10/18/roth-conversion-2026.html",
-      "imageUrl": null,
-      "publishedAt": "2026-10-18T13:30:01.000Z"
     }
   ],
   "ipoNews": [],

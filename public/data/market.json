@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-24T06:45:51.110Z",
+  "updatedAt": "2026-10-24T11:47:05.199Z",
   "period": "3mo",
   "universeSize": 503,
   "source": {
@@ -8537,6 +8537,24 @@
   ],
   "news": [
     {
+      "title": "Trump is pushing a massive AI buildout. His own voters are wary of what comes with it",
+      "url": "https://www.cnbc.com/2026/10/24/trump-ai-data-centers-voter-backlash-midterms.html",
+      "imageUrl": null,
+      "publishedAt": "2026-10-24T10:59:16.000Z"
+    },
+    {
+      "title": "Nvidia's role as AI financier faces first big test as neoclouds take market hit",
+      "url": "https://www.cnbc.com/2026/10/24/nvidias-role-as-ai-financier-faces-first-big-test-as-neoclouds-take-market-hit.html",
+      "imageUrl": null,
+      "publishedAt": "2026-10-24T11:00:01.000Z"
+    },
+    {
+      "title": "What next for France as riots rattle markets? Three questions facing investors ahead of more protests",
+      "url": "https://www.cnbc.com/2026/10/24/france-riots-paris-unrest-debt-budget.html",
+      "imageUrl": null,
+      "publishedAt": "2026-10-24T06:23:02.000Z"
+    },
+    {
       "title": "Trump dropping some Canada tariffs but 'replacing' them with other products",
       "url": "https://www.cnbc.com/2026/10/23/trump-tariffs-canada-susan-collins.html",
       "imageUrl": null,
@@ -8547,24 +8565,6 @@
       "url": "https://www.cnbc.com/2026/10/23/ai-turmoil-neoclouds-struggle-credit-risks-jump-solidigm-pulls-ipo.html",
       "imageUrl": null,
       "publishedAt": "2026-10-24T06:41:14.000Z"
-    },
-    {
-      "title": "What next for France as riots rattle markets? Three questions facing investors ahead of more protests",
-      "url": "https://www.cnbc.com/2026/10/24/france-riots-paris-unrest-debt-budget.html",
-      "imageUrl": null,
-      "publishedAt": "2026-10-24T06:23:02.000Z"
-    },
-    {
-      "title": "Dow tumbles more than 600 points as oil prices rise and market sell-off hits most sectors",
-      "url": "https://www.cnbc.com/2026/10/22/stock-market-today-live-update.html",
-      "imageUrl": null,
-      "publishedAt": "2026-10-23T20:16:54.000Z"
-    },
-    {
-      "title": "What a day in customer service looks like — as AI changes everything",
-      "url": "https://www.cnbc.com/2026/10/24/ai-customer-service-jobs-work.html",
-      "imageUrl": null,
-      "publishedAt": "2026-10-24T05:00:01.000Z"
     },
     {
       "title": "Apple is set to take back the market-cap crown from Nvidia. Upcoming earnings may push it over the top",
@@ -8579,16 +8579,22 @@
       "publishedAt": "2026-10-23T16:55:37.000Z"
     },
     {
-      "title": "Trump's executive order targets mortgage insurance, refinance costs. What it means for borrowers",
-      "url": "https://www.cnbc.com/2026/10/23/trump-mortgage-executive-order-costs.html",
-      "imageUrl": null,
-      "publishedAt": "2026-10-23T22:27:06.000Z"
-    },
-    {
       "title": "Moody's holds steady on France's credit rating as country grapples with turmoil and higher yields",
       "url": "https://www.cnbc.com/2026/10/23/moodys-holds-steady-on-frances-credit-rating-as-country-grapples-with-turmoil-and-higher-yields.html",
       "imageUrl": null,
       "publishedAt": "2026-10-23T22:49:42.000Z"
+    },
+    {
+      "title": "What a day in customer service looks like — as AI changes everything",
+      "url": "https://www.cnbc.com/2026/10/24/ai-customer-service-jobs-work.html",
+      "imageUrl": null,
+      "publishedAt": "2026-10-24T05:00:01.000Z"
+    },
+    {
+      "title": "Dow tumbles more than 600 points as oil prices rise and market sell-off hits most sectors",
+      "url": "https://www.cnbc.com/2026/10/22/stock-market-today-live-update.html",
+      "imageUrl": null,
+      "publishedAt": "2026-10-23T20:16:54.000Z"
     },
     {
       "title": "Scalpers offer Apple iPhone Duo buyers hundreds extra outside Beijing launch",
@@ -8597,16 +8603,10 @@
       "publishedAt": "2026-10-23T20:06:37.000Z"
     },
     {
-      "title": "In hunt for Starlink alternative, Ukraine partners with Nokia and satellite maker ICEYE",
-      "url": "https://www.cnbc.com/2026/10/23/ukraine-partners-with-nokia-and-iceye-for-starlink-alternative.html",
+      "title": "Trump's executive order targets mortgage insurance, refinance costs. What it means for borrowers",
+      "url": "https://www.cnbc.com/2026/10/23/trump-mortgage-executive-order-costs.html",
       "imageUrl": null,
-      "publishedAt": "2026-10-23T20:52:23.000Z"
-    },
-    {
-      "title": "Musk's SpaceX is still restricting Starlink in Ukraine and the toll is rising",
-      "url": "https://www.cnbc.com/2026/10/23/ukraine-says-starlink-restrictions-remain-despite-trump-assurances.html",
-      "imageUrl": null,
-      "publishedAt": "2026-10-23T19:50:26.000Z"
+      "publishedAt": "2026-10-23T22:27:06.000Z"
     }
   ],
   "ipoNews": [

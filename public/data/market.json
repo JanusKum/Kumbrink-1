@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-25T20:15:18.736Z",
+  "updatedAt": "2026-10-25T22:58:47.687Z",
   "period": "3mo",
   "universeSize": 503,
   "source": {
@@ -8537,10 +8537,16 @@
   ],
   "news": [
     {
-      "title": "Audi defends plans for a $4 billion Georgia plant amid VW restructuring, tariffs",
-      "url": "https://www.cnbc.com/2026/10/25/audi-georgia-us-plant-tariffs-volkswagen.html",
+      "title": "Stock futures climb as traders try to recover from the S&P 500's losing week: Live updates",
+      "url": "https://www.cnbc.com/2026/10/25/stock-market-today-live-updates.html",
       "imageUrl": null,
-      "publishedAt": "2026-10-25T16:42:42.000Z"
+      "publishedAt": "2026-10-25T22:57:52.000Z"
+    },
+    {
+      "title": "Blanche defends Trump-ordered lawsuit over Alaska Senate election certification",
+      "url": "https://www.cnbc.com/2026/10/25/blanche-doj-alaska-senate-certification-lawsuit.html",
+      "imageUrl": null,
+      "publishedAt": "2026-10-25T20:28:55.000Z"
     },
     {
       "title": "Ukraine disputes Elon Musk’s claim that its military violated Starlink terms during drone operations",
@@ -8549,22 +8555,16 @@
       "publishedAt": "2026-10-25T18:18:49.000Z"
     },
     {
-      "title": "What Democrats and Republicans fear most about each other: CNBC survey has the answers",
-      "url": "https://www.cnbc.com/2026/10/25/cnbc-survey-midterm-election-voter-fears.html",
+      "title": "Trump invokes 9/11 in urging Michigan voters to oppose Muslim Senate candidate El-Sayed",
+      "url": "https://www.cnbc.com/2026/10/25/trump-invokes-911-in-urging-michigan-voters-to-oppose-el-sayed.html",
       "imageUrl": null,
-      "publishedAt": "2026-10-25T12:00:01.000Z"
+      "publishedAt": "2026-10-25T21:54:11.000Z"
     },
     {
-      "title": "In pictures: Initially peaceful protests across France over inequality again descend into violence",
-      "url": "https://www.cnbc.com/2026/10/25/france-protests-paris-cost-of-living-inequality.html",
+      "title": "Audi defends plans for a $4 billion Georgia plant amid VW restructuring, tariffs",
+      "url": "https://www.cnbc.com/2026/10/25/audi-georgia-us-plant-tariffs-volkswagen.html",
       "imageUrl": null,
-      "publishedAt": "2026-10-25T14:14:23.000Z"
-    },
-    {
-      "title": "Saudi Arabia says it intercepted missiles and drones from Iran-backed Houthis",
-      "url": "https://www.cnbc.com/2026/10/25/saudi-arabia-houthi-missile-drone-interceptions.html",
-      "imageUrl": null,
-      "publishedAt": "2026-10-25T13:41:37.000Z"
+      "publishedAt": "2026-10-25T16:42:42.000Z"
     },
     {
       "title": "SpaceX coverage network designs draw Wall Street's eye. Here's what analysts think",
@@ -8573,16 +8573,22 @@
       "publishedAt": "2026-10-25T11:50:03.000Z"
     },
     {
-      "title": "Marc Lore’s Wonder bets on Texas, automation and user-built restaurants as it mulls IPO",
-      "url": "https://www.cnbc.com/2026/10/25/wonder-ipo-texas-automation.html",
+      "title": "Nvidia's role as AI financier faces first big test as neoclouds take market hit",
+      "url": "https://www.cnbc.com/2026/10/24/nvidias-role-as-ai-financier-faces-first-big-test-as-neoclouds-take-market-hit.html",
       "imageUrl": null,
-      "publishedAt": "2026-10-25T12:00:01.000Z"
+      "publishedAt": "2026-10-24T11:00:01.000Z"
     },
     {
-      "title": "Brazil votes in tight runoff between Lula and Bolsonaro",
+      "title": "In pictures: Initially peaceful protests across France over inequality again descend into violence",
+      "url": "https://www.cnbc.com/2026/10/25/france-protests-paris-cost-of-living-inequality.html",
+      "imageUrl": null,
+      "publishedAt": "2026-10-25T14:14:23.000Z"
+    },
+    {
+      "title": "Brazil's Lula takes early lead in presidential runoff vote",
       "url": "https://www.cnbc.com/2026/10/25/brazil-lula-bolsonaro-presidential-election-runoff.html",
       "imageUrl": null,
-      "publishedAt": "2026-10-25T18:41:45.000Z"
+      "publishedAt": "2026-10-25T22:53:01.000Z"
     },
     {
       "title": "Why popular airplanes are getting scrapped years early",
@@ -8591,22 +8597,16 @@
       "publishedAt": "2026-10-24T15:18:30.000Z"
     },
     {
-      "title": "Democrats, voting-rights groups challenge Trump's bid to block Alaska Senate certification",
-      "url": "https://www.cnbc.com/2026/10/24/alaska-senate-doj-certification-lawsuit.html",
-      "imageUrl": null,
-      "publishedAt": "2026-10-24T19:57:24.000Z"
-    },
-    {
       "title": "America by the numbers: How voters feel about the economy, inflation, AI and Trump",
       "url": "https://www.cnbc.com/2026/10/23/america-by-the-numbers-how-voters-feel-about-the-economy-inflation-ai-and-trump.html",
       "imageUrl": null,
       "publishedAt": "2026-10-24T10:58:30.000Z"
     },
     {
-      "title": "Trump's executive order targets mortgage insurance, refinance costs. What it means for borrowers",
-      "url": "https://www.cnbc.com/2026/10/23/trump-mortgage-executive-order-costs.html",
+      "title": "What Democrats and Republicans fear most about each other: CNBC survey has the answers",
+      "url": "https://www.cnbc.com/2026/10/25/cnbc-survey-midterm-election-voter-fears.html",
       "imageUrl": null,
-      "publishedAt": "2026-10-23T22:27:06.000Z"
+      "publishedAt": "2026-10-25T12:00:01.000Z"
     }
   ],
   "ipoNews": [

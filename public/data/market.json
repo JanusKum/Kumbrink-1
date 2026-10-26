@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-25T22:58:47.687Z",
+  "updatedAt": "2026-10-26T01:02:20.770Z",
   "period": "3mo",
   "universeSize": 503,
   "source": {
@@ -8537,10 +8537,22 @@
   ],
   "news": [
     {
+      "title": "Brazil's Lula wins presidential election in runoff vote",
+      "url": "https://www.cnbc.com/2026/10/26/brazil-lula-win-presidential-election-runoff-vote.html",
+      "imageUrl": null,
+      "publishedAt": "2026-10-26T00:47:09.000Z"
+    },
+    {
+      "title": "SpaceX closes $40 billion debt deal for AI chips, Elon Musk says",
+      "url": "https://www.cnbc.com/2026/10/26/spacex-closes-40-billion-debt-deal-for-ai-chips-elon-musk-.html",
+      "imageUrl": null,
+      "publishedAt": "2026-10-26T00:37:51.000Z"
+    },
+    {
       "title": "Stock futures climb as traders try to recover from the S&P 500's losing week: Live updates",
       "url": "https://www.cnbc.com/2026/10/25/stock-market-today-live-updates.html",
       "imageUrl": null,
-      "publishedAt": "2026-10-25T22:57:52.000Z"
+      "publishedAt": "2026-10-26T00:49:23.000Z"
     },
     {
       "title": "Blanche defends Trump-ordered lawsuit over Alaska Senate election certification",
@@ -8553,6 +8565,18 @@
       "url": "https://www.cnbc.com/2026/10/25/ukraine-musk-starlink-terms-dispute.html",
       "imageUrl": null,
       "publishedAt": "2026-10-25T18:18:49.000Z"
+    },
+    {
+      "title": "‘Ticking time bomb’: The world's pension funds face an ageing crisis",
+      "url": "https://www.cnbc.com/2026/10/26/pension-funds-ageing-crisis-risk-investment.html",
+      "imageUrl": null,
+      "publishedAt": "2026-10-26T00:03:20.000Z"
+    },
+    {
+      "title": "Goldman Sachs slashes Kospi target to 9,000 but still sees over 60% upside",
+      "url": "https://www.cnbc.com/2026/10/26/goldman-slashes-kospi-target-korea-stocks.html",
+      "imageUrl": null,
+      "publishedAt": "2026-10-26T00:00:03.000Z"
     },
     {
       "title": "Trump invokes 9/11 in urging Michigan voters to oppose Muslim Senate candidate El-Sayed",
@@ -8571,30 +8595,6 @@
       "url": "https://www.cnbc.com/2026/10/25/spacex-cell-sites-wireless-network.html",
       "imageUrl": null,
       "publishedAt": "2026-10-25T11:50:03.000Z"
-    },
-    {
-      "title": "Nvidia's role as AI financier faces first big test as neoclouds take market hit",
-      "url": "https://www.cnbc.com/2026/10/24/nvidias-role-as-ai-financier-faces-first-big-test-as-neoclouds-take-market-hit.html",
-      "imageUrl": null,
-      "publishedAt": "2026-10-24T11:00:01.000Z"
-    },
-    {
-      "title": "In pictures: Initially peaceful protests across France over inequality again descend into violence",
-      "url": "https://www.cnbc.com/2026/10/25/france-protests-paris-cost-of-living-inequality.html",
-      "imageUrl": null,
-      "publishedAt": "2026-10-25T14:14:23.000Z"
-    },
-    {
-      "title": "Brazil's Lula takes early lead in presidential runoff vote",
-      "url": "https://www.cnbc.com/2026/10/25/brazil-lula-bolsonaro-presidential-election-runoff.html",
-      "imageUrl": null,
-      "publishedAt": "2026-10-25T22:53:01.000Z"
-    },
-    {
-      "title": "Why popular airplanes are getting scrapped years early",
-      "url": "https://www.cnbc.com/2026/10/24/spirit-airlines-planes-scrapped-engine-shortage.html",
-      "imageUrl": null,
-      "publishedAt": "2026-10-24T15:18:30.000Z"
     },
     {
       "title": "America by the numbers: How voters feel about the economy, inflation, AI and Trump",

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-30T02:19:27.144Z",
+  "updatedAt": "2026-10-30T09:24:42.847Z",
   "period": "3mo",
   "universeSize": 503,
   "source": {
@@ -3605,9 +3605,9 @@
       "startPrice3mo": 473.69,
       "changeAbs3mo": -35.46,
       "changePct3mo": -7.49,
-      "changePct3d": -2.4,
-      "changePct1w": -5.09,
-      "changePct1mo": -4.74,
+      "changePct3d": -4.61,
+      "changePct1w": -1.7,
+      "changePct1mo": -3.39,
       "changePct1y": -5.23,
       "changePct3y": 55.49
     },
@@ -8123,7 +8123,7 @@
       "stockCount": 83,
       "periods": {
         "1w": {
-          "avgChangePct": 2.15,
+          "avgChangePct": 2.19,
           "top10": [
             "VRT",
             "PNR",
@@ -8138,7 +8138,7 @@
           ]
         },
         "1mo": {
-          "avgChangePct": 5.61,
+          "avgChangePct": 5.63,
           "top10": [
             "EFX",
             "LMT",
@@ -8552,40 +8552,28 @@
   ],
   "news": [
     {
-      "title": "Binance 'potential security issue' sees $2.54 billion frozen by the likes of Circle, Tether",
+      "title": "Amazon falls 7%, Intel plunges 25% in premarket trading, as pressure mounts after earnings",
+      "url": "https://www.cnbc.com/2026/10/30/amazon-intel-earnings-big-tech-ai-spending-concerns.html",
+      "imageUrl": null,
+      "publishedAt": "2026-10-30T09:16:27.000Z"
+    },
+    {
+      "title": "Biggest-ever crypto hack impacts $6.3 billion as Binance works to contain fallout",
       "url": "https://www.cnbc.com/2026/10/29/circle-tether-freeze-funds-impacted-by-potential-binance-security-issue.html",
       "imageUrl": null,
-      "publishedAt": "2026-10-29T23:56:02.000Z"
+      "publishedAt": "2026-10-30T08:09:28.000Z"
     },
     {
-      "title": "Amazon posts negative free cash flow of $42.4 billion, holds 2026 capex unchanged",
-      "url": "https://www.cnbc.com/2026/10/29/amazon-amzn-q3-earnings-report-2026.html",
+      "title": "Trump, Vance scrap planned appearances in final stretch of midterm campaign",
+      "url": "https://www.cnbc.com/2026/10/30/trump-vance-rally-midterm-elections-.html",
       "imageUrl": null,
-      "publishedAt": "2026-10-29T22:24:49.000Z"
+      "publishedAt": "2026-10-30T08:18:13.000Z"
     },
     {
-      "title": "How elections worldwide are testing Trump’s influence abroad",
-      "url": "https://www.cnbc.com/2026/10/30/election-trump-brazil-serbia-hungary.html",
+      "title": "Iran claims four tankers struck mines in Hormuz as strike fears grow after U.S. midterms",
+      "url": "https://www.cnbc.com/2026/10/30/iran-trump-hormuz-oil-middle-east-.html",
       "imageUrl": null,
-      "publishedAt": "2026-10-30T00:13:22.000Z"
-    },
-    {
-      "title": "Nasdaq-100 futures fall as Amazon and Intel swoon after earnings: Live updates",
-      "url": "https://www.cnbc.com/2026/10/29/stock-market-today-live-updates.html",
-      "imageUrl": null,
-      "publishedAt": "2026-10-30T01:47:07.000Z"
-    },
-    {
-      "title": "Intel stock plunges 21% as chipmaker blames PC slowdown for weak guidance",
-      "url": "https://www.cnbc.com/2026/10/29/intel-intc-q3-earnings-report-2026-.html",
-      "imageUrl": null,
-      "publishedAt": "2026-10-30T00:39:52.000Z"
-    },
-    {
-      "title": "Microsoft plans to raise $25 billion in debt as it pursues AI buildout",
-      "url": "https://www.cnbc.com/2026/10/29/microsoft-25-billion-debt-offering.html",
-      "imageUrl": null,
-      "publishedAt": "2026-10-30T00:38:13.000Z"
+      "publishedAt": "2026-10-30T07:12:49.000Z"
     },
     {
       "title": "Firm that correctly called the AI rally slowdown says here's where to hide out",
@@ -8594,34 +8582,46 @@
       "publishedAt": "2026-10-29T19:59:53.000Z"
     },
     {
-      "title": "ServiceNow shares plunge 27% to worst day ever after earnings revive AI disruption fears",
-      "url": "https://www.cnbc.com/2026/10/29/servicenow-now-earnings-q3-2026.html",
+      "title": "Alphabet earnings miss reflects first real sign that AI is taking a bite out of search",
+      "url": "https://www.cnbc.com/2026/10/29/alphabet-google-search-ai-earnings.html",
       "imageUrl": null,
-      "publishedAt": "2026-10-29T20:02:32.000Z"
+      "publishedAt": "2026-10-29T20:16:03.000Z"
     },
     {
-      "title": "DOJ escalates Alaska Senate lawsuit over dueling Sullivan candidacies",
-      "url": "https://www.cnbc.com/2026/10/29/alaska-senate-governor-investigation-sullivan-peltola-doj.html",
+      "title": "Amazon AWS posts 39% revenue growth as cloud rivals also accelerate",
+      "url": "https://www.cnbc.com/2026/10/29/aws-q3-earnings-report-2026.html",
       "imageUrl": null,
-      "publishedAt": "2026-10-30T01:34:32.000Z"
+      "publishedAt": "2026-10-29T21:59:31.000Z"
     },
     {
-      "title": "Intel plunges on a major guidance miss. What went wrong — and how to proceed",
-      "url": "https://www.cnbc.com/investingclub/2026/10/29/intel-plunges-on-a-major-guidance-miss-what-went-wrong-how-to-proceed.html",
+      "title": "Binance's $6.3 billion hack: What we know and what comes next",
+      "url": "https://www.cnbc.com/2026/10/30/billions-in-crypto-frozen-in-binance-hack-heres-what-happens-next-.html",
       "imageUrl": null,
-      "publishedAt": "2026-10-30T01:06:07.000Z"
+      "publishedAt": "2026-10-30T08:04:50.000Z"
     },
     {
-      "title": "It's a 'socialist' bank — and North Dakota Republicans love it",
-      "url": "https://www.cnbc.com/2026/10/29/bank-north-dakota-socialism-election.html",
+      "title": "BP’s third-quarter profit nearly quadruples to $8.5 billion as refining margins surge",
+      "url": "https://www.cnbc.com/2026/10/30/bp-earnings-oil-q3.html",
       "imageUrl": null,
-      "publishedAt": "2026-10-29T10:00:01.000Z"
+      "publishedAt": "2026-10-30T09:00:24.000Z"
     },
     {
-      "title": "IRS CEO Bisignano donates to Trump Accounts in his childhood Brooklyn ZIP code",
-      "url": "https://www.cnbc.com/2026/10/29/trump-accounts-frank-bisignano-brooklyn.html",
+      "title": "A pharma giant is moving past one patent cliff — but another is already looming",
+      "url": "https://www.cnbc.com/2026/10/30/novartis-remibrutinib-multiple-sclerosis.html",
       "imageUrl": null,
-      "publishedAt": "2026-10-29T21:55:42.000Z"
+      "publishedAt": "2026-10-30T06:00:01.000Z"
+    },
+    {
+      "title": "Rivian third-quarter earnings beat estimates as software revenue, R2 deliveries rise",
+      "url": "https://www.cnbc.com/2026/10/29/rivian-rivn-earnings-q3-2026.html",
+      "imageUrl": null,
+      "publishedAt": "2026-10-29T21:52:27.000Z"
+    },
+    {
+      "title": "Reddit shares sink on weak sales guidance and plans login requirement test as Google search traffic shrinks",
+      "url": "https://www.cnbc.com/2026/10/29/reddit-rddt-q3-2026.html",
+      "imageUrl": null,
+      "publishedAt": "2026-10-30T00:28:45.000Z"
     }
   ],
   "ipoNews": [],
@@ -24117,16 +24117,16 @@
           "c": 224.1
         },
         {
-          "t": "2026-10-05T19:30:00.000Z",
-          "c": 224.75
+          "t": "2026-10-06T13:30:00.000Z",
+          "c": 224.29
         },
         {
-          "t": "2026-10-06T16:30:00.000Z",
-          "c": 222.89
+          "t": "2026-10-06T17:30:00.000Z",
+          "c": 222.42
         },
         {
-          "t": "2026-10-07T13:30:00.000Z",
-          "c": 224.64
+          "t": "2026-10-07T14:30:00.000Z",
+          "c": 224.93
         },
         {
           "t": "2026-10-07T17:30:00.000Z",
@@ -24169,44 +24169,44 @@
           "c": 235.13
         },
         {
-          "t": "2026-10-15T14:30:00.000Z",
-          "c": 240.25
+          "t": "2026-10-15T15:30:00.000Z",
+          "c": 240.24
         },
         {
-          "t": "2026-10-15T18:30:00.000Z",
-          "c": 240.26
+          "t": "2026-10-15T19:30:00.000Z",
+          "c": 239.52
         },
         {
-          "t": "2026-10-16T15:30:00.000Z",
-          "c": 242.71
+          "t": "2026-10-16T16:30:00.000Z",
+          "c": 242.63
         },
         {
-          "t": "2026-10-16T19:30:00.000Z",
-          "c": 247.99
+          "t": "2026-10-19T13:30:00.000Z",
+          "c": 245.19
         },
         {
-          "t": "2026-10-19T16:30:00.000Z",
-          "c": 245.79
+          "t": "2026-10-19T17:30:00.000Z",
+          "c": 247.18
         },
         {
-          "t": "2026-10-20T13:30:00.000Z",
-          "c": 247.96
+          "t": "2026-10-20T14:30:00.000Z",
+          "c": 249.22
         },
         {
-          "t": "2026-10-20T17:30:00.000Z",
-          "c": 249.4
+          "t": "2026-10-20T18:30:00.000Z",
+          "c": 248.54
         },
         {
-          "t": "2026-10-21T14:30:00.000Z",
-          "c": 250.43
+          "t": "2026-10-21T15:30:00.000Z",
+          "c": 250.14
         },
         {
-          "t": "2026-10-21T18:30:00.000Z",
-          "c": 250.43
+          "t": "2026-10-21T19:30:00.000Z",
+          "c": 251.01
         },
         {
-          "t": "2026-10-22T15:30:00.000Z",
-          "c": 257.07
+          "t": "2026-10-22T16:30:00.000Z",
+          "c": 258
         },
         {
           "t": "2026-10-22T19:30:00.000Z",
@@ -24221,28 +24221,28 @@
           "c": 256.24
         },
         {
-          "t": "2026-10-26T16:30:00.000Z",
-          "c": 256.01
+          "t": "2026-10-26T17:30:00.000Z",
+          "c": 255.69
         },
         {
-          "t": "2026-10-27T13:30:00.000Z",
-          "c": 250.84
+          "t": "2026-10-27T14:30:00.000Z",
+          "c": 251.96
         },
         {
-          "t": "2026-10-27T17:30:00.000Z",
-          "c": 251.5
+          "t": "2026-10-27T18:30:00.000Z",
+          "c": 252.28
         },
         {
-          "t": "2026-10-28T14:30:00.000Z",
-          "c": 251.63
+          "t": "2026-10-28T15:30:00.000Z",
+          "c": 251.38
         },
         {
-          "t": "2026-10-28T18:30:00.000Z",
-          "c": 249.78
+          "t": "2026-10-28T19:30:00.000Z",
+          "c": 250.25
         },
         {
-          "t": "2026-10-29T15:30:00.000Z",
-          "c": 253.84
+          "t": "2026-10-29T16:30:00.000Z",
+          "c": 254.38
         },
         {
           "t": "2026-10-29T20:00:00.000Z",
@@ -224003,8 +224003,8 @@
           "c": 507.73
         },
         {
-          "t": "2026-08-07T13:30:00.000Z",
-          "c": 513.99
+          "t": "2026-08-10T13:30:00.000Z",
+          "c": 504.9
         },
         {
           "t": "2026-08-11T13:30:00.000Z",
@@ -224035,8 +224035,8 @@
           "c": 464.19
         },
         {
-          "t": "2026-08-26T13:30:00.000Z",
-          "c": 472.46
+          "t": "2026-08-27T13:30:00.000Z",
+          "c": 470.28
         },
         {
           "t": "2026-08-28T13:30:00.000Z",
@@ -224047,28 +224047,28 @@
           "c": 443.31
         },
         {
-          "t": "2026-09-02T13:30:00.000Z",
-          "c": 450.08
+          "t": "2026-09-03T13:30:00.000Z",
+          "c": 460.15
         },
         {
           "t": "2026-09-04T13:30:00.000Z",
           "c": 460.72
         },
         {
-          "t": "2026-09-08T13:30:00.000Z",
-          "c": 464.75
+          "t": "2026-09-09T13:30:00.000Z",
+          "c": 454.97
         },
         {
-          "t": "2026-09-10T13:30:00.000Z",
-          "c": 452.41
+          "t": "2026-09-11T13:30:00.000Z",
+          "c": 460.4
         },
         {
           "t": "2026-09-14T13:30:00.000Z",
           "c": 442.38
         },
         {
-          "t": "2026-09-15T13:30:00.000Z",
-          "c": 438.53
+          "t": "2026-09-16T13:30:00.000Z",
+          "c": 439.07
         },
         {
           "t": "2026-09-17T13:30:00.000Z",
@@ -224079,72 +224079,72 @@
           "c": 457.49
         },
         {
-          "t": "2026-09-22T13:30:00.000Z",
-          "c": 458.83
+          "t": "2026-09-23T13:30:00.000Z",
+          "c": 463.7
         },
         {
           "t": "2026-09-24T13:30:00.000Z",
           "c": 465.88
         },
         {
-          "t": "2026-09-25T13:30:00.000Z",
-          "c": 466.62
+          "t": "2026-09-28T13:30:00.000Z",
+          "c": 465.72
         },
         {
-          "t": "2026-09-29T13:30:00.000Z",
-          "c": 459.09
+          "t": "2026-09-30T13:30:00.000Z",
+          "c": 453.6
         },
         {
           "t": "2026-10-01T13:30:00.000Z",
           "c": 466.98
         },
         {
-          "t": "2026-10-02T13:30:00.000Z",
-          "c": 475.52
-        },
-        {
-          "t": "2026-10-06T13:30:00.000Z",
-          "c": 485.41
+          "t": "2026-10-05T13:30:00.000Z",
+          "c": 480.65
         },
         {
           "t": "2026-10-07T13:30:00.000Z",
           "c": 475.41
         },
         {
-          "t": "2026-10-09T13:30:00.000Z",
-          "c": 474.11
+          "t": "2026-10-08T13:30:00.000Z",
+          "c": 475.4
         },
         {
-          "t": "2026-10-13T13:30:00.000Z",
-          "c": 477.93
+          "t": "2026-10-12T13:30:00.000Z",
+          "c": 474.05
         },
         {
           "t": "2026-10-14T13:30:00.000Z",
           "c": 473.37
         },
         {
-          "t": "2026-10-16T13:30:00.000Z",
-          "c": 461.1
+          "t": "2026-10-15T13:30:00.000Z",
+          "c": 464.71
+        },
+        {
+          "t": "2026-10-19T13:30:00.000Z",
+          "c": 464.92
         },
         {
           "t": "2026-10-20T13:30:00.000Z",
           "c": 459.32
         },
         {
-          "t": "2026-10-21T13:30:00.000Z",
-          "c": 460.76
-        },
-        {
-          "t": "2026-10-23T13:30:00.000Z",
-          "c": 448.1
+          "t": "2026-10-22T13:30:00.000Z",
+          "c": 445.8
         },
         {
           "t": "2026-10-26T13:30:00.000Z",
           "c": 459.4
         },
         {
-          "t": "2026-10-28T13:30:00.000Z",
-          "c": 437.33
+          "t": "2026-10-27T13:30:00.000Z",
+          "c": 434.28
+        },
+        {
+          "t": "2026-10-29T13:30:00.000Z",
+          "c": 438.23
         }
       ],
       "history1y": [],

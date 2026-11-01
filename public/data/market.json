@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-01T08:32:54.277Z",
+  "updatedAt": "2026-11-01T15:40:32.126Z",
   "period": "3mo",
   "universeSize": 503,
   "source": {
@@ -8552,10 +8552,16 @@
   ],
   "news": [
     {
-      "title": "Binance says 90% of $6.3 billion hack losses are now covered, plans to resume withdrawals Sunday",
+      "title": "Why AI is boosting Meta's ad business while hurting Google search",
+      "url": "https://www.cnbc.com/2026/11/01/ai-meta-ads-google-search.html",
+      "imageUrl": null,
+      "publishedAt": "2026-11-01T14:31:29.000Z"
+    },
+    {
+      "title": "Binance resumes withdrawals following $6.3 billion hack, says 90% of stolen user assets are covered",
       "url": "https://www.cnbc.com/2026/10/31/binance-hack-asset-coverage-withdrawals.html",
       "imageUrl": null,
-      "publishedAt": "2026-10-31T22:27:56.000Z"
+      "publishedAt": "2026-11-01T12:19:33.000Z"
     },
     {
       "title": "Trump defamation suit against Murdoch, WSJ over Epstein letter dismissed with prejudice",
@@ -8570,46 +8576,40 @@
       "publishedAt": "2026-10-31T12:00:01.000Z"
     },
     {
-      "title": "Companies promised AI gains— here's how the payoff showed up in earnings",
-      "url": "https://www.cnbc.com/2026/11/01/ai-investments-company-earnings.html",
+      "title": "These Senate races may help determine the fate of Social Security",
+      "url": "https://www.cnbc.com/2026/11/01/social-security-senate-races.html",
       "imageUrl": null,
-      "publishedAt": "2026-11-01T06:00:01.000Z"
+      "publishedAt": "2026-11-01T15:20:06.000Z"
     },
     {
-      "title": "Automakers like Rivian and Ford are ‘democratizing 3D printing’ to reduce costs and increase speed",
-      "url": "https://www.cnbc.com/2026/10/31/automakers-3d-printing-ford-rivian-gm.html",
+      "title": "Crocs stock jumped 25% after earnings. Here's why that might be just the beginning",
+      "url": "https://www.cnbc.com/2026/11/01/crocs-stock-valuation-3q-earnings.html",
       "imageUrl": null,
-      "publishedAt": "2026-10-31T12:00:01.000Z"
+      "publishedAt": "2026-11-01T12:32:09.000Z"
     },
     {
-      "title": "Intel stock plunges 29%. Analysts urge caution on buying the dip",
-      "url": "https://www.cnbc.com/2026/10/31/intel-not-a-buy-after-drop.html",
+      "title": "The midterm election could reshape the muni bond market. Here’s what investors need to know",
+      "url": "https://www.cnbc.com/2026/11/01/election-municipal-bonds.html",
       "imageUrl": null,
-      "publishedAt": "2026-10-31T13:02:22.000Z"
+      "publishedAt": "2026-11-01T12:30:48.000Z"
     },
     {
-      "title": "SpaceX loses bid to toss NAACP lawsuit over Memphis data center air pollution",
-      "url": "https://www.cnbc.com/2026/10/31/xai-naacp-clean-air-act-lawsuit-dismissal.html",
+      "title": "Crypto industry pours more than $200 million into 2026 midterms to pressure Congress on favorable rules",
+      "url": "https://www.cnbc.com/2026/10/31/crypto-industry-spends-more-than-200-million-to-sway-the-midterms.html",
       "imageUrl": null,
-      "publishedAt": "2026-10-31T20:12:37.000Z"
+      "publishedAt": "2026-10-31T13:04:29.000Z"
     },
     {
-      "title": "OPEC+ agrees in principle to keep oil output targets steady in December, sources say",
-      "url": "https://www.cnbc.com/2026/10/31/opec-oil-output-targets-december.html",
+      "title": "Top Wall Street analysts are bullish on these 3 stocks for the long haul",
+      "url": "https://www.cnbc.com/2026/11/01/top-analysts-are-bullish-on-these-3-stocks-for-the-long-haul.html",
       "imageUrl": null,
-      "publishedAt": "2026-10-31T22:44:11.000Z"
+      "publishedAt": "2026-11-01T12:33:53.000Z"
     },
     {
-      "title": "OpenAI pares fundraising goal, now seeking up to $20 billion in latest round",
-      "url": "https://www.cnbc.com/2026/10/31/openai-fundraising-20-billion-valuation.html",
+      "title": "Social Security may have to cut retirement benefits in six years. Here's how much money is at stake for beneficiaries",
+      "url": "https://www.cnbc.com/2026/11/01/social-security-benefit-cuts-2032.html",
       "imageUrl": null,
-      "publishedAt": "2026-10-31T19:56:23.000Z"
-    },
-    {
-      "title": "Trump promised to slash energy costs  — but gasoline, diesel and jet fuel all soared instead",
-      "url": "https://www.cnbc.com/2026/10/31/trump-gas-diesel-price-midterm-election.html",
-      "imageUrl": null,
-      "publishedAt": "2026-10-31T12:49:58.000Z"
+      "publishedAt": "2026-11-01T15:18:38.000Z"
     },
     {
       "title": "Automatic 401(k) rollovers reduce cash-outs, research finds — but few accounts reach new employer plans",
@@ -8618,10 +8618,10 @@
       "publishedAt": "2026-10-31T13:30:01.000Z"
     },
     {
-      "title": "Treasury Department announces new Series I bond rate of 5.51% for the next six months",
-      "url": "https://www.cnbc.com/2026/10/30/treasury-i-bond-rate-through-april-2027.html",
+      "title": "Gen Z is ditching bars for run clubs — and finding more than friends along the way",
+      "url": "https://www.cnbc.com/2026/10/30/gen-z-diplo-run-club.html",
       "imageUrl": null,
-      "publishedAt": "2026-10-30T17:15:53.000Z"
+      "publishedAt": "2026-10-30T10:32:46.000Z"
     }
   ],
   "ipoNews": [],

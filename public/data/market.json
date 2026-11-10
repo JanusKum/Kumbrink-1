@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-09T22:50:26.297Z",
+  "updatedAt": "2026-11-10T04:28:12.677Z",
   "period": "3mo",
   "universeSize": 503,
   "source": {
@@ -3481,10 +3481,10 @@
       "name": "Hilton Worldwide",
       "sector": "Consumer Discretionary",
       "currency": "USD",
-      "price": 373.23,
+      "price": 376.53,
       "startPrice3mo": 311,
-      "changeAbs3mo": 62.23,
-      "changePct3mo": 20.01,
+      "changeAbs3mo": 65.53,
+      "changePct3mo": 21.07,
       "changePct3d": -0.88,
       "changePct1w": 2.34,
       "changePct1mo": 14.29,
@@ -4700,10 +4700,10 @@
       "startPrice3mo": 81.39,
       "changeAbs3mo": -19.89,
       "changePct3mo": -24.44,
-      "changePct3d": -18.38,
+      "changePct3d": -18.37,
       "changePct1w": -19.2,
       "changePct1mo": -18.6,
-      "changePct1y": 14.99,
+      "changePct1y": 15,
       "changePct3y": -20.71
     },
     "MU": {
@@ -7581,13 +7581,13 @@
     "VLTO",
     "ULTA",
     "A",
+    "HLT",
     "APP",
     "CDW",
     "KR",
     "SWKS",
     "MCK",
     "TMO",
-    "HLT",
     "BDX",
     "MAR",
     "CCI",
@@ -7910,7 +7910,7 @@
           ]
         },
         "3mo": {
-          "avgChangePct": 0.56,
+          "avgChangePct": 0.58,
           "top10": [
             "BBY",
             "HAS",
@@ -8555,7 +8555,13 @@
       "title": "Jensen Huang affair puts Nvidia's future at risk, with no clear successor to the renowned CEO",
       "url": "https://www.cnbc.com/2026/11/09/jensen-huang-affair-nvidia-succession.html",
       "imageUrl": null,
-      "publishedAt": "2026-11-09T22:40:26.000Z"
+      "publishedAt": "2026-11-09T22:56:39.000Z"
+    },
+    {
+      "title": "Trump says Jensen Huang told him Monday he didn't know paramour 'was a spy'",
+      "url": "https://www.cnbc.com/2026/11/09/trump-jensen-huang-nvidia-chinese-spy.html",
+      "imageUrl": null,
+      "publishedAt": "2026-11-10T01:43:47.000Z"
     },
     {
       "title": "Hegseth impeachment articles introduced by Rep. Massie",
@@ -8564,28 +8570,22 @@
       "publishedAt": "2026-11-09T22:41:12.000Z"
     },
     {
-      "title": "A key report for where inflation stood in October comes out Tuesday. Here's what to expect",
-      "url": "https://www.cnbc.com/2026/11/09/october-cpi-report-2026-inflation.html",
+      "title": "S&P 500 futures are little changed as traders brace for crucial consumer inflation report: Live updates",
+      "url": "https://www.cnbc.com/2026/11/09/stock-market-today-live-updates.html",
       "imageUrl": null,
-      "publishedAt": "2026-11-09T21:03:55.000Z"
+      "publishedAt": "2026-11-10T03:33:27.000Z"
     },
     {
-      "title": "Dow surges 1,100 points, Nasdaq climbs more than 2% as tech rebounds from last week’s tumult: Live updates",
-      "url": "https://www.cnbc.com/2026/11/08/stock-market-today-live-updates.html",
+      "title": "China exports, imports soar past expectations in October — surplus narrows sharply",
+      "url": "https://www.cnbc.com/2026/11/10/china-trade-october-exports-imports-surplus-.html",
       "imageUrl": null,
-      "publishedAt": "2026-11-09T21:26:49.000Z"
+      "publishedAt": "2026-11-10T03:56:15.000Z"
     },
     {
-      "title": "3 unexpected reasons the October jobs report was so strong",
-      "url": "https://www.cnbc.com/2026/11/09/october-jobs-report-hiring-by-sector.html",
+      "title": "SoftBank Group shares surge 13% as Asian tech stocks track Wall Street rebound",
+      "url": "https://www.cnbc.com/2026/11/10/ai-softbank-sk-hynix-samsung-wall-street-tech-stocks.html",
       "imageUrl": null,
-      "publishedAt": "2026-11-09T22:23:56.000Z"
-    },
-    {
-      "title": "Stocks making the biggest moves after hours: Trade Desk, Sanmina, Securitize & more  — Live updates",
-      "url": "https://www.cnbc.com/2026/11/09/stock-market-movers-live-updates.html",
-      "imageUrl": null,
-      "publishedAt": "2026-11-09T22:13:31.000Z"
+      "publishedAt": "2026-11-10T03:58:46.000Z"
     },
     {
       "title": "Nvidia's China revenue exposure: What New Street estimates",
@@ -8594,22 +8594,22 @@
       "publishedAt": "2026-11-09T21:05:13.000Z"
     },
     {
+      "title": "A key report for where inflation stood in October comes out Tuesday. Here's what to expect",
+      "url": "https://www.cnbc.com/2026/11/09/october-cpi-report-2026-inflation.html",
+      "imageUrl": null,
+      "publishedAt": "2026-11-09T21:03:55.000Z"
+    },
+    {
+      "title": "3 unexpected reasons the October jobs report was so strong",
+      "url": "https://www.cnbc.com/2026/11/09/october-jobs-report-hiring-by-sector.html",
+      "imageUrl": null,
+      "publishedAt": "2026-11-09T22:23:56.000Z"
+    },
+    {
       "title": "Skydance outlines its $6 billion in planned cost savings. Here's the breakdown",
       "url": "https://www.cnbc.com/2026/11/09/skydance-cost-savings-breakdown.html",
       "imageUrl": null,
-      "publishedAt": "2026-11-09T21:28:40.000Z"
-    },
-    {
-      "title": "PepsiCo to cut about 1,000 jobs as North American business struggles",
-      "url": "https://www.cnbc.com/2026/11/09/pepsico-north-america-job-cuts.html",
-      "imageUrl": null,
-      "publishedAt": "2026-11-09T20:41:38.000Z"
-    },
-    {
-      "title": "Children’s Place files for bankruptcy protection, seeks buyer",
-      "url": "https://www.cnbc.com/2026/11/09/childrens-place-chapter-11-sale.html",
-      "imageUrl": null,
-      "publishedAt": "2026-11-09T20:57:46.000Z"
+      "publishedAt": "2026-11-09T23:14:38.000Z"
     },
     {
       "title": "Trump questions midterm election results, revives voting-machine conspiracy",
@@ -226429,7 +226429,7 @@
         },
         {
           "t": "2026-11-09T21:00:00.000Z",
-          "c": 373.23
+          "c": 376.53
         }
       ],
       "history1w": [
@@ -226671,7 +226671,7 @@
         },
         {
           "t": "2026-11-09T21:00:00.000Z",
-          "c": 373.23
+          "c": 376.53
         }
       ],
       "history1mo": [
@@ -226833,7 +226833,7 @@
         },
         {
           "t": "2026-11-09T21:00:00.000Z",
-          "c": 373.23
+          "c": 376.53
         }
       ],
       "history": [
@@ -298124,7 +298124,7 @@
         },
         {
           "t": "2026-11-09T14:30:00.000Z",
-          "c": 61.49
+          "c": 61.5
         }
       ],
       "history1y": [
@@ -298286,7 +298286,7 @@
         },
         {
           "t": "2026-11-09T14:30:00.000Z",
-          "c": 61.49
+          "c": 61.5
         }
       ],
       "history3y": [
@@ -298448,7 +298448,7 @@
         },
         {
           "t": "2026-11-09T05:00:00.000Z",
-          "c": 61.49
+          "c": 61.5
         }
       ],
       "history5y": [
@@ -298610,7 +298610,7 @@
         },
         {
           "t": "2026-11-09T05:00:00.000Z",
-          "c": 61.49
+          "c": 61.5
         }
       ]
     },
@@ -466229,8 +466229,8 @@
           "c": 238.74
         },
         {
-          "t": "2026-10-13T13:30:00.000Z",
-          "c": 241.96
+          "t": "2026-10-13T14:30:00.000Z",
+          "c": 239.96
         },
         {
           "t": "2026-10-13T17:30:00.000Z",
@@ -466245,8 +466245,8 @@
           "c": 239.7
         },
         {
-          "t": "2026-10-15T14:30:00.000Z",
-          "c": 249.79
+          "t": "2026-10-15T15:30:00.000Z",
+          "c": 248.41
         },
         {
           "t": "2026-10-15T18:30:00.000Z",
@@ -466261,8 +466261,8 @@
           "c": 250.03
         },
         {
-          "t": "2026-10-19T15:30:00.000Z",
-          "c": 248.91
+          "t": "2026-10-19T16:30:00.000Z",
+          "c": 247.87
         },
         {
           "t": "2026-10-19T19:30:00.000Z",
@@ -466277,12 +466277,12 @@
           "c": 252.13
         },
         {
-          "t": "2026-10-21T16:30:00.000Z",
-          "c": 253.65
+          "t": "2026-10-21T17:30:00.000Z",
+          "c": 254.62
         },
         {
-          "t": "2026-10-22T13:30:00.000Z",
-          "c": 255.15
+          "t": "2026-10-22T14:30:00.000Z",
+          "c": 257.3
         },
         {
           "t": "2026-10-22T17:30:00.000Z",
@@ -466293,12 +466293,12 @@
           "c": 253.45
         },
         {
-          "t": "2026-10-23T17:30:00.000Z",
-          "c": 251.97
+          "t": "2026-10-23T18:30:00.000Z",
+          "c": 252.9
         },
         {
-          "t": "2026-10-26T14:30:00.000Z",
-          "c": 249.04
+          "t": "2026-10-26T15:30:00.000Z",
+          "c": 249.08
         },
         {
           "t": "2026-10-26T18:30:00.000Z",
@@ -466309,12 +466309,12 @@
           "c": 250.87
         },
         {
-          "t": "2026-10-27T18:30:00.000Z",
-          "c": 249.36
+          "t": "2026-10-27T19:30:00.000Z",
+          "c": 250.38
         },
         {
-          "t": "2026-10-28T15:30:00.000Z",
-          "c": 249.76
+          "t": "2026-10-28T16:30:00.000Z",
+          "c": 251.54
         },
         {
           "t": "2026-10-28T19:30:00.000Z",
@@ -466325,56 +466325,56 @@
           "c": 259.89
         },
         {
-          "t": "2026-10-29T19:30:00.000Z",
-          "c": 259.91
+          "t": "2026-10-30T13:30:00.000Z",
+          "c": 255.36
         },
         {
-          "t": "2026-10-30T16:30:00.000Z",
-          "c": 254.46
+          "t": "2026-10-30T17:30:00.000Z",
+          "c": 251.97
         },
         {
-          "t": "2026-11-02T14:30:00.000Z",
-          "c": 260.54
+          "t": "2026-11-02T15:30:00.000Z",
+          "c": 262.11
         },
         {
           "t": "2026-11-02T18:30:00.000Z",
           "c": 259.15
         },
         {
-          "t": "2026-11-03T14:30:00.000Z",
-          "c": 254.7
+          "t": "2026-11-03T15:30:00.000Z",
+          "c": 255.82
         },
         {
-          "t": "2026-11-03T18:30:00.000Z",
-          "c": 252.1
+          "t": "2026-11-03T19:30:00.000Z",
+          "c": 253.24
         },
         {
-          "t": "2026-11-04T15:30:00.000Z",
-          "c": 264.36
+          "t": "2026-11-04T16:30:00.000Z",
+          "c": 268.06
         },
         {
           "t": "2026-11-04T19:30:00.000Z",
           "c": 268.07
         },
         {
-          "t": "2026-11-05T15:30:00.000Z",
-          "c": 261.98
+          "t": "2026-11-05T16:30:00.000Z",
+          "c": 258.83
         },
         {
-          "t": "2026-11-05T19:30:00.000Z",
-          "c": 258.52
+          "t": "2026-11-05T20:30:00.000Z",
+          "c": 258.6
         },
         {
-          "t": "2026-11-06T16:30:00.000Z",
-          "c": 256.98
+          "t": "2026-11-06T17:30:00.000Z",
+          "c": 256.42
         },
         {
           "t": "2026-11-06T20:30:00.000Z",
           "c": 253.99
         },
         {
-          "t": "2026-11-09T16:30:00.000Z",
-          "c": 261.37
+          "t": "2026-11-09T17:30:00.000Z",
+          "c": 262.2
         },
         {
           "t": "2026-11-09T21:00:00.000Z",

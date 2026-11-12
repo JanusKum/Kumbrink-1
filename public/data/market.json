@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-11T22:25:44.638Z",
+  "updatedAt": "2026-11-12T03:32:41.098Z",
   "period": "3mo",
   "universeSize": 503,
   "source": {
@@ -1686,7 +1686,7 @@
       "changeAbs3mo": 53.69,
       "changePct3mo": 20.48,
       "changePct3d": 3.26,
-      "changePct1w": 2.46,
+      "changePct1w": 2.47,
       "changePct1mo": 13.61,
       "changePct1y": 15.66,
       "changePct3y": 48
@@ -1940,9 +1940,9 @@
       "startPrice3mo": 30.5,
       "changeAbs3mo": -0.23,
       "changePct3mo": -0.77,
-      "changePct3d": -0.93,
-      "changePct1w": -7.11,
-      "changePct1mo": 0.88,
+      "changePct3d": -0.92,
+      "changePct1w": -7.09,
+      "changePct1mo": 0.9,
       "changePct1y": -55,
       "changePct3y": -63.42
     },
@@ -3200,9 +3200,9 @@
       "startPrice3mo": 28.64,
       "changeAbs3mo": 2,
       "changePct3mo": 6.97,
-      "changePct3d": 2.84,
-      "changePct1w": -0.83,
-      "changePct1mo": 28.66,
+      "changePct3d": 2.85,
+      "changePct1w": -0.81,
+      "changePct1mo": 28.69,
       "changePct1y": 15.43,
       "changePct3y": 48.28
     },
@@ -8552,34 +8552,34 @@
   ],
   "news": [
     {
+      "title": "Nvidia prepares to oust Jensen Huang, WSJ reports — stock sinks",
+      "url": "https://www.cnbc.com/2026/11/11/nvidia-jensen-huang-affair-employee.html",
+      "imageUrl": null,
+      "publishedAt": "2026-11-12T00:21:27.000Z"
+    },
+    {
       "title": "Jensen Huang affair in D.C.: Resignation calls and moves to tighten Nvidia China exports",
       "url": "https://www.cnbc.com/2026/11/11/nvidia-jensen-huang-congress-resign-ai-chips.html",
       "imageUrl": null,
-      "publishedAt": "2026-11-11T22:14:02.000Z"
+      "publishedAt": "2026-11-11T22:46:29.000Z"
     },
     {
-      "title": "Canada’s ambassador warns Trump tariffs are driving up costs, threatening U.S. investment",
-      "url": "https://www.cnbc.com/2026/11/11/canada-ambassador-trump-tariffs-investments.html",
+      "title": "What we know so far about Nvidia partner Megaspeed’s Asia footprint",
+      "url": "https://www.cnbc.com/2026/11/12/nvidia-megaspeed-alice-huang-jensen-.html",
       "imageUrl": null,
-      "publishedAt": "2026-11-11T20:30:23.000Z"
+      "publishedAt": "2026-11-12T03:02:03.000Z"
     },
     {
-      "title": "Feds arrest top official of healthcare company, alleging illegal drug importation",
-      "url": "https://www.cnbc.com/2026/11/11/canarx-official-arrested-drug-importation.html",
+      "title": "Cramer's stance on Nvidia's stock amid reports that CEO Jensen Huang may be ousted",
+      "url": "https://www.cnbc.com/investingclub/2026/11/11/jim-cramer-jensen-huang-nvidia-stock-advice.html",
       "imageUrl": null,
-      "publishedAt": "2026-11-11T21:33:17.000Z"
+      "publishedAt": "2026-11-12T01:14:21.000Z"
     },
     {
-      "title": "Nasdaq gains more than 1% as CoreWeave spike revitalizes AI trade",
-      "url": "https://www.cnbc.com/2026/11/10/stock-market-today-live-updates.html",
+      "title": "Nasdaq-100 futures slide, dragged lower as Nvidia sell-off resumes: Live updates",
+      "url": "https://www.cnbc.com/2026/11/11/stock-market-today-live-updates.html",
       "imageUrl": null,
-      "publishedAt": "2026-11-11T21:22:14.000Z"
-    },
-    {
-      "title": "Mississippi Senate: Scott Colom lead over Hyde-Smith pops to more than 4,400 votes",
-      "url": "https://www.cnbc.com/2026/11/10/mississippi-senate-scott-colom-hyde-smith.html",
-      "imageUrl": null,
-      "publishedAt": "2026-11-11T19:55:39.000Z"
+      "publishedAt": "2026-11-12T03:13:25.000Z"
     },
     {
       "title": "Insiders are starting to buy this retail turnaround story, so I am too",
@@ -8588,34 +8588,34 @@
       "publishedAt": "2026-11-11T20:29:14.000Z"
     },
     {
-      "title": "Nvidia shares rebound as Jensen Huang faces scrutiny ahead of earnings",
-      "url": "https://www.cnbc.com/2026/11/11/nvidia-stock-jensen-huang-affair-china.html",
+      "title": "Feds arrest top official of healthcare company, alleging illegal drug importation",
+      "url": "https://www.cnbc.com/2026/11/11/canarx-official-arrested-drug-importation.html",
       "imageUrl": null,
-      "publishedAt": "2026-11-11T21:04:36.000Z"
+      "publishedAt": "2026-11-11T22:58:11.000Z"
     },
     {
-      "title": "CoreWeave soars more than 24% for best day since April 2025 after strong Q3 report",
-      "url": "https://www.cnbc.com/2026/11/11/coreweave-crwv-outlook-earnings-ai.html",
+      "title": "Scott Colom wins Mississippi Senate election over incumbent Republican Hyde-Smith",
+      "url": "https://www.cnbc.com/2026/11/11/democrat-scott-colom-projected-to-win-mississippi-senate-election-over-incumbent-hyde-smith.html",
       "imageUrl": null,
-      "publishedAt": "2026-11-11T21:11:26.000Z"
+      "publishedAt": "2026-11-11T23:31:37.000Z"
     },
     {
-      "title": "Prediction markets tied to clinical trials and drug approvals draw lawmakers' ire",
-      "url": "https://www.cnbc.com/2026/11/11/kalsi-polymarket-prediction-market-senators-hhs-drug-approval.html",
+      "title": "Elon Musk says it would be an 'honor' to hire Nvidia's Jensen Huang",
+      "url": "https://www.cnbc.com/2026/11/12/elon-musk-jensen-huang-nvidia-tesla.html",
       "imageUrl": null,
-      "publishedAt": "2026-11-11T19:16:23.000Z"
+      "publishedAt": "2026-11-12T03:25:05.000Z"
     },
     {
-      "title": "Nvidia's Huang tries to project 'business as usual' in return to office after affair revelation",
-      "url": "https://www.cnbc.com/2026/11/10/nvidia-jensen-huang-affair-office.html",
+      "title": "Canada’s ambassador warns Trump tariffs are driving up costs, threatening U.S. investment",
+      "url": "https://www.cnbc.com/2026/11/11/canada-ambassador-trump-tariffs-investments.html",
       "imageUrl": null,
-      "publishedAt": "2026-11-11T13:46:59.000Z"
+      "publishedAt": "2026-11-11T22:30:57.000Z"
     },
     {
-      "title": "Social Security could pay full benefits until 2059 if taxable payroll kept pace with GDP: AARP report",
-      "url": "https://www.cnbc.com/2026/11/11/social-security-benefits-taxable-payroll-gdp.html",
+      "title": "United Airlines moves to block AI agents from its platform over security concerns",
+      "url": "https://www.cnbc.com/2026/11/11/united-airlines-ai-agents.html",
       "imageUrl": null,
-      "publishedAt": "2026-11-11T19:54:27.000Z"
+      "publishedAt": "2026-11-11T23:16:15.000Z"
     },
     {
       "title": "American Airlines brings fresh food back to NY-Chicago first class for first time since 2019",
@@ -57223,8 +57223,8 @@
           "c": 276.73
         },
         {
-          "t": "2026-10-14T15:30:00.000Z",
-          "c": 279.27
+          "t": "2026-10-14T16:30:00.000Z",
+          "c": 278.79
         },
         {
           "t": "2026-10-15T13:30:00.000Z",
@@ -57255,16 +57255,16 @@
           "c": 291.39
         },
         {
-          "t": "2026-10-21T13:30:00.000Z",
-          "c": 294.56
+          "t": "2026-10-21T14:30:00.000Z",
+          "c": 295.39
         },
         {
-          "t": "2026-10-21T17:30:00.000Z",
-          "c": 294.47
+          "t": "2026-10-21T18:30:00.000Z",
+          "c": 294.13
         },
         {
-          "t": "2026-10-22T14:30:00.000Z",
-          "c": 304.64
+          "t": "2026-10-22T15:30:00.000Z",
+          "c": 305.15
         },
         {
           "t": "2026-10-22T19:30:00.000Z",
@@ -57287,24 +57287,24 @@
           "c": 293.28
         },
         {
-          "t": "2026-10-27T18:30:00.000Z",
-          "c": 292.49
+          "t": "2026-10-27T19:30:00.000Z",
+          "c": 292.88
         },
         {
-          "t": "2026-10-28T15:30:00.000Z",
-          "c": 284.57
+          "t": "2026-10-28T16:30:00.000Z",
+          "c": 284.24
         },
         {
-          "t": "2026-10-28T19:30:00.000Z",
-          "c": 285.24
+          "t": "2026-10-29T13:30:00.000Z",
+          "c": 284.7
         },
         {
-          "t": "2026-10-29T16:30:00.000Z",
-          "c": 285.63
+          "t": "2026-10-29T17:30:00.000Z",
+          "c": 287.07
         },
         {
-          "t": "2026-10-30T13:30:00.000Z",
-          "c": 294.69
+          "t": "2026-10-30T14:30:00.000Z",
+          "c": 294.71
         },
         {
           "t": "2026-10-30T18:30:00.000Z",
@@ -57319,48 +57319,48 @@
           "c": 298.84
         },
         {
-          "t": "2026-11-03T17:30:00.000Z",
-          "c": 297.19
+          "t": "2026-11-03T18:30:00.000Z",
+          "c": 297.7
         },
         {
-          "t": "2026-11-04T14:30:00.000Z",
-          "c": 300.76
+          "t": "2026-11-04T15:30:00.000Z",
+          "c": 303.27
         },
         {
-          "t": "2026-11-04T18:30:00.000Z",
-          "c": 304.99
+          "t": "2026-11-04T19:30:00.000Z",
+          "c": 305.04
         },
         {
-          "t": "2026-11-05T15:30:00.000Z",
-          "c": 306.33
+          "t": "2026-11-05T16:30:00.000Z",
+          "c": 305.2
         },
         {
-          "t": "2026-11-05T19:30:00.000Z",
-          "c": 305.23
+          "t": "2026-11-05T20:30:00.000Z",
+          "c": 307.23
         },
         {
-          "t": "2026-11-06T16:30:00.000Z",
-          "c": 303.24
+          "t": "2026-11-06T17:30:00.000Z",
+          "c": 303.81
         },
         {
-          "t": "2026-11-06T20:30:00.000Z",
-          "c": 303.29
+          "t": "2026-11-09T14:30:00.000Z",
+          "c": 300.45
         },
         {
           "t": "2026-11-09T18:30:00.000Z",
           "c": 303.27
         },
         {
-          "t": "2026-11-10T15:30:00.000Z",
-          "c": 302.5
+          "t": "2026-11-10T16:30:00.000Z",
+          "c": 303.8
         },
         {
-          "t": "2026-11-10T19:30:00.000Z",
-          "c": 304
+          "t": "2026-11-10T20:30:00.000Z",
+          "c": 305.43
         },
         {
-          "t": "2026-11-11T16:30:00.000Z",
-          "c": 304.51
+          "t": "2026-11-11T17:30:00.000Z",
+          "c": 304.59
         },
         {
           "t": "2026-11-11T21:00:00.000Z",
@@ -109231,7 +109231,7 @@
         },
         {
           "t": "2026-11-11T14:30:00.000Z",
-          "c": 315.86
+          "c": 315.87
         }
       ],
       "history1y": [
@@ -109393,7 +109393,7 @@
         },
         {
           "t": "2026-11-11T14:30:00.000Z",
-          "c": 315.86
+          "c": 315.87
         }
       ],
       "history3y": [
@@ -126760,7 +126760,7 @@
         },
         {
           "t": "2026-11-11T14:30:00.000Z",
-          "c": 30.26
+          "c": 30.27
         }
       ],
       "history1y": [],
@@ -191299,7 +191299,7 @@
         },
         {
           "t": "2026-11-09T05:00:00.000Z",
-          "c": 129.83
+          "c": 132.64
         },
         {
           "t": "2026-11-11T21:00:02.000Z",
@@ -191405,7 +191405,7 @@
         },
         {
           "t": "2026-11-09T05:00:00.000Z",
-          "c": 129.83
+          "c": 132.64
         },
         {
           "t": "2026-11-11T21:00:02.000Z",
@@ -228871,7 +228871,7 @@
         },
         {
           "t": "2026-11-09T05:00:00.000Z",
-          "c": 166.47
+          "c": 169.53
         },
         {
           "t": "2026-11-11T21:00:01.000Z",
@@ -228965,7 +228965,7 @@
         },
         {
           "t": "2026-11-09T05:00:00.000Z",
-          "c": 166.47
+          "c": 169.53
         },
         {
           "t": "2026-11-11T21:00:01.000Z",
@@ -359315,7 +359315,7 @@
         },
         {
           "t": "2026-11-09T05:00:00.000Z",
-          "c": 123.64
+          "c": 126.57
         },
         {
           "t": "2026-11-11T21:02:20.000Z",
@@ -383542,8 +383542,8 @@
           "c": 734.12
         },
         {
-          "t": "2026-10-14T15:30:00.000Z",
-          "c": 726.97
+          "t": "2026-10-14T16:30:00.000Z",
+          "c": 715.77
         },
         {
           "t": "2026-10-15T13:30:00.000Z",
@@ -383574,16 +383574,16 @@
           "c": 678.71
         },
         {
-          "t": "2026-10-21T13:30:00.000Z",
-          "c": 693.78
+          "t": "2026-10-21T14:30:00.000Z",
+          "c": 695.8
         },
         {
-          "t": "2026-10-21T17:30:00.000Z",
-          "c": 700.51
+          "t": "2026-10-21T18:30:00.000Z",
+          "c": 702.36
         },
         {
-          "t": "2026-10-22T14:30:00.000Z",
-          "c": 634.7
+          "t": "2026-10-22T15:30:00.000Z",
+          "c": 634.25
         },
         {
           "t": "2026-10-22T19:30:00.000Z",
@@ -383606,24 +383606,24 @@
           "c": 678.58
         },
         {
-          "t": "2026-10-27T18:30:00.000Z",
-          "c": 674.78
+          "t": "2026-10-27T19:30:00.000Z",
+          "c": 668.21
         },
         {
-          "t": "2026-10-28T15:30:00.000Z",
-          "c": 682.85
+          "t": "2026-10-28T16:30:00.000Z",
+          "c": 683.92
         },
         {
-          "t": "2026-10-28T19:30:00.000Z",
-          "c": 697.83
+          "t": "2026-10-29T13:30:00.000Z",
+          "c": 705.19
         },
         {
-          "t": "2026-10-29T16:30:00.000Z",
-          "c": 703.24
+          "t": "2026-10-29T17:30:00.000Z",
+          "c": 692.25
         },
         {
-          "t": "2026-10-30T13:30:00.000Z",
-          "c": 656.86
+          "t": "2026-10-30T14:30:00.000Z",
+          "c": 656.91
         },
         {
           "t": "2026-10-30T18:30:00.000Z",
@@ -383638,48 +383638,48 @@
           "c": 593.64
         },
         {
-          "t": "2026-11-03T17:30:00.000Z",
-          "c": 600.44
+          "t": "2026-11-03T18:30:00.000Z",
+          "c": 601.77
         },
         {
-          "t": "2026-11-04T14:30:00.000Z",
-          "c": 580.19
+          "t": "2026-11-04T15:30:00.000Z",
+          "c": 561.97
         },
         {
-          "t": "2026-11-04T18:30:00.000Z",
-          "c": 560.35
+          "t": "2026-11-04T19:30:00.000Z",
+          "c": 560.38
         },
         {
-          "t": "2026-11-05T15:30:00.000Z",
-          "c": 484
+          "t": "2026-11-05T16:30:00.000Z",
+          "c": 477.34
         },
         {
-          "t": "2026-11-05T19:30:00.000Z",
-          "c": 473.37
+          "t": "2026-11-05T20:30:00.000Z",
+          "c": 465.94
         },
         {
-          "t": "2026-11-06T16:30:00.000Z",
-          "c": 459.63
+          "t": "2026-11-06T17:30:00.000Z",
+          "c": 454.34
         },
         {
-          "t": "2026-11-06T20:30:00.000Z",
-          "c": 461.23
+          "t": "2026-11-09T14:30:00.000Z",
+          "c": 501.78
         },
         {
           "t": "2026-11-09T18:30:00.000Z",
           "c": 503.43
         },
         {
-          "t": "2026-11-10T15:30:00.000Z",
-          "c": 497.7
+          "t": "2026-11-10T16:30:00.000Z",
+          "c": 486.44
         },
         {
-          "t": "2026-11-10T19:30:00.000Z",
-          "c": 500.54
+          "t": "2026-11-10T20:30:00.000Z",
+          "c": 501.61
         },
         {
-          "t": "2026-11-11T16:30:00.000Z",
-          "c": 566.8
+          "t": "2026-11-11T17:30:00.000Z",
+          "c": 564.18
         },
         {
           "t": "2026-11-11T21:00:00.000Z",

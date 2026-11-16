@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-15T20:57:16.772Z",
+  "updatedAt": "2026-11-16T00:43:23.337Z",
   "period": "3mo",
   "universeSize": 503,
   "source": {
@@ -8558,28 +8558,28 @@
       "publishedAt": "2026-11-15T18:10:18.000Z"
     },
     {
+      "title": "Japan's economy unexpectedly contracts in third-quarter as elevated energy costs bite",
+      "url": "https://www.cnbc.com/2026/11/16/japan-q3-gdp-energy-oil-prices.html",
+      "imageUrl": null,
+      "publishedAt": "2026-11-16T00:11:25.000Z"
+    },
+    {
       "title": "Anthropic’s IPO lands as the embattled AI trade looks for a much-needed bright spot",
       "url": "https://www.cnbc.com/2026/11/15/anthropic-ipo-is-make-or-break-for-the-technology-industry.html",
       "imageUrl": null,
       "publishedAt": "2026-11-15T12:00:01.000Z"
     },
     {
+      "title": "Stock futures tick higher as traders brace for Nvidia earnings, Anthropic IPO this week: Live updates",
+      "url": "https://www.cnbc.com/2026/11/15/stock-market-today-live-updates.html",
+      "imageUrl": null,
+      "publishedAt": "2026-11-16T00:26:50.000Z"
+    },
+    {
       "title": "'We slept here': Flight delays linger but schedule is back on track for Monday",
       "url": "https://www.cnbc.com/2026/11/15/flight-delays-ground-faa-stop.html",
       "imageUrl": null,
-      "publishedAt": "2026-11-15T18:22:23.000Z"
-    },
-    {
-      "title": "Trump breaks silence about FAA nationwide ground stop, blames Biden administration",
-      "url": "https://www.cnbc.com/2026/11/15/trump-breaks-silence-on-faa-nationwide-ground-stop-blames-biden-.html",
-      "imageUrl": null,
-      "publishedAt": "2026-11-15T16:56:40.000Z"
-    },
-    {
-      "title": "Rivian, Lucid, Scout CEOs aren’t counting on Democrats to restore EV federal support after midterm wins",
-      "url": "https://www.cnbc.com/2026/11/15/rivian-lucid-scout-arent-counting-on-dems-to-restore-ev-incentives.html",
-      "imageUrl": null,
-      "publishedAt": "2026-11-15T13:00:02.000Z"
+      "publishedAt": "2026-11-15T22:33:26.000Z"
     },
     {
       "title": "How Canadian stocks could be big winners of U.S. midterms",
@@ -8594,6 +8594,12 @@
       "publishedAt": "2026-11-14T12:00:01.000Z"
     },
     {
+      "title": "Trump breaks silence about FAA nationwide ground stop, blames Biden administration",
+      "url": "https://www.cnbc.com/2026/11/15/trump-breaks-silence-on-faa-nationwide-ground-stop-blames-biden-.html",
+      "imageUrl": null,
+      "publishedAt": "2026-11-15T16:56:40.000Z"
+    },
+    {
       "title": "SpaceX catches upper stage of Starship rocket in historic first",
       "url": "https://www.cnbc.com/2026/11/14/spacex-plans-to-try-first-ever-catch-of-starship-rocket-from-orbit.html",
       "imageUrl": null,
@@ -8604,12 +8610,6 @@
       "url": "https://www.cnbc.com/2026/11/15/social-security-tax-changes-midterm-election.html",
       "imageUrl": null,
       "publishedAt": "2026-11-15T14:30:01.000Z"
-    },
-    {
-      "title": "Nvidia board urged to consider 'potential return of Jensen Huang' by two major investors",
-      "url": "https://www.cnbc.com/2026/11/14/nvidia-investors-jensen-huang-return-board-letter.html",
-      "imageUrl": null,
-      "publishedAt": "2026-11-14T17:46:06.000Z"
     },
     {
       "title": "How Rockstar's 'GTA VI' release could reshape gaming, streaming and even paid time off",
@@ -8632,10 +8632,10 @@
       "publishedAt": "2026-11-15T12:00:01.000Z"
     },
     {
-      "title": "Will the Anthropic IPO create a disturbance in the broader U.S. equity market, like SpaceX did?",
-      "url": "https://www.marketwatch.com/story/will-the-anthropic-ipo-create-a-disturbance-in-the-broader-u-s-equity-market-like-spacex-did-05ba4351?mod=mw_rss_topstories",
-      "imageUrl": "https://images.mktw.net/im-76199482",
-      "publishedAt": "2026-11-15T14:00:00.000Z"
+      "title": "Stock futures tick higher as traders brace for Nvidia earnings, Anthropic IPO this week: Live updates",
+      "url": "https://www.cnbc.com/2026/11/15/stock-market-today-live-updates.html",
+      "imageUrl": null,
+      "publishedAt": "2026-11-16T00:26:50.000Z"
     }
   ],
   "benchmark": {

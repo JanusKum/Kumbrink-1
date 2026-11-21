@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-21T11:58:33.460Z",
+  "updatedAt": "2026-11-21T18:45:53.621Z",
   "period": "3mo",
   "universeSize": 503,
   "source": {
@@ -8552,22 +8552,52 @@
   ],
   "news": [
     {
-      "title": "S&P 500 correction: Five forces behind the market sell-off",
-      "url": "https://www.cnbc.com/2026/11/20/sp-500-correction-market-sell-off.html",
+      "title": "Anthropic’s record IPO collides with tech’s worst week on Wall Street since 2020",
+      "url": "https://www.cnbc.com/2026/11/21/anthropic-ipo-tech-selloff.html",
       "imageUrl": null,
-      "publishedAt": "2026-11-21T11:29:25.000Z"
+      "publishedAt": "2026-11-21T16:40:05.000Z"
     },
     {
-      "title": "Two tanker attack incidents reported near Oman's Khasab, UKMTO says",
-      "url": "https://www.cnbc.com/2026/11/21/two-tanker-attacks-reported-near-omans-khasab-ukmto-says.html",
+      "title": "Trump says there could be a 'positive spin' from the latest FBI database hack",
+      "url": "https://www.cnbc.com/2026/11/21/trump-fbi-database-hack.html",
       "imageUrl": null,
-      "publishedAt": "2026-11-21T11:15:25.000Z"
+      "publishedAt": "2026-11-21T16:57:34.000Z"
     },
     {
-      "title": "Nvidia stock plunges 14%, wraps up longest weekly losing streak since 2008 financial crisis",
-      "url": "https://www.cnbc.com/2026/11/20/nvidias-7-week-losing-streak-is-longest-since-2008-financial-crisis.html",
+      "title": "Tech outages are fueling a new doomsday economy",
+      "url": "https://www.cnbc.com/2026/11/21/emergency-prep-spending-tech-outages.html",
       "imageUrl": null,
-      "publishedAt": "2026-11-20T22:59:33.000Z"
+      "publishedAt": "2026-11-21T15:04:56.000Z"
+    },
+    {
+      "title": "State and federal battle over prediction markets regulation heats up after midterms",
+      "url": "https://www.cnbc.com/2026/11/21/prediction-market-regulation-kalshi-cftc.html",
+      "imageUrl": null,
+      "publishedAt": "2026-11-21T13:12:41.000Z"
+    },
+    {
+      "title": "International first class is over for U.S. airlines. Enter the mega business-class cabin",
+      "url": "https://www.cnbc.com/2026/11/21/us-airlines-first-class-business-class.html",
+      "imageUrl": null,
+      "publishedAt": "2026-11-21T12:00:01.000Z"
+    },
+    {
+      "title": "From trash to treasure: Most hated stocks are winning as AI bull market rolls over",
+      "url": "https://www.cnbc.com/2026/11/21/from-trash-to-treasure-these-hated-stocks-are-winning-as-ai-flounders.html",
+      "imageUrl": null,
+      "publishedAt": "2026-11-21T13:10:40.000Z"
+    },
+    {
+      "title": "Warren Buffett quadruples Thanksgiving gifts: A breakdown of how much wealth he's giving away",
+      "url": "https://www.cnbc.com/2026/11/21/warren-buffett-quadruples-thanksgiving-gifts.html",
+      "imageUrl": null,
+      "publishedAt": "2026-11-21T13:01:44.000Z"
+    },
+    {
+      "title": "An ‘illusion of glitz and glamour’: Inside California’s modern-day gold rush, where miners can bring in millions",
+      "url": "https://www.cnbc.com/make-it/2026/11/21/california-mining-modern-gold-rush.html",
+      "imageUrl": null,
+      "publishedAt": "2026-11-21T14:05:40.000Z"
     },
     {
       "title": "How China is using summits to expand its global influence",
@@ -8576,40 +8606,10 @@
       "publishedAt": "2026-11-21T06:00:02.000Z"
     },
     {
-      "title": "Trump orders federal contractors to notify White House before giving Congress information",
-      "url": "https://www.cnbc.com/2026/11/21/trump-orders-federal-contractors-to-notify-white-house-before-giving-congress-information.html",
+      "title": "Nvidia stock plunges 14%, wraps up longest weekly losing streak since 2008 financial crisis",
+      "url": "https://www.cnbc.com/2026/11/20/nvidias-7-week-losing-streak-is-longest-since-2008-financial-crisis.html",
       "imageUrl": null,
-      "publishedAt": "2026-11-21T08:54:22.000Z"
-    },
-    {
-      "title": "Is the bull market cracking? What to watch for next week after the AI washout",
-      "url": "https://www.cnbc.com/2026/11/20/stock-market-next-week-outlook-for-nov-23-27-2026.html",
-      "imageUrl": null,
-      "publishedAt": "2026-11-20T20:26:28.000Z"
-    },
-    {
-      "title": "Zscaler stock jumps 18% on report that CrowdStrike in talks to buy security vendor",
-      "url": "https://www.cnbc.com/2026/11/20/zscaler-crowdstrike-deal.html",
-      "imageUrl": null,
-      "publishedAt": "2026-11-20T21:35:24.000Z"
-    },
-    {
-      "title": "Why Anthropic's blockbuster IPO couldn't escape the market correction",
-      "url": "https://www.cnbc.com/2026/11/20/anthropic-ipo-ai-stock-market-selloff.html",
-      "imageUrl": null,
-      "publishedAt": "2026-11-21T05:30:09.000Z"
-    },
-    {
-      "title": "An early breakdown in the polar vortex is threatening already depleted gas stocks",
-      "url": "https://www.cnbc.com/2026/11/21/polar-vortex-europe-gas-prices.html",
-      "imageUrl": null,
-      "publishedAt": "2026-11-21T06:00:02.000Z"
-    },
-    {
-      "title": "A massive bearish trade just happened in the chip stocks",
-      "url": "https://www.cnbc.com/2026/11/20/a-massive-bearish-trade-just-happened-in-the-chip-stocks.html",
-      "imageUrl": null,
-      "publishedAt": "2026-11-20T19:33:31.000Z"
+      "publishedAt": "2026-11-20T22:59:33.000Z"
     },
     {
       "title": "Trump says he still has confidence in Lutnick",
@@ -8626,22 +8626,16 @@
   ],
   "ipoNews": [
     {
-      "title": "Why Anthropic's blockbuster IPO couldn't escape the market correction",
+      "title": "Anthropic’s record IPO collides with tech’s worst week on Wall Street since 2020",
+      "url": "https://www.cnbc.com/2026/11/21/anthropic-ipo-tech-selloff.html",
+      "imageUrl": null,
+      "publishedAt": "2026-11-21T16:40:05.000Z"
+    },
+    {
+      "title": "Why Anthropic's blockbuster IPO couldn't escape the stock market correction",
       "url": "https://www.cnbc.com/2026/11/20/anthropic-ipo-ai-stock-market-selloff.html",
       "imageUrl": null,
-      "publishedAt": "2026-11-21T05:30:09.000Z"
-    },
-    {
-      "title": "The hidden catch in Anthropic&#x2019;s IPO: Billions of locked-up shares are waiting in the wings",
-      "url": "https://www.marketwatch.com/story/the-hidden-catch-in-anthropics-ipo-billions-of-locked-up-shares-are-waiting-in-the-wings-279d33ce?mod=mw_rss_topstories",
-      "imageUrl": "https://images.mktw.net/im-62665344",
-      "publishedAt": "2026-11-20T21:39:00.000Z"
-    },
-    {
-      "title": "Anthropic&#x2019;s stock sees dramatic slide but manages to stay above its IPO price",
-      "url": "https://www.marketwatch.com/story/anthropics-stock-slides-closer-to-ipo-price-and-drags-down-the-ai-trade-cc43a0c4?mod=mw_rss_topstories",
-      "imageUrl": "https://images.mktw.net/im-99445886",
-      "publishedAt": "2026-11-20T21:25:00.000Z"
+      "publishedAt": "2026-11-21T14:07:53.000Z"
     }
   ],
   "benchmark": {

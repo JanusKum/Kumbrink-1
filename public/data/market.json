@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-22T12:59:47.822Z",
+  "updatedAt": "2026-11-22T20:13:45.145Z",
   "period": "3mo",
   "universeSize": 503,
   "source": {
@@ -8552,22 +8552,22 @@
   ],
   "news": [
     {
-      "title": "Tech outages are fueling a new doomsday economy",
-      "url": "https://www.cnbc.com/2026/11/21/emergency-prep-spending-tech-outages.html",
+      "title": "Director of National Intelligence Jay Clayton warns Americans of 'bumps in the road' after tech outages",
+      "url": "https://www.cnbc.com/2026/11/22/jay-clayton-tech-outages-faa-microsoft-thanksgiving.html",
       "imageUrl": null,
-      "publishedAt": "2026-11-21T15:04:56.000Z"
+      "publishedAt": "2026-11-22T17:14:03.000Z"
     },
     {
-      "title": "Trump says there could be a 'positive spin' from the latest FBI database hack",
-      "url": "https://www.cnbc.com/2026/11/21/trump-fbi-database-hack.html",
+      "title": "Employees at Eric Trump-backed robot startup lose health benefits as company's cash crunch deepens",
+      "url": "https://www.cnbc.com/2026/11/22/foundation-future-industries-health-benefits-payroll-base-group.html",
       "imageUrl": null,
-      "publishedAt": "2026-11-21T16:57:34.000Z"
+      "publishedAt": "2026-11-22T18:55:05.000Z"
     },
     {
-      "title": "Quantum computing’s first real-world payoff may come in energy, not drug discovery",
-      "url": "https://www.cnbc.com/2026/11/22/quantum-computing-energy-applications.html",
+      "title": "Pizza chains are under pressure. GLP-1 use is only one part of the problem",
+      "url": "https://www.cnbc.com/2026/11/22/pizza-chains-sales-glp-1-demand.html",
       "imageUrl": null,
-      "publishedAt": "2026-11-22T06:00:01.000Z"
+      "publishedAt": "2026-11-22T13:00:01.000Z"
     },
     {
       "title": "Anthropic’s record IPO collides with tech’s worst week on Wall Street since 2020",
@@ -8576,10 +8576,10 @@
       "publishedAt": "2026-11-21T16:40:05.000Z"
     },
     {
-      "title": "S&P 500 correction: Five forces behind the market sell-off",
-      "url": "https://www.cnbc.com/2026/11/20/sp-500-correction-market-sell-off.html",
+      "title": "Saudi Arabia, Bahrain report new attacks as Iran says it remains open to a deal with U.S.",
+      "url": "https://www.cnbc.com/2026/11/22/saudi-houthi-bahrain-iran-attacks-araghchi-talks.html",
       "imageUrl": null,
-      "publishedAt": "2026-11-21T11:29:25.000Z"
+      "publishedAt": "2026-11-22T13:25:47.000Z"
     },
     {
       "title": "As prediction markets grow, so do the number of short sellers counting on DraftKings to fall",
@@ -8588,28 +8588,28 @@
       "publishedAt": "2026-11-22T12:15:24.000Z"
     },
     {
-      "title": "Top Wall Street analysts favor these 3 dividend stocks for strong returns",
-      "url": "https://www.cnbc.com/2026/11/22/top-wall-street-analysts-favor-these-stocks-for-strong-returns.html",
+      "title": "Quantum computing’s first real-world payoff may come in energy, not drug discovery",
+      "url": "https://www.cnbc.com/2026/11/22/quantum-computing-energy-applications.html",
       "imageUrl": null,
-      "publishedAt": "2026-11-22T12:13:56.000Z"
+      "publishedAt": "2026-11-22T06:00:01.000Z"
     },
     {
-      "title": "The Nasdaq is in freefall. Here's one stock to look at",
-      "url": "https://www.cnbc.com/2026/11/22/the-nasdaq-is-in-freefall-heres-one-stock-to-look-at.html",
+      "title": "Trump says there could be a 'positive spin' from the latest FBI database hack",
+      "url": "https://www.cnbc.com/2026/11/21/trump-fbi-database-hack.html",
       "imageUrl": null,
-      "publishedAt": "2026-11-22T12:10:39.000Z"
+      "publishedAt": "2026-11-21T16:57:34.000Z"
     },
     {
-      "title": "State and federal battle over prediction markets regulation heats up after midterms",
-      "url": "https://www.cnbc.com/2026/11/21/prediction-market-regulation-kalshi-cftc.html",
+      "title": "S&P 500 correction: Five forces behind the market sell-off",
+      "url": "https://www.cnbc.com/2026/11/20/sp-500-correction-market-sell-off.html",
       "imageUrl": null,
-      "publishedAt": "2026-11-21T13:12:41.000Z"
+      "publishedAt": "2026-11-21T11:29:25.000Z"
     },
     {
-      "title": "Warren Buffett quadruples Thanksgiving gifts: A breakdown of how much wealth he's giving away",
-      "url": "https://www.cnbc.com/2026/11/21/warren-buffett-quadruples-thanksgiving-gifts.html",
+      "title": "Social Security benefits are rising in 2027, but other changes could affect what you keep",
+      "url": "https://www.cnbc.com/2026/11/22/social-security-changes-cola-taxes-medicare.html",
       "imageUrl": null,
-      "publishedAt": "2026-11-21T13:01:44.000Z"
+      "publishedAt": "2026-11-22T14:30:01.000Z"
     },
     {
       "title": "International first class is over for U.S. airlines. Enter the mega business-class cabin",
@@ -8630,12 +8630,6 @@
       "url": "https://www.cnbc.com/2026/11/21/anthropic-ipo-tech-selloff.html",
       "imageUrl": null,
       "publishedAt": "2026-11-21T16:40:05.000Z"
-    },
-    {
-      "title": "Why Anthropic's blockbuster IPO couldn't escape the stock market correction",
-      "url": "https://www.cnbc.com/2026/11/20/anthropic-ipo-ai-stock-market-selloff.html",
-      "imageUrl": null,
-      "publishedAt": "2026-11-21T14:07:53.000Z"
     }
   ],
   "benchmark": {

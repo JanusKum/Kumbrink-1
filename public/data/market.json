@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-22T04:31:38.658Z",
+  "updatedAt": "2026-11-22T12:59:47.822Z",
   "period": "3mo",
   "universeSize": 503,
   "source": {
@@ -8552,10 +8552,10 @@
   ],
   "news": [
     {
-      "title": "Anthropic’s record IPO collides with tech’s worst week on Wall Street since 2020",
-      "url": "https://www.cnbc.com/2026/11/21/anthropic-ipo-tech-selloff.html",
+      "title": "Tech outages are fueling a new doomsday economy",
+      "url": "https://www.cnbc.com/2026/11/21/emergency-prep-spending-tech-outages.html",
       "imageUrl": null,
-      "publishedAt": "2026-11-21T16:40:05.000Z"
+      "publishedAt": "2026-11-21T15:04:56.000Z"
     },
     {
       "title": "Trump says there could be a 'positive spin' from the latest FBI database hack",
@@ -8564,10 +8564,40 @@
       "publishedAt": "2026-11-21T16:57:34.000Z"
     },
     {
-      "title": "Tech outages are fueling a new doomsday economy",
-      "url": "https://www.cnbc.com/2026/11/21/emergency-prep-spending-tech-outages.html",
+      "title": "Quantum computing’s first real-world payoff may come in energy, not drug discovery",
+      "url": "https://www.cnbc.com/2026/11/22/quantum-computing-energy-applications.html",
       "imageUrl": null,
-      "publishedAt": "2026-11-21T15:04:56.000Z"
+      "publishedAt": "2026-11-22T06:00:01.000Z"
+    },
+    {
+      "title": "Anthropic’s record IPO collides with tech’s worst week on Wall Street since 2020",
+      "url": "https://www.cnbc.com/2026/11/21/anthropic-ipo-tech-selloff.html",
+      "imageUrl": null,
+      "publishedAt": "2026-11-21T16:40:05.000Z"
+    },
+    {
+      "title": "S&P 500 correction: Five forces behind the market sell-off",
+      "url": "https://www.cnbc.com/2026/11/20/sp-500-correction-market-sell-off.html",
+      "imageUrl": null,
+      "publishedAt": "2026-11-21T11:29:25.000Z"
+    },
+    {
+      "title": "As prediction markets grow, so do the number of short sellers counting on DraftKings to fall",
+      "url": "https://www.cnbc.com/2026/11/22/draftkings-short-interest-prediction-markets.html",
+      "imageUrl": null,
+      "publishedAt": "2026-11-22T12:15:24.000Z"
+    },
+    {
+      "title": "Top Wall Street analysts favor these 3 dividend stocks for strong returns",
+      "url": "https://www.cnbc.com/2026/11/22/top-wall-street-analysts-favor-these-stocks-for-strong-returns.html",
+      "imageUrl": null,
+      "publishedAt": "2026-11-22T12:13:56.000Z"
+    },
+    {
+      "title": "The Nasdaq is in freefall. Here's one stock to look at",
+      "url": "https://www.cnbc.com/2026/11/22/the-nasdaq-is-in-freefall-heres-one-stock-to-look-at.html",
+      "imageUrl": null,
+      "publishedAt": "2026-11-22T12:10:39.000Z"
     },
     {
       "title": "State and federal battle over prediction markets regulation heats up after midterms",
@@ -8576,52 +8606,22 @@
       "publishedAt": "2026-11-21T13:12:41.000Z"
     },
     {
-      "title": "International first class is over for U.S. airlines. Enter the mega business-class cabin",
-      "url": "https://www.cnbc.com/2026/11/21/us-airlines-first-class-business-class.html",
-      "imageUrl": null,
-      "publishedAt": "2026-11-21T12:00:01.000Z"
-    },
-    {
-      "title": "From trash to treasure: Most hated stocks are winning as AI bull market rolls over",
-      "url": "https://www.cnbc.com/2026/11/21/from-trash-to-treasure-these-hated-stocks-are-winning-as-ai-flounders.html",
-      "imageUrl": null,
-      "publishedAt": "2026-11-21T13:10:40.000Z"
-    },
-    {
       "title": "Warren Buffett quadruples Thanksgiving gifts: A breakdown of how much wealth he's giving away",
       "url": "https://www.cnbc.com/2026/11/21/warren-buffett-quadruples-thanksgiving-gifts.html",
       "imageUrl": null,
       "publishedAt": "2026-11-21T13:01:44.000Z"
     },
     {
+      "title": "International first class is over for U.S. airlines. Enter the mega business-class cabin",
+      "url": "https://www.cnbc.com/2026/11/21/us-airlines-first-class-business-class.html",
+      "imageUrl": null,
+      "publishedAt": "2026-11-21T12:00:01.000Z"
+    },
+    {
       "title": "An ‘illusion of glitz and glamour’: Inside California’s modern-day gold rush, where miners can bring in millions",
       "url": "https://www.cnbc.com/make-it/2026/11/21/california-mining-modern-gold-rush.html",
       "imageUrl": null,
       "publishedAt": "2026-11-21T14:05:40.000Z"
-    },
-    {
-      "title": "How China is using summits to expand its global influence",
-      "url": "https://www.cnbc.com/2026/11/21/china-xi-trump-putin-global-diplomacy-shenzhen.html",
-      "imageUrl": null,
-      "publishedAt": "2026-11-21T06:00:02.000Z"
-    },
-    {
-      "title": "Nvidia stock plunges 14%, wraps up longest weekly losing streak since 2008 financial crisis",
-      "url": "https://www.cnbc.com/2026/11/20/nvidias-7-week-losing-streak-is-longest-since-2008-financial-crisis.html",
-      "imageUrl": null,
-      "publishedAt": "2026-11-20T22:59:33.000Z"
-    },
-    {
-      "title": "Trump says he still has confidence in Lutnick",
-      "url": "https://www.cnbc.com/2026/11/20/trump-lutnick-commerce-china-ai.html",
-      "imageUrl": null,
-      "publishedAt": "2026-11-20T20:52:08.000Z"
-    },
-    {
-      "title": "Jensen Huang to testify publicly before Senate banking panel, Chairman Scott says",
-      "url": "https://www.cnbc.com/2026/11/20/jensen-huang-nvidia-senate-testimony.html",
-      "imageUrl": null,
-      "publishedAt": "2026-11-20T19:42:53.000Z"
     }
   ],
   "ipoNews": [

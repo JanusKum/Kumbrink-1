@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-26T03:54:00.533Z",
+  "updatedAt": "2026-11-26T13:27:44.257Z",
   "period": "3mo",
   "universeSize": 503,
   "source": {
@@ -8552,64 +8552,64 @@
   ],
   "news": [
     {
+      "title": "SpaceX, Musk pledge to donate a share each to active Trump Accounts",
+      "url": "https://www.cnbc.com/2026/11/25/spacex-musk-trump-account-stock.html",
+      "imageUrl": null,
+      "publishedAt": "2026-11-26T06:39:34.000Z"
+    },
+    {
+      "title": "Trump, NATO chief caution Russia as attacks on Ukraine’s energy infrastructure intensify",
+      "url": "https://www.cnbc.com/2026/11/26/trump-nato-rutte-russia-ukraine-war.html",
+      "imageUrl": null,
+      "publishedAt": "2026-11-26T10:45:45.000Z"
+    },
+    {
+      "title": "The Nobel-winning science turning ‘water harvesting’ into a commercial race",
+      "url": "https://www.cnbc.com/atmospheric-water-harvesting-nobel-prize-atoco-ahbstra/",
+      "imageUrl": null,
+      "publishedAt": "2026-11-26T11:01:13.000Z"
+    },
+    {
+      "title": "Global stocks rally as investors shrug off U.S. tariffs and AI jitters to 'fish for bargains'",
+      "url": "https://www.cnbc.com/2026/11/26/stock-markets-today-.html",
+      "imageUrl": null,
+      "publishedAt": "2026-11-26T12:22:25.000Z"
+    },
+    {
+      "title": "Switzerland’s biggest bank set for showdown with lawmakers as capital fight intensifies amid crisis planning",
+      "url": "https://www.cnbc.com/2026/11/26/ubs-swiss-capital-rules-finma-crisis-plan.html",
+      "imageUrl": null,
+      "publishedAt": "2026-11-26T11:17:39.000Z"
+    },
+    {
+      "title": "Norse Atlantic suspends all flights, warns it may file for bankruptcy after share price collapse",
+      "url": "https://www.cnbc.com/2026/11/26/norse-airline-finance-business.html",
+      "imageUrl": null,
+      "publishedAt": "2026-11-26T09:02:30.000Z"
+    },
+    {
+      "title": "U.S. tariff-hike threats pile pressure on partners to sign trade deals",
+      "url": "https://www.cnbc.com/2026/11/26/us-tariffs-hike-trade-agreement.html",
+      "imageUrl": null,
+      "publishedAt": "2026-11-26T12:46:55.000Z"
+    },
+    {
+      "title": "Wealthy Europeans look beyond stocks amid AI selloff. Here’s where they’re investing",
+      "url": "https://www.cnbc.com/2026/11/26/wealthy-europeans-alternative-investments-ai.html",
+      "imageUrl": null,
+      "publishedAt": "2026-11-26T07:23:42.000Z"
+    },
+    {
       "title": "S&P warns Nvidia credit rating could be cut over 'rising' management and governance risk",
       "url": "https://www.cnbc.com/2026/11/26/nvidia-market-governance-risk.html",
       "imageUrl": null,
       "publishedAt": "2026-11-26T03:19:44.000Z"
     },
     {
-      "title": "U.S. proposes new tariffs on 14 trading partners, including China and the EU",
-      "url": "https://www.cnbc.com/2026/11/25/us-tariffs-trump-section-301.html",
+      "title": "Latin America has the copper and energy the AI build-out needs. Infrastructure is the test",
+      "url": "https://www.cnbc.com/2026/11/26/latin-america-copper-energy-ai-investment.html",
       "imageUrl": null,
-      "publishedAt": "2026-11-25T16:02:52.000Z"
-    },
-    {
-      "title": "K-beauty stocks rally as Korean brands top Amazon bestseller lists globally ahead of Black Friday",
-      "url": "https://www.cnbc.com/2026/11/26/k-beauty-firms-amazon-sales-black-friday.html",
-      "imageUrl": null,
-      "publishedAt": "2026-11-26T03:09:47.000Z"
-    },
-    {
-      "title": "South Korea's Kospi leads gains as tech rebound lifts Asia markets",
-      "url": "https://www.cnbc.com/2026/11/26/stock-markets-today-.html",
-      "imageUrl": null,
-      "publishedAt": "2026-11-26T01:45:52.000Z"
-    },
-    {
-      "title": "Vance says he was assured Jensen Huang was not under DOJ investigation",
-      "url": "https://www.cnbc.com/2026/11/25/vance-jensen-huang-nvidia-doj-investigation.html",
-      "imageUrl": null,
-      "publishedAt": "2026-11-25T21:00:08.000Z"
-    },
-    {
-      "title": "Norse Atlantic flights suspended after warning finances 'critical'",
-      "url": "https://www.cnbc.com/2026/11/26/norse-airline-finance-business.html",
-      "imageUrl": null,
-      "publishedAt": "2026-11-26T01:52:20.000Z"
-    },
-    {
-      "title": "Hedge funds are no longer just for the rich. They’re coming for everyday investors",
-      "url": "https://www.cnbc.com/2026/11/26/hedge-funds-retail-investors.html",
-      "imageUrl": null,
-      "publishedAt": "2026-11-26T01:10:58.000Z"
-    },
-    {
-      "title": "South Korea upgrades growth forecast, raises benchmark rates to highest in two years",
-      "url": "https://www.cnbc.com/2026/11/26/bok-rate-decision-korea-gdp-inflation.html",
-      "imageUrl": null,
-      "publishedAt": "2026-11-26T03:32:53.000Z"
-    },
-    {
-      "title": "Where the market may be mispricing risk most: AI boom, volatility, high-yield bonds",
-      "url": "https://www.cnbc.com/2026/11/26/mispricing-risk-fund-managers-ai-volatility.html",
-      "imageUrl": null,
-      "publishedAt": "2026-11-26T01:34:58.000Z"
-    },
-    {
-      "title": "Inside India newsletter: Roaring economy, foreign investors’ return and now record auto sales",
-      "url": "https://www.cnbc.com/2026/11/26/india-auto-slaes-economy-suzuki-hyundai-toyota.html",
-      "imageUrl": null,
-      "publishedAt": "2026-11-26T00:12:16.000Z"
+      "publishedAt": "2026-11-26T08:59:11.000Z"
     },
     {
       "title": "Secondhand shopping is going mainstream this holiday season as consumers seek value",
@@ -8618,10 +8618,10 @@
       "publishedAt": "2026-11-25T14:17:01.000Z"
     },
     {
-      "title": "Even the price of toys is on the rise. How Americans are scaling back holiday plans",
-      "url": "https://www.cnbc.com/2026/11/25/holiday-inflation-thanksgiving-travel-food-gifts.html",
+      "title": "‘Your booth is waiting’: Denny’s welcomes Jensen Huang back as Nvidia CEO",
+      "url": "https://www.cnbc.com/2026/11/26/dennys-jensen-huang-nvidia.html",
       "imageUrl": null,
-      "publishedAt": "2026-11-25T16:17:13.000Z"
+      "publishedAt": "2026-11-26T03:13:43.000Z"
     }
   ],
   "ipoNews": [
@@ -60125,8 +60125,8 @@
           "c": 292.49
         },
         {
-          "t": "2026-10-28T15:30:00.000Z",
-          "c": 284.57
+          "t": "2026-10-28T16:30:00.000Z",
+          "c": 284.24
         },
         {
           "t": "2026-10-29T13:30:00.000Z",
@@ -60157,16 +60157,16 @@
           "c": 297.19
         },
         {
-          "t": "2026-11-04T14:30:00.000Z",
-          "c": 300.76
+          "t": "2026-11-04T15:30:00.000Z",
+          "c": 303.27
         },
         {
-          "t": "2026-11-04T18:30:00.000Z",
-          "c": 304.99
+          "t": "2026-11-04T19:30:00.000Z",
+          "c": 305.04
         },
         {
-          "t": "2026-11-05T15:30:00.000Z",
-          "c": 306.33
+          "t": "2026-11-05T16:30:00.000Z",
+          "c": 305.2
         },
         {
           "t": "2026-11-05T20:30:00.000Z",
@@ -60189,24 +60189,24 @@
           "c": 302.5
         },
         {
-          "t": "2026-11-10T19:30:00.000Z",
-          "c": 304
+          "t": "2026-11-10T20:30:00.000Z",
+          "c": 305.43
         },
         {
-          "t": "2026-11-11T16:30:00.000Z",
-          "c": 304.51
+          "t": "2026-11-11T17:30:00.000Z",
+          "c": 304.59
         },
         {
-          "t": "2026-11-11T20:30:00.000Z",
-          "c": 306.41
+          "t": "2026-11-12T14:30:00.000Z",
+          "c": 309.55
         },
         {
-          "t": "2026-11-12T17:30:00.000Z",
-          "c": 307.46
+          "t": "2026-11-12T18:30:00.000Z",
+          "c": 307.82
         },
         {
-          "t": "2026-11-13T14:30:00.000Z",
-          "c": 308.83
+          "t": "2026-11-13T15:30:00.000Z",
+          "c": 309.98
         },
         {
           "t": "2026-11-13T19:30:00.000Z",
@@ -60221,48 +60221,48 @@
           "c": 313.52
         },
         {
-          "t": "2026-11-17T17:30:00.000Z",
-          "c": 309.82
+          "t": "2026-11-17T18:30:00.000Z",
+          "c": 309.7
         },
         {
-          "t": "2026-11-18T14:30:00.000Z",
-          "c": 307.66
+          "t": "2026-11-18T15:30:00.000Z",
+          "c": 306.02
         },
         {
-          "t": "2026-11-18T18:30:00.000Z",
-          "c": 306.98
+          "t": "2026-11-18T19:30:00.000Z",
+          "c": 307.17
         },
         {
-          "t": "2026-11-19T15:30:00.000Z",
-          "c": 301.46
+          "t": "2026-11-19T16:30:00.000Z",
+          "c": 301.77
         },
         {
-          "t": "2026-11-19T19:30:00.000Z",
-          "c": 300.79
+          "t": "2026-11-19T20:30:00.000Z",
+          "c": 301.18
         },
         {
-          "t": "2026-11-20T16:30:00.000Z",
-          "c": 306.38
+          "t": "2026-11-20T17:30:00.000Z",
+          "c": 304.92
         },
         {
-          "t": "2026-11-20T20:30:00.000Z",
-          "c": 302
+          "t": "2026-11-23T14:30:00.000Z",
+          "c": 300.05
         },
         {
           "t": "2026-11-23T18:30:00.000Z",
           "c": 301.64
         },
         {
-          "t": "2026-11-24T15:30:00.000Z",
-          "c": 309.54
+          "t": "2026-11-24T16:30:00.000Z",
+          "c": 310.34
         },
         {
-          "t": "2026-11-24T19:30:00.000Z",
-          "c": 310.32
+          "t": "2026-11-24T20:30:00.000Z",
+          "c": 310.83
         },
         {
-          "t": "2026-11-25T16:30:00.000Z",
-          "c": 317.46
+          "t": "2026-11-25T17:30:00.000Z",
+          "c": 318.69
         },
         {
           "t": "2026-11-25T21:00:00.000Z",
@@ -171558,8 +171558,8 @@
           "c": 161.28
         },
         {
-          "t": "2026-10-28T15:30:00.000Z",
-          "c": 161.96
+          "t": "2026-10-28T16:30:00.000Z",
+          "c": 161.54
         },
         {
           "t": "2026-10-29T13:30:00.000Z",
@@ -171590,16 +171590,16 @@
           "c": 156.45
         },
         {
-          "t": "2026-11-04T14:30:00.000Z",
-          "c": 150.24
+          "t": "2026-11-04T15:30:00.000Z",
+          "c": 149.39
         },
         {
-          "t": "2026-11-04T18:30:00.000Z",
-          "c": 147.83
+          "t": "2026-11-04T19:30:00.000Z",
+          "c": 147.06
         },
         {
-          "t": "2026-11-05T15:30:00.000Z",
-          "c": 149.7
+          "t": "2026-11-05T16:30:00.000Z",
+          "c": 147.53
         },
         {
           "t": "2026-11-05T20:30:00.000Z",
@@ -171622,24 +171622,24 @@
           "c": 151.29
         },
         {
-          "t": "2026-11-10T19:30:00.000Z",
-          "c": 151.86
+          "t": "2026-11-10T20:30:00.000Z",
+          "c": 151.5
         },
         {
-          "t": "2026-11-11T16:30:00.000Z",
-          "c": 152.7
+          "t": "2026-11-11T17:30:00.000Z",
+          "c": 152.78
         },
         {
-          "t": "2026-11-11T20:30:00.000Z",
-          "c": 153.77
+          "t": "2026-11-12T14:30:00.000Z",
+          "c": 155.34
         },
         {
-          "t": "2026-11-12T17:30:00.000Z",
-          "c": 156.79
+          "t": "2026-11-12T18:30:00.000Z",
+          "c": 156.55
         },
         {
-          "t": "2026-11-13T14:30:00.000Z",
-          "c": 157.67
+          "t": "2026-11-13T15:30:00.000Z",
+          "c": 157.3
         },
         {
           "t": "2026-11-13T19:30:00.000Z",
@@ -171654,48 +171654,48 @@
           "c": 155.55
         },
         {
-          "t": "2026-11-17T17:30:00.000Z",
-          "c": 155.46
+          "t": "2026-11-17T18:30:00.000Z",
+          "c": 154.87
         },
         {
-          "t": "2026-11-18T14:30:00.000Z",
-          "c": 152.54
+          "t": "2026-11-18T15:30:00.000Z",
+          "c": 151.15
         },
         {
-          "t": "2026-11-18T18:30:00.000Z",
-          "c": 150.07
+          "t": "2026-11-18T19:30:00.000Z",
+          "c": 150.15
         },
         {
-          "t": "2026-11-19T15:30:00.000Z",
-          "c": 149.9
+          "t": "2026-11-19T16:30:00.000Z",
+          "c": 149.14
         },
         {
-          "t": "2026-11-19T19:30:00.000Z",
-          "c": 149.62
+          "t": "2026-11-19T20:30:00.000Z",
+          "c": 149.52
         },
         {
-          "t": "2026-11-20T16:30:00.000Z",
-          "c": 151.55
+          "t": "2026-11-20T17:30:00.000Z",
+          "c": 150.98
         },
         {
-          "t": "2026-11-20T20:30:00.000Z",
-          "c": 148.62
+          "t": "2026-11-23T14:30:00.000Z",
+          "c": 148.01
         },
         {
           "t": "2026-11-23T18:30:00.000Z",
           "c": 146.22
         },
         {
-          "t": "2026-11-24T15:30:00.000Z",
-          "c": 147.14
+          "t": "2026-11-24T16:30:00.000Z",
+          "c": 147.44
         },
         {
-          "t": "2026-11-24T19:30:00.000Z",
-          "c": 147.5
+          "t": "2026-11-24T20:30:00.000Z",
+          "c": 146.59
         },
         {
-          "t": "2026-11-25T16:30:00.000Z",
-          "c": 148.87
+          "t": "2026-11-25T17:30:00.000Z",
+          "c": 149.15
         },
         {
           "t": "2026-11-25T21:00:00.000Z",
@@ -362268,7 +362268,7 @@
         },
         {
           "t": "2026-11-24T16:30:00.000Z",
-          "c": 234.19
+          "c": 234.45
         },
         {
           "t": "2026-11-24T20:30:00.000Z",
@@ -409872,8 +409872,8 @@
           "c": 171.17
         },
         {
-          "t": "2026-10-28T15:30:00.000Z",
-          "c": 173.66
+          "t": "2026-10-28T16:30:00.000Z",
+          "c": 174.12
         },
         {
           "t": "2026-10-29T13:30:00.000Z",
@@ -409904,16 +409904,16 @@
           "c": 169.63
         },
         {
-          "t": "2026-11-04T14:30:00.000Z",
-          "c": 170.7
+          "t": "2026-11-04T15:30:00.000Z",
+          "c": 169.88
         },
         {
-          "t": "2026-11-04T18:30:00.000Z",
-          "c": 172.57
+          "t": "2026-11-04T19:30:00.000Z",
+          "c": 172.91
         },
         {
-          "t": "2026-11-05T15:30:00.000Z",
-          "c": 168.43
+          "t": "2026-11-05T16:30:00.000Z",
+          "c": 167.29
         },
         {
           "t": "2026-11-05T20:30:00.000Z",
@@ -409936,24 +409936,24 @@
           "c": 171.45
         },
         {
-          "t": "2026-11-10T19:30:00.000Z",
-          "c": 171.63
+          "t": "2026-11-10T20:30:00.000Z",
+          "c": 171.66
         },
         {
-          "t": "2026-11-11T16:30:00.000Z",
-          "c": 174.29
+          "t": "2026-11-11T17:30:00.000Z",
+          "c": 174.8
         },
         {
-          "t": "2026-11-11T20:30:00.000Z",
-          "c": 174.16
+          "t": "2026-11-12T14:30:00.000Z",
+          "c": 173.29
         },
         {
-          "t": "2026-11-12T17:30:00.000Z",
-          "c": 174.68
+          "t": "2026-11-12T18:30:00.000Z",
+          "c": 174.36
         },
         {
-          "t": "2026-11-13T14:30:00.000Z",
-          "c": 172.7
+          "t": "2026-11-13T15:30:00.000Z",
+          "c": 172.48
         },
         {
           "t": "2026-11-13T19:30:00.000Z",
@@ -409968,48 +409968,48 @@
           "c": 170.08
         },
         {
-          "t": "2026-11-17T17:30:00.000Z",
-          "c": 166.65
+          "t": "2026-11-17T18:30:00.000Z",
+          "c": 166.21
         },
         {
-          "t": "2026-11-18T14:30:00.000Z",
-          "c": 166.38
+          "t": "2026-11-18T15:30:00.000Z",
+          "c": 166.19
         },
         {
-          "t": "2026-11-18T18:30:00.000Z",
-          "c": 166.11
+          "t": "2026-11-18T19:30:00.000Z",
+          "c": 165.56
         },
         {
-          "t": "2026-11-19T15:30:00.000Z",
-          "c": 164.15
+          "t": "2026-11-19T16:30:00.000Z",
+          "c": 162.43
         },
         {
-          "t": "2026-11-19T19:30:00.000Z",
-          "c": 161.73
+          "t": "2026-11-19T20:30:00.000Z",
+          "c": 161.31
         },
         {
-          "t": "2026-11-20T16:30:00.000Z",
-          "c": 157.62
+          "t": "2026-11-20T17:30:00.000Z",
+          "c": 157.37
         },
         {
-          "t": "2026-11-20T20:30:00.000Z",
-          "c": 155.38
+          "t": "2026-11-23T14:30:00.000Z",
+          "c": 162.54
         },
         {
           "t": "2026-11-23T18:30:00.000Z",
           "c": 162.29
         },
         {
-          "t": "2026-11-24T15:30:00.000Z",
-          "c": 159.69
+          "t": "2026-11-24T16:30:00.000Z",
+          "c": 161.13
         },
         {
-          "t": "2026-11-24T19:30:00.000Z",
-          "c": 160.2
+          "t": "2026-11-24T20:30:00.000Z",
+          "c": 160.89
         },
         {
-          "t": "2026-11-25T16:30:00.000Z",
-          "c": 158.96
+          "t": "2026-11-25T17:30:00.000Z",
+          "c": 161.23
         },
         {
           "t": "2026-11-25T21:00:00.000Z",
@@ -476968,8 +476968,8 @@
           "c": 249.36
         },
         {
-          "t": "2026-10-28T15:30:00.000Z",
-          "c": 249.76
+          "t": "2026-10-28T16:30:00.000Z",
+          "c": 251.54
         },
         {
           "t": "2026-10-29T13:30:00.000Z",
@@ -477000,16 +477000,16 @@
           "c": 251.37
         },
         {
-          "t": "2026-11-04T14:30:00.000Z",
-          "c": 264.02
+          "t": "2026-11-04T15:30:00.000Z",
+          "c": 264.36
         },
         {
-          "t": "2026-11-04T18:30:00.000Z",
-          "c": 265.95
+          "t": "2026-11-04T19:30:00.000Z",
+          "c": 268.07
         },
         {
-          "t": "2026-11-05T15:30:00.000Z",
-          "c": 261.98
+          "t": "2026-11-05T16:30:00.000Z",
+          "c": 258.83
         },
         {
           "t": "2026-11-05T20:30:00.000Z",
@@ -477032,24 +477032,24 @@
           "c": 258.64
         },
         {
-          "t": "2026-11-10T19:30:00.000Z",
-          "c": 259.67
+          "t": "2026-11-10T20:30:00.000Z",
+          "c": 261.67
         },
         {
-          "t": "2026-11-11T16:30:00.000Z",
-          "c": 262.27
+          "t": "2026-11-11T17:30:00.000Z",
+          "c": 263
         },
         {
-          "t": "2026-11-11T20:30:00.000Z",
-          "c": 262.02
+          "t": "2026-11-12T14:30:00.000Z",
+          "c": 253.05
         },
         {
-          "t": "2026-11-12T17:30:00.000Z",
-          "c": 253.34
+          "t": "2026-11-12T18:30:00.000Z",
+          "c": 252.37
         },
         {
-          "t": "2026-11-13T14:30:00.000Z",
-          "c": 247.74
+          "t": "2026-11-13T15:30:00.000Z",
+          "c": 252.23
         },
         {
           "t": "2026-11-13T19:30:00.000Z",
@@ -477064,48 +477064,48 @@
           "c": 252.09
         },
         {
-          "t": "2026-11-17T17:30:00.000Z",
-          "c": 251.67
+          "t": "2026-11-17T18:30:00.000Z",
+          "c": 250.07
         },
         {
-          "t": "2026-11-18T14:30:00.000Z",
-          "c": 259.31
+          "t": "2026-11-18T15:30:00.000Z",
+          "c": 260.27
         },
         {
-          "t": "2026-11-18T18:30:00.000Z",
-          "c": 260.45
+          "t": "2026-11-18T19:30:00.000Z",
+          "c": 261.9
         },
         {
-          "t": "2026-11-19T15:30:00.000Z",
-          "c": 229.51
+          "t": "2026-11-19T16:30:00.000Z",
+          "c": 224.68
         },
         {
-          "t": "2026-11-19T19:30:00.000Z",
-          "c": 219.6
+          "t": "2026-11-19T20:30:00.000Z",
+          "c": 220.95
         },
         {
-          "t": "2026-11-20T16:30:00.000Z",
-          "c": 215.83
+          "t": "2026-11-20T17:30:00.000Z",
+          "c": 215.91
         },
         {
-          "t": "2026-11-20T20:30:00.000Z",
-          "c": 210.78
+          "t": "2026-11-23T14:30:00.000Z",
+          "c": 214.96
         },
         {
           "t": "2026-11-23T18:30:00.000Z",
           "c": 218.51
         },
         {
-          "t": "2026-11-24T15:30:00.000Z",
-          "c": 209.52
+          "t": "2026-11-24T16:30:00.000Z",
+          "c": 213.46
         },
         {
-          "t": "2026-11-24T19:30:00.000Z",
-          "c": 214.01
+          "t": "2026-11-24T20:30:00.000Z",
+          "c": 214.03
         },
         {
-          "t": "2026-11-25T16:30:00.000Z",
-          "c": 210.94
+          "t": "2026-11-25T17:30:00.000Z",
+          "c": 214.53
         },
         {
           "t": "2026-11-25T21:00:00.000Z",

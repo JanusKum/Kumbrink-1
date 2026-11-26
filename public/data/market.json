@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-26T13:27:44.257Z",
+  "updatedAt": "2026-11-26T22:45:07.918Z",
   "period": "3mo",
   "universeSize": 503,
   "source": {
@@ -8552,16 +8552,22 @@
   ],
   "news": [
     {
-      "title": "SpaceX, Musk pledge to donate a share each to active Trump Accounts",
-      "url": "https://www.cnbc.com/2026/11/25/spacex-musk-trump-account-stock.html",
+      "title": "Trump demands probe into ‘record setting error’ after third-quarter GDP data gets massive revision higher",
+      "url": "https://www.cnbc.com/2026/11/26/trump-gdp-revision-investigation.html",
       "imageUrl": null,
-      "publishedAt": "2026-11-26T06:39:34.000Z"
+      "publishedAt": "2026-11-26T21:13:17.000Z"
     },
     {
-      "title": "Trump, NATO chief caution Russia as attacks on Ukraine’s energy infrastructure intensify",
-      "url": "https://www.cnbc.com/2026/11/26/trump-nato-rutte-russia-ukraine-war.html",
+      "title": "Semiconductor chips are the new oil. Here's why",
+      "url": "https://www.cnbc.com/2026/11/26/semiconductor-chips-are-the-new-oil-heres-why.html",
       "imageUrl": null,
-      "publishedAt": "2026-11-26T10:45:45.000Z"
+      "publishedAt": "2026-11-26T17:52:15.000Z"
+    },
+    {
+      "title": "Buyer beware? Nvidia's volatile swings expose risks of single-stock ETFs",
+      "url": "https://www.cnbc.com/2026/11/26/nvidias-volatile-swings-expose-risks-of-single-stock-etfs.html",
+      "imageUrl": null,
+      "publishedAt": "2026-11-26T16:00:01.000Z"
     },
     {
       "title": "The Nobel-winning science turning ‘water harvesting’ into a commercial race",
@@ -8570,58 +8576,52 @@
       "publishedAt": "2026-11-26T11:01:13.000Z"
     },
     {
+      "title": "Liesman: Why Greenspan could bet on productivity — and Warsh needs to hike",
+      "url": "https://www.cnbc.com/2026/11/25/kevin-warsh-greenspan-fed-rates-ai-inflation.html",
+      "imageUrl": null,
+      "publishedAt": "2026-11-25T21:56:43.000Z"
+    },
+    {
+      "title": "Even the price of toys is on the rise. How Americans are scaling back holiday plans",
+      "url": "https://www.cnbc.com/2026/11/25/holiday-inflation-thanksgiving-travel-food-gifts.html",
+      "imageUrl": null,
+      "publishedAt": "2026-11-25T16:17:13.000Z"
+    },
+    {
+      "title": "Microdrama apps chase profits as Hollywood moves into short-form, vertical video",
+      "url": "https://www.cnbc.com/2026/11/26/micro-drama-apps-hollywood-vertical-video.html",
+      "imageUrl": null,
+      "publishedAt": "2026-11-26T18:27:43.000Z"
+    },
+    {
+      "title": "Spain’s Pablo Hernández de Cos set to lead European Central Bank",
+      "url": "https://www.cnbc.com/2026/11/26/pablo-hernandez-de-cos-ecb-president.html",
+      "imageUrl": null,
+      "publishedAt": "2026-11-26T15:28:26.000Z"
+    },
+    {
+      "title": "SpaceX, Musk pledge to donate a share each to active Trump Accounts",
+      "url": "https://www.cnbc.com/2026/11/25/spacex-musk-trump-account-stock.html",
+      "imageUrl": null,
+      "publishedAt": "2026-11-26T06:39:34.000Z"
+    },
+    {
       "title": "Global stocks rally as investors shrug off U.S. tariffs and AI jitters to 'fish for bargains'",
       "url": "https://www.cnbc.com/2026/11/26/stock-markets-today-.html",
       "imageUrl": null,
       "publishedAt": "2026-11-26T12:22:25.000Z"
     },
     {
-      "title": "Switzerland’s biggest bank set for showdown with lawmakers as capital fight intensifies amid crisis planning",
-      "url": "https://www.cnbc.com/2026/11/26/ubs-swiss-capital-rules-finma-crisis-plan.html",
+      "title": "Want to save money this winter? Start by asking why",
+      "url": "https://www.cnbc.com/select/how-to-save-money-this-winter/",
       "imageUrl": null,
-      "publishedAt": "2026-11-26T11:17:39.000Z"
+      "publishedAt": "2026-11-26T13:00:01.000Z"
     },
     {
-      "title": "Norse Atlantic suspends all flights, warns it may file for bankruptcy after share price collapse",
-      "url": "https://www.cnbc.com/2026/11/26/norse-airline-finance-business.html",
+      "title": "Planes, trains and automobiles: The best ways to beat travel fatigue—so you can come home feeling rested and fulfilled",
+      "url": "https://www.cnbc.com/make-it/2026/11/26/travel-fatigue-holiday-tips.html",
       "imageUrl": null,
-      "publishedAt": "2026-11-26T09:02:30.000Z"
-    },
-    {
-      "title": "U.S. tariff-hike threats pile pressure on partners to sign trade deals",
-      "url": "https://www.cnbc.com/2026/11/26/us-tariffs-hike-trade-agreement.html",
-      "imageUrl": null,
-      "publishedAt": "2026-11-26T12:46:55.000Z"
-    },
-    {
-      "title": "Wealthy Europeans look beyond stocks amid AI selloff. Here’s where they’re investing",
-      "url": "https://www.cnbc.com/2026/11/26/wealthy-europeans-alternative-investments-ai.html",
-      "imageUrl": null,
-      "publishedAt": "2026-11-26T07:23:42.000Z"
-    },
-    {
-      "title": "S&P warns Nvidia credit rating could be cut over 'rising' management and governance risk",
-      "url": "https://www.cnbc.com/2026/11/26/nvidia-market-governance-risk.html",
-      "imageUrl": null,
-      "publishedAt": "2026-11-26T03:19:44.000Z"
-    },
-    {
-      "title": "Latin America has the copper and energy the AI build-out needs. Infrastructure is the test",
-      "url": "https://www.cnbc.com/2026/11/26/latin-america-copper-energy-ai-investment.html",
-      "imageUrl": null,
-      "publishedAt": "2026-11-26T08:59:11.000Z"
-    },
-    {
-      "title": "Secondhand shopping is going mainstream this holiday season as consumers seek value",
-      "url": "https://www.cnbc.com/2026/11/25/secondhand-holiday-shopping-grows-as-shoppers-seek-value.html",
-      "imageUrl": null,
-      "publishedAt": "2026-11-25T14:17:01.000Z"
-    },
-    {
-      "title": "‘Your booth is waiting’: Denny’s welcomes Jensen Huang back as Nvidia CEO",
-      "url": "https://www.cnbc.com/2026/11/26/dennys-jensen-huang-nvidia.html",
-      "imageUrl": null,
-      "publishedAt": "2026-11-26T03:13:43.000Z"
+      "publishedAt": "2026-11-26T13:00:01.000Z"
     }
   ],
   "ipoNews": [

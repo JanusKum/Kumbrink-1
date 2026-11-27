@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-26T22:45:07.918Z",
+  "updatedAt": "2026-11-27T04:43:03.684Z",
   "period": "3mo",
   "universeSize": 503,
   "source": {
@@ -8552,22 +8552,28 @@
   ],
   "news": [
     {
+      "title": "Stock futures tick higher as Wall Street gets set to wrap up a volatile holiday week: Live updates",
+      "url": "https://www.cnbc.com/2026/11/26/stock-market-today-live-updates.html",
+      "imageUrl": null,
+      "publishedAt": "2026-11-27T04:40:59.000Z"
+    },
+    {
+      "title": "Two Italians killed in Kuwait drone attack; Trump says Iran war ends ‘whenever I want it’",
+      "url": "https://www.cnbc.com/2026/11/27/us-iran-war-trump-hormuz-italian-killed-trump.html",
+      "imageUrl": null,
+      "publishedAt": "2026-11-27T03:30:23.000Z"
+    },
+    {
+      "title": "SpaceX shares jump on alternative trading platform after Musk says he will expand share donations",
+      "url": "https://www.cnbc.com/2026/11/27/spacex-shares-musk-donations.html",
+      "imageUrl": null,
+      "publishedAt": "2026-11-27T04:20:55.000Z"
+    },
+    {
       "title": "Trump demands probe into ‘record setting error’ after third-quarter GDP data gets massive revision higher",
       "url": "https://www.cnbc.com/2026/11/26/trump-gdp-revision-investigation.html",
       "imageUrl": null,
       "publishedAt": "2026-11-26T21:13:17.000Z"
-    },
-    {
-      "title": "Semiconductor chips are the new oil. Here's why",
-      "url": "https://www.cnbc.com/2026/11/26/semiconductor-chips-are-the-new-oil-heres-why.html",
-      "imageUrl": null,
-      "publishedAt": "2026-11-26T17:52:15.000Z"
-    },
-    {
-      "title": "Buyer beware? Nvidia's volatile swings expose risks of single-stock ETFs",
-      "url": "https://www.cnbc.com/2026/11/26/nvidias-volatile-swings-expose-risks-of-single-stock-etfs.html",
-      "imageUrl": null,
-      "publishedAt": "2026-11-26T16:00:01.000Z"
     },
     {
       "title": "The Nobel-winning science turning ‘water harvesting’ into a commercial race",
@@ -8576,40 +8582,34 @@
       "publishedAt": "2026-11-26T11:01:13.000Z"
     },
     {
-      "title": "Liesman: Why Greenspan could bet on productivity — and Warsh needs to hike",
-      "url": "https://www.cnbc.com/2026/11/25/kevin-warsh-greenspan-fed-rates-ai-inflation.html",
+      "title": "Sovereign wealth funds are acting more like private equity giants — and inheriting their risks",
+      "url": "https://www.cnbc.com/2026/11/27/swf-private-equity-risks.html",
       "imageUrl": null,
-      "publishedAt": "2026-11-25T21:56:43.000Z"
+      "publishedAt": "2026-11-27T00:22:29.000Z"
     },
     {
-      "title": "Even the price of toys is on the rise. How Americans are scaling back holiday plans",
-      "url": "https://www.cnbc.com/2026/11/25/holiday-inflation-thanksgiving-travel-food-gifts.html",
+      "title": "This 170-year historical study says ‘major market collapse’ is coming",
+      "url": "https://www.cnbc.com/2026/11/27/ai-bubble-burst-market-study.html",
       "imageUrl": null,
-      "publishedAt": "2026-11-25T16:17:13.000Z"
+      "publishedAt": "2026-11-27T04:07:07.000Z"
     },
     {
-      "title": "Microdrama apps chase profits as Hollywood moves into short-form, vertical video",
-      "url": "https://www.cnbc.com/2026/11/26/micro-drama-apps-hollywood-vertical-video.html",
+      "title": "U.S. tariff-hike threats pile pressure on partners to sign trade deals",
+      "url": "https://www.cnbc.com/2026/11/26/us-tariffs-hike-trade-agreement.html",
       "imageUrl": null,
-      "publishedAt": "2026-11-26T18:27:43.000Z"
+      "publishedAt": "2026-11-26T12:46:55.000Z"
     },
     {
-      "title": "Spain’s Pablo Hernández de Cos set to lead European Central Bank",
-      "url": "https://www.cnbc.com/2026/11/26/pablo-hernandez-de-cos-ecb-president.html",
+      "title": "Nvidia chip buyers told to rule out Chinese renters to purchase GPUs, sources say",
+      "url": "https://www.cnbc.com/2026/11/26/neoclouds-nvidia-china-ai.html",
       "imageUrl": null,
-      "publishedAt": "2026-11-26T15:28:26.000Z"
+      "publishedAt": "2026-11-26T17:04:54.000Z"
     },
     {
-      "title": "SpaceX, Musk pledge to donate a share each to active Trump Accounts",
-      "url": "https://www.cnbc.com/2026/11/25/spacex-musk-trump-account-stock.html",
+      "title": "China industrial profits growth surges to a 5-month high of 20.1% in October",
+      "url": "https://www.cnbc.com/2026/11/27/china-industrial-profits-october.html",
       "imageUrl": null,
-      "publishedAt": "2026-11-26T06:39:34.000Z"
-    },
-    {
-      "title": "Global stocks rally as investors shrug off U.S. tariffs and AI jitters to 'fish for bargains'",
-      "url": "https://www.cnbc.com/2026/11/26/stock-markets-today-.html",
-      "imageUrl": null,
-      "publishedAt": "2026-11-26T12:22:25.000Z"
+      "publishedAt": "2026-11-27T02:04:09.000Z"
     },
     {
       "title": "Want to save money this winter? Start by asking why",
